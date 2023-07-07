@@ -196,8 +196,48 @@
   </div>
 
    
+  <nav class="article-nav">
+    
+      <a href="/2023/07/07/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            图片测试
+          
+        </div>
+      </a>
+    
+    
+  </nav>
+
   
    
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+
+
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+
+
+<script src="https://cdn.staticfile.org/blueimp-md5/2.19.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'd186f3f35180f1d7ea10',
+    clientSecret: '4e853408d31eaf16451af58d490d816a8ed985a5',
+    repo: 'zh3g.github.io',
+    owner: 'zh3g',
+    admin: ['zh3g'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
   
    
     <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
