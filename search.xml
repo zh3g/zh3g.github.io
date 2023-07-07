@@ -103,13 +103,20 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code><br>在文档需要插图片的地方</p>
 (实测不行)
 <p>改为 <code>![图片](图片名)</code><br><del>hexo修改文章路径</del><br><del>hexo默认文章路径为年&#x2F;月&#x2F;日&#x2F;文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径</del><br><del>permalink:</del> <del>:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</del><br><del>为</del><br><del>permalink:</del> <del>archives&#x2F;:title.html</del><br>千万别改(改完图片就失效了30min摸索的经验)</p>
-<h1 id="修改新建文件-博客-提示词"><a href="#修改新建文件-博客-提示词" class="headerlink" title="修改新建文件(博客)提示词"></a>修改新建文件(博客)提示词</h1><p><a href="https://zhuanlan.zhihu.com/p/384471848">参考</a></p>
+<h1 id="修改新建文件-博客-提示词"><a href="#修改新建文件-博客-提示词" class="headerlink" title="修改新建文件(博客)提示词"></a>修改新建文件(博客)提示词</h1><p><a href="https://zhuanlan.zhihu.com/p/384471848">参考</a><br><del>不适用于yare主题,现无解</del></p>
+<h1 id="用vscode写markdown"><a href="#用vscode写markdown" class="headerlink" title="用vscode写markdown"></a>用vscode写markdown</h1><h2 id="用vscode写markdown必备插件："><a href="#用vscode写markdown必备插件：" class="headerlink" title="用vscode写markdown必备插件："></a>用vscode写markdown必备插件：</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced">Markdown Preview Enhanced</a></li>
+</ul>
+<h2 id="markdown"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</h2><p><a href="https://markdown.com.cn/basic-syntax">官方教程</a></p>
 ]]></content>
       <categories>
         <category>个人</category>
       </categories>
       <tags>
-        <tag>教程</tag>
+        <tag>hexo -vscode</tag>
       </tags>
   </entry>
   <entry>
@@ -124,7 +131,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?aid=211010474&bvid=BV1Da411m7mc&cid=496825719&page=1&autoplay=0&autoplay=0&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 </div>
 
-<p><del>手机端好像没什么区别<img src="/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/0257B9A9.png" alt="Alt text"></del></p>
+<p><del>手机端好像没什么区别!<br><a href="0257B9A9.png">流汗</a></del></p>
 ]]></content>
       <categories>
         <category>视频嵌入</category>
