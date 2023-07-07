@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>基本教程</title>
-    <url>/undefined/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B.html</url>
+    <url>/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>安装GIT 和 node.js<br>安装HExo</p>
 <h1 id="命令行步骤"><a href="#命令行步骤" class="headerlink" title="命令行步骤"></a>命令行步骤</h1><pre><code>npm install hexo-cli -g
 hexo init blog
@@ -114,9 +114,9 @@ distractionFreeMode: true  #无干扰模式，不需要更改
   </entry>
   <entry>
     <title>一张图片</title>
-    <url>/undefined/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87.html</url>
+    <url>/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="hello"><a href="#hello" class="headerlink" title="hello"></a>hello</h1><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p><a href="01.png">图片</a></p>
-<h2 id="这是图片"><a href="#这是图片" class="headerlink" title="这是图片"></a>这是图片</h2><p><img src="/undefined/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87.htm/01.png" alt="picture"></p>
+<h2 id="这是图片"><a href="#这是图片" class="headerlink" title="这是图片"></a>这是图片</h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
 ]]></content>
       <categories>
         <category>无</category>
@@ -127,7 +127,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/undefined/hello-world.html</url>
+    <url>/2023/07/07/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
