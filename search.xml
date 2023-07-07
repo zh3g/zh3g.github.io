@@ -16,7 +16,8 @@ hexo server 或者 hexo s
 <p>修改config文件 <code>theme: ayer</code></p>
 <pre><code>hexo g -s
 </code></pre>
-<p>修改主题配置文件之前一定要复制一份(防止出错)</p>
+<p>修改主题配置文件之前一定要复制一份(防止出错) </p>
+<span id="more"></span>
 <h1 id="注册gitee或github"><a href="#注册gitee或github" class="headerlink" title="注册gitee或github"></a>注册gitee或github</h1><p><del>(这里以github为例)</del><br>首先 新建仓库为 zh3g.github.io</p>
 <h1 id="github-与hexo配置"><a href="#github-与hexo配置" class="headerlink" title="github 与hexo配置"></a>github 与hexo配置</h1><pre><code>git config --global user.name &quot;zh3g&quot;
 git config --global user.email &quot;zhang1zhengzheng@outlook.com&quot;
