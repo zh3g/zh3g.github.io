@@ -113,6 +113,24 @@ distractionFreeMode: true  #无干扰模式，不需要更改
       </tags>
   </entry>
   <entry>
+    <title>vscode自动更新</title>
+    <url>/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<h1 id="论如何设置vscode自动更新"><a href="#论如何设置vscode自动更新" class="headerlink" title="论如何设置vscode自动更新"></a>论如何设置vscode自动更新</h1><h2 id="打开VSCode设置界面-搜索框内输入-auto-save"><a href="#打开VSCode设置界面-搜索框内输入-auto-save" class="headerlink" title="- 打开VSCode设置界面,搜索框内输入 auto save"></a>- 打开VSCode设置界面,搜索框内输入 auto save</h2><p><img src="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/image.png" alt="Alt text"></p>
+<ul>
+<li>afterDelay将在配置的 <code>files.autoSaveDelay</code> 后自动保存为保存的编辑器</li>
+<li>onFocusChange —— 当编辑器失去焦点时，将自动保存为保存的编辑器也就是鼠标不在VSCode里面时自动保存</li>
+<li>onWindowChange —— 当窗口失去焦点时，将自动保存为保存的编辑器（窗口可理解为每个代码脚本，当鼠标从 A 脚本转到 B 脚本时，自动保存脚本 A 的修改内容）</li>
+</ul>
+<p><del>最后：这里我用的是onWindowChange 自己喜欢哪个就用哪个！！！</del></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一张图片</title>
     <url>/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="hello"><a href="#hello" class="headerlink" title="hello"></a>hello</h1><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p><a href="01.png">图片</a></p>

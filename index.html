@@ -67,7 +67,7 @@
     
   <div class="cover-frame">
     <div class="bg-box">
-      <img src="/images/cover3.jpg" alt="image frame" />
+      <img src="/images/cover9.png" alt="image frame" />
     </div>
     <div class="cover-inner text-center text-white">
       <h1><a href="/">Hexo</a></h1>
@@ -96,11 +96,11 @@
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+        strings: ['每个人都会有那么一瞬间， 觉得整个世界为自己作了一次配角。', '世界那么大，我想我的野心再大，它也装得下。', '想要的都拥有，得不到的都释怀'],
         startDelay: 0,
-        typeSpeed: 200,
+        typeSpeed: 300,
         loop: true,
-        backSpeed: 100,
+        backSpeed: 150,
         showCursor: true
       });
     } catch (err) {
@@ -305,6 +305,66 @@ distractionFreeMode: true  #无干扰模式，不需要更改
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-vscode自动更新"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/"
+    >vscode自动更新</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/" class="article-date">
+  <time datetime="2023-07-07T08:48:48.000Z" itemprop="datePublished">2023-07-07</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="论如何设置vscode自动更新"><a href="#论如何设置vscode自动更新" class="headerlink" title="论如何设置vscode自动更新"></a>论如何设置vscode自动更新</h1><h2 id="打开VSCode设置界面-搜索框内输入-auto-save"><a href="#打开VSCode设置界面-搜索框内输入-auto-save" class="headerlink" title="- 打开VSCode设置界面,搜索框内输入 auto save"></a>- 打开VSCode设置界面,搜索框内输入 auto save</h2><p><img src="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/image.png" alt="Alt text"></p>
+<ul>
+<li>afterDelay将在配置的 <code>files.autoSaveDelay</code> 后自动保存为保存的编辑器</li>
+<li>onFocusChange —— 当编辑器失去焦点时，将自动保存为保存的编辑器也就是鼠标不在VSCode里面时自动保存</li>
+<li>onWindowChange —— 当窗口失去焦点时，将自动保存为保存的编辑器（窗口可理解为每个代码脚本，当鼠标从 A 脚本转到 B 脚本时，自动保存脚本 A 的修改内容）</li>
+</ul>
+<p><del>最后：这里我用的是onWindowChange 自己喜欢哪个就用哪个！！！</del></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li></ul>
 
     </footer>
   </div>
