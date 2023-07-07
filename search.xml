@@ -101,8 +101,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image -- save</span><br></pre></td></tr></table></figure>
 <p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code><br>在文档需要插图片的地方</p>
 (实测不行)
-<p>改为 <code>![图片](图片名)</code></p>
-<h1 id="hexo修改文章路径"><a href="#hexo修改文章路径" class="headerlink" title="hexo修改文章路径"></a>hexo修改文章路径</h1><p>hexo默认文章路径为年&#x2F;月&#x2F;日&#x2F;文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径<br><code>permalink: :year/:month/:day/:title/</code><br>为<br><code>permalink: archives/:title.html</code></p>
+<p>改为 <code>![图片](图片名)</code><br><del>hexo修改文章路径</del><br><del>hexo默认文章路径为年&#x2F;月&#x2F;日&#x2F;文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径</del><br><del>permalink:</del> <del>:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</del><br><del>为</del><br><del>permalink:</del> <del>archives&#x2F;:title.html</del><br>千万别改(改完图片就失效了30min摸索的经验)</p>
 <h1 id="修改新建文件-博客-提示词"><a href="#修改新建文件-博客-提示词" class="headerlink" title="修改新建文件(博客)提示词"></a>修改新建文件(博客)提示词</h1><p><a href="https://zhuanlan.zhihu.com/p/384471848">参考</a></p>
 ]]></content>
       <categories>
