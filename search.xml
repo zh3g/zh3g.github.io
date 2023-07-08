@@ -4,13 +4,22 @@
     <title>基本教程</title>
     <url>/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1><span id="准备工作">准备工作</span></h1><p>安装GIT 和 node.js<br>安装HExo</p>
-<h1><span id="命令行步骤">命令行步骤</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server 或者 hexo s</span><br><span class="line">```    </span><br><span class="line">出现博客地址 打开</span><br><span class="line"></span><br><span class="line"># 安装主题</span><br><span class="line">    git clone https://gitee.com/mirrors/ayer.git themes/ayer</span><br><span class="line">修改config文件 `theme: ayer`</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>hexo g<br>hexo s</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">修改主题配置文件之前一定要复制一份(防止出错) </span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line"># 注册gitee或github</span><br><span class="line">~(这里以github为例)~</span><br><span class="line">首先 新建仓库为 zh3g.github.io</span><br><span class="line"></span><br><span class="line"># github 与hexo配置</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>git config –global user.name “zh3g”<br>git config –global user.email “<a href="mailto:&#122;&#x68;&#x61;&#110;&#x67;&#49;&#x7a;&#x68;&#x65;&#110;&#103;&#122;&#104;&#x65;&#110;&#x67;&#x40;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#x6d;">&#122;&#x68;&#x61;&#110;&#x67;&#49;&#x7a;&#x68;&#x65;&#110;&#103;&#122;&#104;&#x65;&#110;&#x67;&#x40;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#x6d;</a>“</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">`ssh-keygen -t rsa -C &quot;zhang1zhengzheng@outlook.com&quot;`</span><br><span class="line">    (输入三次回车</span><br><span class="line"></span><br><span class="line">`cat ~/.ssh/id_rsa.pub`</span><br><span class="line">复制显示的密钥到ssh公钥</span><br><span class="line"></span><br><span class="line">`ssh -T git@github.com`</span><br><span class="line"> 找到config文件</span><br><span class="line"> 最后输入</span><br><span class="line">例如:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>deploy:<br>  type: ‘git’<br>  repository: <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:zh3g&#x2F;zh3g.github.io.git<br>  branch: master</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line">    npm install hexo-deployer-git --save</span><br><span class="line">    hexo g</span><br><span class="line">    hexo d</span><br></pre></td></tr></table></figure>
+<h1><span id="命令行步骤">命令行步骤</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server 或者 hexo s</span><br></pre></td></tr></table></figure>
+<p>出现博客地址 打开</p>
+<h1><span id="安装主题">安装主题</span></h1><pre><code>git clone https://gitee.com/mirrors/ayer.git themes/ayer
+</code></pre>
+<p>修改config文件 <code>theme: ayer</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>修改主题配置文件之前一定要复制一份(防止出错) </p>
+<span id="more"></span>
+<h1><span id="注册gitee或github">注册gitee或github</span></h1><p><del>(这里以github为例)</del><br>首先 新建仓库为 zh3g.github.io</p>
+<h1><span id="github-与hexo配置">github 与hexo配置</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;zh3g&quot;</span><br><span class="line">git config --global user.email &quot;zhang1zhengzheng@outlook.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>ssh-keygen -t rsa -C &quot;zhang1zhengzheng@outlook.com&quot;</code><br>    (输入三次回车</p>
+<p><code>cat ~/.ssh/id_rsa.pub</code><br>复制显示的密钥到ssh公钥</p>
+<p><code>ssh -T git@github.com</code><br> 找到config文件<br> 最后输入<br>例如:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:zh3g/zh3g.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <h1><span id="写一个bat命令用于运行写好的博客">写一个bat命令用于运行写好的博客</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br><span class="line"></span><br><span class="line">Echo 请选择 Y. 启动三件套            N. 退出</span><br><span class="line">Echo.</span><br><span class="line">Set /p var=请选择:</span><br><span class="line">If /i %var%==Y (start cmd /k &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;hexo s &quot;) else (Exit)</span><br><span class="line">Pause</span><br><span class="line">%0 </span><br></pre></td></tr></table></figure>
 
 <h1><span id="必备插件">必备插件</span></h1><h2><span id="1hexo-generator-searchdb-搜索">1. 搜索</span></h2><p>1 <code>npm install hexo-generator-searchdb --save</code></p>
