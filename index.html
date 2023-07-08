@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="zh-CN">
   
 
     <head>
@@ -173,7 +173,7 @@
 <h2 itemprop="name">
   <a class="article-title" href="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/"
     >基本教程
-  <i class="article-topping">Sticky</i>
+  <i class="article-topping">置顶</i>
 </a> 
 </h2>
  
@@ -495,9 +495,9 @@ hexo server 或者 hexo s
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -581,7 +581,7 @@ hexo server 或者 hexo s
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -837,7 +837,7 @@ hexo server 或者 hexo s
   console.log(password, lock_password);
   if (lock_password !== password) {
     Swal.fire({
-      title: "Please enter password",
+      title: "请输入访问密码",
       input: "text",
       inputAttributes: {
         autocapitalize: "off",
@@ -845,7 +845,7 @@ hexo server 或者 hexo s
       showCancelButton: false,
       showLoaderOnConfirm: true,
       allowOutsideClick: false,
-      confirmButtonText: "Ok",
+      confirmButtonText: "确定",
     }).then((result) => {
       console.log(result);
       if (result.isConfirmed) {
@@ -855,8 +855,8 @@ hexo server 或者 hexo s
         } else {
           Swal.fire({
             icon: "error",
-            title: "Incorrect password, please try again",
-            confirmButtonText: "Ok",
+            title: "密码错误，请重试",
+            confirmButtonText: "确定",
             allowOutsideClick: false,
           }).then(() => {
             window.location.reload();

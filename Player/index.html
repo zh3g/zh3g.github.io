@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="zh-CN">
   
 
     <head>
@@ -41,10 +41,10 @@
           font-size: 1.6rem;
         }
       </style>
-    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+    <link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 <script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
-</head>
+<script src="/assets/js/DPlayer.min.js"></script></head>
   </html>
 </html>
 
@@ -92,19 +92,24 @@
 
 
 
-    <div id="aplayer-DRqLNwgO" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1834076023" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    <div id="aplayer-dRSUuzaD" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1834076023" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 
 
-    <div id="aplayer-ZAoHcBpj" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7386630004" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    <div id="aplayer-CnZHlDdj" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="7386630004" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 
-<h1><span id="视频">视频</span></h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":"yes","screenshot":"yes","video":{"url":"https://www.bilibili.com/video/BV1zN411D7JV/?spm_id_from=333.337.search-card.all.click"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h1><span id="视频">视频</span></h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://devtest.qiniudn.com/若能绽放光芒.mp4","pic":"http://devtest.qiniudn.com/若能绽放光芒.png"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+<h1><span id="bilibili自带">BILIBILI自带</span></h1><div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?aid=487726960&bvid=BV1zN411D7JV&cid=1185714736&page=1&autoplay=0&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
 
  
       <!-- reward -->
       
       <div id="reword-out">
         <div id="reward-btn">
-          Donate
+          打赏
         </div>
       </div>
       
@@ -117,9 +122,9 @@
       <ul class="post-copyright">
         <li>
           <i class="ri-copyright-line"></i>
-          <strong>Copyright： </strong>
+          <strong>版权声明： </strong>
           
-          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
           
         </li>
       </ul>
@@ -203,9 +208,9 @@
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -289,7 +294,7 @@
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -545,7 +550,7 @@
   console.log(password, lock_password);
   if (lock_password !== password) {
     Swal.fire({
-      title: "Please enter password",
+      title: "请输入访问密码",
       input: "text",
       inputAttributes: {
         autocapitalize: "off",
@@ -553,7 +558,7 @@
       showCancelButton: false,
       showLoaderOnConfirm: true,
       allowOutsideClick: false,
-      confirmButtonText: "Ok",
+      confirmButtonText: "确定",
     }).then((result) => {
       console.log(result);
       if (result.isConfirmed) {
@@ -563,8 +568,8 @@
         } else {
           Swal.fire({
             icon: "error",
-            title: "Incorrect password, please try again",
-            confirmButtonText: "Ok",
+            title: "密码错误，请重试",
+            confirmButtonText: "确定",
             allowOutsideClick: false,
           }).then(() => {
             window.location.reload();
