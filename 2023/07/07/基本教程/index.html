@@ -95,7 +95,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1.2k</span>
+            <span class="post-count">631</span>
         </span>
     </span>
 
@@ -104,7 +104,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">5 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -143,84 +143,32 @@
 <p>然后将以下配置复制到你博客根目录下的 _config.yml 里（注意不是ayer目录下的）:</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
 
-<h2><span id="2hexo-generator-index-pin-top">2.</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+<h2><span id="2hexo-generator-index-pin-top">2.hexo-generator-index-pin-top</span></h2><p><a target="_blank" rel="noopener" href="https://github.com/netcan/hexo-generator-index-pin-top">hexo-generator-index-pin-top</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
 <p>在需要的页面顶部输入<code>top: true</code></p>
 <h1><span id="其他页面">其他页面</span></h1><h2><span id="分类">分类</span></h2><p><code>hexo new page categories</code><br>然后将以下复制到_posts&#x2F;categories&#x2F;index.md文件</p>
-<pre><code>---
-title: categories
-type: &quot;categories&quot;
-layout: &quot;categories&quot;
----
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
 <h2><span id="标签">标签</span></h2><p><code>hexo new page tags</code><br>配置同分类一样</p>
-<pre><code>---
-title: tags
-type: &quot;tags&quot;
-layout: &quot;tags&quot;
----
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
 <h2><span id="相册">相册</span></h2><p><code>hexo new page photos</code><br>然后将以下复制到 <code>/source/photos/index.md</code> 文件， <code>img_url</code> 替换成图片路径， <code>caption</code> 替换成图片名称</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Gallery</span><br><span class="line"></span><br><span class="line">albums: [</span><br><span class="line">        [&quot;img_url&quot;,&quot;img_caption&quot;],</span><br><span class="line">        [&quot;img_url&quot;,&quot;img_caption&quot;]</span><br><span class="line">        ]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p><del>实际无用</del></p>
 <h2><span id="文章目录">文章目录</span></h2><p>用Tocbot解析文章标题并生成目录</p>
-<h2><span id="将以下配置复制到你ayer目录下的-_configyml-里123456-toc-toc-true-当然你可能并不想所有文章都生成悬浮目录你可以在文章顶部的配置中加一行来进行关闭">将以下配置复制到你ayer目录下的 _config.yml 里：<br><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Toc</span><br><span class="line"> toc: true</span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line">当然你可能并不想所有文章都生成悬浮目录，你可以在文章顶部的配置中加一行来进行关闭：</span><br><span class="line"></span><br></pre></td></tr></table></figure></span></h2><h2><span id="toc-false">toc: false</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 补充 </span><br><span class="line">hexo安装toc插件</span><br><span class="line">一、安装(这里是hexo的路径下，也就是博客根目录下)</span><br><span class="line">`cnpm install hexo-toc --save`</span><br><span class="line">`二、配置博客根目录下的_config.yml文件：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2><span id="toc-maxdepth-312345678910三-在markdown里使用-在markdown中需要显示文章目录的地方添加lt-toc-gt-友情链接hexo-new-page-friends然后将以下复制到-sourcefriendsindexmd-文件">toc:<br>  maxdepth: 3<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">三、在markdown里使用 在Markdown中需要显示文章目录的地方添加</span><br><span class="line"></span><br><span class="line">`&lt;!-- toc --&gt;`</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 友情链接</span><br><span class="line">`hexo new page friends`</span><br><span class="line">然后将以下复制到 `/source/friends/index.md `文件</span><br><span class="line"></span><br></pre></td></tr></table></figure></span></h2><h2><span id="title-friendstype-friendslayout-friends">title: friends<br>type: friends<br>layout: “friends”</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">然后在 ayer 主题目录下的 _config.yml 中自定义 friends_link 配置项即可</span><br><span class="line"># 可选插件</span><br><span class="line">## [gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)</span><br><span class="line">[配置gitalk](https://www.cnblogs.com/qisi007/p/13731562.html)</span><br><span class="line">首先进入主题的配置文件_config.yml(注意是主题的配置文件，不是博客根目录下的配置文件)，添加gitalk配置(一定要仔细，缺一不可)。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>gitalk:<br>enable: true 开启gitalk评论，不需要配置<br>owner: github用户名<br>admin: github用户名<br>repo: 博客的仓库名称(注意不是地址)<br>ClientID: 上面生成的Client ID<br>ClientSecret: 上面生成的Client Secret<br>labels: ‘gitalk’ github issue 对应的issue标签（新建一个）<br>distractionFreeMode: true  无干扰模式，不需要更改</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例如</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<pre><code>gitalk:
-enable: true #开启gitalk评论，不需要配置
-owner: zh3g
-admin: zh3g
-repo: zh3g.github.io
-ClientID: d186f3f35180f1d7ea10
-ClientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5
-labels: &#39;gitalk&#39; #github issue 对应的issue标签（新建一个）
-distractionFreeMode: true  #无干扰模式，不需要更改
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">随后修好主题里的config文件确保gitalk为`true`</span><br><span class="line">例如</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1><span id="2-gitalkhttpsgithubcomgitalkgitalk">2、Gitalk()</span></h1><p>gitalk:<br>  enable: true # true<br>  clientID: d186f3f35180f1d7ea10 # GitHub Application Client ID<br>  clientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5 # Client Secret<br>  repo: zh3g.github.io # Repository name<br>  owner: zh3g # GitHub ID<br>  admin: zh3g # GitHub ID</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 问题:本地图片引用</span><br><span class="line">安装插件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>npm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> – save</p>
-<pre><code>
-将 `config.yml` 文件中的 `post_asset_folder` 选项设为 `true`
-在文档需要插图片的地方
-&#123;% asset_img 图片名.jpg 描述语句 %&#125;(实测不行)
-改为 `![图片](图片名)`
-~hexo修改文章路径~
-~hexo默认文章路径为年/月/日/文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径~
-~permalink:~ ~:year/:month/:day/:title/~
-~为~
-~permalink:~ ~archives/:title.html~
-千万别改(改完图片就失效了30min摸索的经验)
+<p>将以下配置复制到你ayer目录下的 _config.yml 里：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Toc</span></span><br><span class="line"> <span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">```</span>     </span><br><span class="line"></span><br><span class="line"><span class="string">当然你可能并不想所有文章都生成悬浮目录，你可以在文章顶部的配置中加一行来进行关闭：</span></span><br><span class="line"></span><br><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
-# 修改新建文件(博客)提示词
-[参考](https://zhuanlan.zhihu.com/p/384471848)
-~不适用于yare主题,现无解~
+<h3><span id="补充">补充</span></h3><p>hexo安装toc插件<br>一、安装(这里是hexo的路径下，也就是博客根目录下)<br><code>cnpm install hexo-toc --save</code><br>&#96;二、配置博客根目录下的_config.yml文件：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">maxdepth:</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
 
-# 用vscode写markdown
-
-## 用vscode写markdown必备插件：
-* [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-* [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
-* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-* [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-
-## markdown
-[官方教程](https://markdown.com.cn/basic-syntax
-)
-
-# yare 主题
-
-- [主题配置](https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
-- [Ayer中文说明](https://shen-yu.gitee.io/2019/ayer/)
-
-
-# 这是文章目录
-
-&lt;!-- toc --&gt;
+<p>三、在markdown里使用 在Markdown中需要显示文章目录的地方添加</p>
+<p>&#96;</p>
+<!-- toc -->
 
 
 
-&lt;!-- tocstop --&gt;
+<!-- tocstop -->
 
 
 
@@ -242,7 +190,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 
 
 
-</code></pre>
+
  
       <!-- reward -->
       
