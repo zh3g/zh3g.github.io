@@ -95,7 +95,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">627</span>
+            <span class="post-count">1.2k</span>
         </span>
     </span>
 
@@ -104,7 +104,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">2 min</span>
+            <span class="post-count">5 min</span>
         </span>
     </span>
 </div>
@@ -190,32 +190,72 @@ toc: false
 <p>&#96;</p>
 <!-- toc -->
 
-
-
+<ul>
+<li><a href="#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5">友情链接</a></li>
+</ul>
+<ul>
+<li><a href="#%E5%8F%AF%E9%80%89%E6%8F%92%E4%BB%B6">可选插件</a><ul>
+<li><a href="#gitalkhttpsgithubcomgitalkgitalkblobmasterreadme-cnmd">gitalk</a></li>
+</ul>
+</li>
+<li><a href="#%E9%97%AE%E9%A2%98%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8">问题:本地图片引用</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%8D%9A%E5%AE%A2%E6%8F%90%E7%A4%BA%E8%AF%8D">修改新建文件(博客)提示词</a></li>
+<li><a href="#%E7%94%A8vscode%E5%86%99markdown">用vscode写markdown</a><ul>
+<li><a href="#%E7%94%A8vscode%E5%86%99markdown%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6">用vscode写markdown必备插件：</a></li>
+<li><a href="#markdown">markdown</a></li>
+</ul>
+</li>
+<li><a href="#yare-%E4%B8%BB%E9%A2%98">yare 主题</a></li>
+<li><a href="#%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E7%9B%AE%E5%BD%95">这是一个目录</a></li>
+</ul>
 <!-- tocstop -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+<p>&#96;</p>
+<h2><span id="友情链接">友情链接</span></h2><p><code>hexo new page friends</code><br>然后将以下复制到 <code>/source/friends/index.md </code>文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: friends</span><br><span class="line">type: friends</span><br><span class="line">layout: &quot;friends&quot;</span><br><span class="line">---    </span><br></pre></td></tr></table></figure>
+<p>然后在 ayer 主题目录下的 _config.yml 中自定义 friends_link 配置项即可</p>
+<h1><span id="可选插件">可选插件</span></h1><h2><span id="gitalk"></span></h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/qisi007/p/13731562.html">配置gitalk</a><br>首先进入主题的配置文件_config.yml(注意是主题的配置文件，不是博客根目录下的配置文件)，添加gitalk配置(一定要仔细，缺一不可)。</p>
+<pre><code>gitalk:
+enable: true 开启gitalk评论，不需要配置
+owner: github用户名
+admin: github用户名
+repo: 博客的仓库名称(注意不是地址)
+ClientID: 上面生成的Client ID
+ClientSecret: 上面生成的Client Secret
+labels: &#39;gitalk&#39; github issue 对应的issue标签（新建一个）
+distractionFreeMode: true  无干扰模式，不需要更改
+</code></pre>
+<p>例如</p>
+<pre><code>gitalk:
+enable: true #开启gitalk评论，不需要配置
+owner: zh3g
+admin: zh3g
+repo: zh3g.github.io
+ClientID: d186f3f35180f1d7ea10
+ClientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5
+labels: &#39;gitalk&#39; #github issue 对应的issue标签（新建一个）
+distractionFreeMode: true  #无干扰模式，不需要更改
+</code></pre>
+<p>随后修好主题里的config文件确保gitalk为<code>true</code><br>例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 2、Gitalk(https://github.com/gitalk/gitalk)</span><br><span class="line">gitalk:</span><br><span class="line">  enable: true # true</span><br><span class="line">  clientID: d186f3f35180f1d7ea10 # GitHub Application Client ID</span><br><span class="line">  clientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5 # Client Secret</span><br><span class="line">  repo: zh3g.github.io # Repository name</span><br><span class="line">  owner: zh3g # GitHub ID</span><br><span class="line">  admin: zh3g # GitHub ID</span><br></pre></td></tr></table></figure>
+<h1><span id="问题本地图片引用">问题:本地图片引用</span></h1><p>安装插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image -- save</span><br></pre></td></tr></table></figure>
+<p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code><br>在文档需要插图片的地方</p>
+(实测不行)
+<p>改为 <code>![图片](图片名)</code><br><del>hexo修改文章路径</del><br><del>hexo默认文章路径为年&#x2F;月&#x2F;日&#x2F;文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径</del><br><del>permalink:</del> <del>:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</del><br><del>为</del><br><del>permalink:</del> <del>archives&#x2F;:title.html</del><br>千万别改(改完图片就失效了30min摸索的经验)</p>
+<h1><span id="修改新建文件博客提示词">修改新建文件(博客)提示词</span></h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/384471848">参考</a><br><del>不适用于yare主题,现无解</del></p>
+<h1><span id="用vscode写markdown">用vscode写markdown</span></h1><h2><span id="用vscode写markdown必备插件">用vscode写markdown必备插件：</span></h2><ul>
+<li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></li>
+<li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a></li>
+<li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a></li>
+<li><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced">Markdown Preview Enhanced</a></li>
+</ul>
+<h2><span id="markdown">markdown</span></h2><p><a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax">官方教程</a></p>
+<h1><span id="yare-主题">yare 主题</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题配置</a></li>
+<li><a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer中文说明</a></li>
+</ul>
+<h1><span id="这是一个目录">这是一个目录</span></h1> 
       <!-- reward -->
       
       <div id="reword-out">
