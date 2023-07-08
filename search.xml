@@ -4,77 +4,139 @@
     <title>基本教程</title>
     <url>/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1><span id="准备工作">准备工作</span></h1><p>安装GIT 和 node.js<br>安装HExo</p>
-<h1><span id="命令行步骤">命令行步骤</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server 或者 hexo s</span><br></pre></td></tr></table></figure>
-
+<h1><span id="命令行步骤">命令行步骤</span></h1><pre><code>npm install hexo-cli -g
+hexo init blog
+cd blog
+npm install
+hexo server 或者 hexo s
+</code></pre>
 <p>出现博客地址 打开</p>
 <h1><span id="安装主题">安装主题</span></h1><pre><code>git clone https://gitee.com/mirrors/ayer.git themes/ayer
 </code></pre>
 <p>修改config文件 <code>theme: ayer</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<pre><code>hexo g -s
+</code></pre>
 <p>修改主题配置文件之前一定要复制一份(防止出错) </p>
 <span id="more"></span>
 <h1><span id="注册gitee或github">注册gitee或github</span></h1><p><del>(这里以github为例)</del><br>首先 新建仓库为 zh3g.github.io</p>
-<h1><span id="github-与hexo配置">github 与hexo配置</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;zh3g&quot;</span><br><span class="line">git config --global user.email &quot;zhang1zhengzheng@outlook.com&quot;</span><br></pre></td></tr></table></figure>
+<h1><span id="github-与hexo配置">github 与hexo配置</span></h1><pre><code>git config --global user.name &quot;zh3g&quot;
+git config --global user.email &quot;zhang1zhengzheng@outlook.com&quot;
 
-<p><code>ssh-keygen -t rsa -C &quot;zhang1zhengzheng@outlook.com&quot;</code><br>    (输入三次回车</p>
-<p><code>cat ~/.ssh/id_rsa.pub</code><br>复制显示的密钥到ssh公钥</p>
-<p><code>ssh -T git@github.com</code><br> 找到config文件<br> 最后输入<br>例如:</p>
+ssh-keygen -t rsa -C &quot;zhang1zhengzheng@outlook.com&quot;
+(输入三次回车
+
+cat ~/.ssh/id_rsa.pub
+</code></pre>
+<p>复制显示的密钥到ssh公钥</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p> 找到config文件<br> 最后输入<br>例如:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:zh3g/zh3g.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h1><span id="写一个bat命令用于运行写好的博客">写一个bat命令用于运行写好的博客</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br><span class="line"></span><br><span class="line">Echo 请选择 Y. 启动三件套            N. 退出</span><br><span class="line">Echo.</span><br><span class="line">Set /p var=请选择:</span><br><span class="line">If /i %var%==Y (start cmd /k &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;hexo s &quot;) else (Exit)</span><br><span class="line">Pause</span><br><span class="line">%0 </span><br></pre></td></tr></table></figure>
+<h1><span id="写一个bat命令用于运行写好的博客">写一个bat命令用于运行写好的博客</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br><span class="line"></span><br><span class="line">Echo 请选择 Y. 启动三件套            N. 退出</span><br><span class="line">Echo.</span><br><span class="line">Set /p var=请选择:</span><br><span class="line">If /i %var%==Y (start cmd /k &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;) else (Exit)</span><br><span class="line">Pause</span><br><span class="line">%0 </span><br></pre></td></tr></table></figure>
 
 <h1><span id="必备插件">必备插件</span></h1><h2><span id="1hexo-generator-searchdb-搜索">1. 搜索</span></h2><p>1 <code>npm install hexo-generator-searchdb --save</code></p>
 <p>然后将以下配置复制到你博客根目录下的 _config.yml 里（注意不是ayer目录下的）:</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
 
-<h2><span id="2hexo-generator-index-pin-top">2.hexo-generator-index-pin-top</span></h2><p><a href="https://github.com/netcan/hexo-generator-index-pin-top">hexo-generator-index-pin-top</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+<h2><span id="2hexo-generator-index-pin-top">2.</span></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
 <p>在需要的页面顶部输入<code>top: true</code></p>
 <h1><span id="其他页面">其他页面</span></h1><h2><span id="分类">分类</span></h2><p><code>hexo new page categories</code><br>然后将以下复制到_posts&#x2F;categories&#x2F;index.md文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
+<pre><code>---
+title: categories
+type: &quot;categories&quot;
+layout: &quot;categories&quot;
+---
+</code></pre>
 <h2><span id="标签">标签</span></h2><p><code>hexo new page tags</code><br>配置同分类一样</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
+<pre><code>---
+title: tags
+type: &quot;tags&quot;
+layout: &quot;tags&quot;
+---
+</code></pre>
 <h2><span id="相册">相册</span></h2><p><code>hexo new page photos</code><br>然后将以下复制到 <code>/source/photos/index.md</code> 文件， <code>img_url</code> 替换成图片路径， <code>caption</code> 替换成图片名称</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Gallery</span><br><span class="line"></span><br><span class="line">albums: [</span><br><span class="line">        [&quot;img_url&quot;,&quot;img_caption&quot;],</span><br><span class="line">        [&quot;img_url&quot;,&quot;img_caption&quot;]</span><br><span class="line">        ]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p><del>实际无用</del></p>
 <h2><span id="文章目录">文章目录</span></h2><p>用Tocbot解析文章标题并生成目录</p>
 <p>将以下配置复制到你ayer目录下的 _config.yml 里：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Toc</span></span><br><span class="line"> <span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">```</span>     </span><br><span class="line"></span><br><span class="line"><span class="string">当然你可能并不想所有文章都生成悬浮目录，你可以在文章顶部的配置中加一行来进行关闭：</span></span><br><span class="line"></span><br><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<pre><code># Toc
+ toc: true
+</code></pre>
+<p>当然你可能并不想所有文章都生成悬浮目录，你可以在文章顶部的配置中加一行来进行关闭：</p>
+<pre><code>---
+toc: false
+---
+</code></pre>
 <h3><span id="补充">补充</span></h3><p>hexo安装toc插件<br>一、安装(这里是hexo的路径下，也就是博客根目录下)<br><code>cnpm install hexo-toc --save</code><br>&#96;二、配置博客根目录下的_config.yml文件：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">maxdepth:</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">toc:</span><br><span class="line">  maxdepth: 3</span><br></pre></td></tr></table></figure>
 <p>三、在markdown里使用 在Markdown中需要显示文章目录的地方添加</p>
 <p>&#96;</p>
 <!-- toc -->
 
-
-
+<ul>
+<li><a href="#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5">友情链接</a></li>
+</ul>
+<ul>
+<li><a href="#%E5%8F%AF%E9%80%89%E6%8F%92%E4%BB%B6">可选插件</a><ul>
+<li><a href="#gitalkhttpsgithubcomgitalkgitalkblobmasterreadme-cnmd">gitalk</a></li>
+</ul>
+</li>
+<li><a href="#%E9%97%AE%E9%A2%98%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8">问题:本地图片引用</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%8D%9A%E5%AE%A2%E6%8F%90%E7%A4%BA%E8%AF%8D">修改新建文件(博客)提示词</a></li>
+<li><a href="#%E7%94%A8vscode%E5%86%99markdown">用vscode写markdown</a><ul>
+<li><a href="#%E7%94%A8vscode%E5%86%99markdown%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6">用vscode写markdown必备插件：</a></li>
+<li><a href="#markdown">markdown</a></li>
+</ul>
+</li>
+<li><a href="#yare-%E4%B8%BB%E9%A2%98">yare 主题</a></li>
+</ul>
 <!-- tocstop -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p>&#96;</p>
+<h2><span id="友情链接">友情链接</span></h2><p><code>hexo new page friends</code><br>然后将以下复制到 <code>/source/friends/index.md </code>文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: friends</span><br><span class="line">type: friends</span><br><span class="line">layout: &quot;friends&quot;</span><br><span class="line">---    </span><br></pre></td></tr></table></figure>
+<p>然后在 ayer 主题目录下的 _config.yml 中自定义 friends_link 配置项即可</p>
+<h1><span id="可选插件">可选插件</span></h1><h2><span id="gitalk"></span></h2><p><a href="https://www.cnblogs.com/qisi007/p/13731562.html">配置gitalk</a><br>首先进入主题的配置文件_config.yml(注意是主题的配置文件，不是博客根目录下的配置文件)，添加gitalk配置(一定要仔细，缺一不可)。</p>
+<pre><code>gitalk:
+enable: true 开启gitalk评论，不需要配置
+owner: github用户名
+admin: github用户名
+repo: 博客的仓库名称(注意不是地址)
+ClientID: 上面生成的Client ID
+ClientSecret: 上面生成的Client Secret
+labels: &#39;gitalk&#39; github issue 对应的issue标签（新建一个）
+distractionFreeMode: true  无干扰模式，不需要更改
+</code></pre>
+<p>例如</p>
+<pre><code>gitalk:
+enable: true #开启gitalk评论，不需要配置
+owner: zh3g
+admin: zh3g
+repo: zh3g.github.io
+ClientID: d186f3f35180f1d7ea10
+ClientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5
+labels: &#39;gitalk&#39; #github issue 对应的issue标签（新建一个）
+distractionFreeMode: true  #无干扰模式，不需要更改
+</code></pre>
+<p>随后修好主题里的config文件确保gitalk为<code>true</code><br>例如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 2、Gitalk(https://github.com/gitalk/gitalk)</span><br><span class="line">gitalk:</span><br><span class="line">  enable: true # true</span><br><span class="line">  clientID: d186f3f35180f1d7ea10 # GitHub Application Client ID</span><br><span class="line">  clientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5 # Client Secret</span><br><span class="line">  repo: zh3g.github.io # Repository name</span><br><span class="line">  owner: zh3g # GitHub ID</span><br><span class="line">  admin: zh3g # GitHub ID</span><br></pre></td></tr></table></figure>
+<h1><span id="问题本地图片引用">问题:本地图片引用</span></h1><p>安装插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image -- save</span><br></pre></td></tr></table></figure>
+<p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code><br>在文档需要插图片的地方</p>
+(实测不行)
+<p>改为 <code>![图片](图片名)</code><br><del>hexo修改文章路径</del><br><del>hexo默认文章路径为年&#x2F;月&#x2F;日&#x2F;文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径</del><br><del>permalink:</del> <del>:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</del><br><del>为</del><br><del>permalink:</del> <del>archives&#x2F;:title.html</del><br>千万别改(改完图片就失效了30min摸索的经验)</p>
+<h1><span id="修改新建文件博客提示词">修改新建文件(博客)提示词</span></h1><p><a href="https://zhuanlan.zhihu.com/p/384471848">参考</a><br><del>不适用于yare主题,现无解</del></p>
+<h1><span id="用vscode写markdown">用vscode写markdown</span></h1><h2><span id="用vscode写markdown必备插件">用vscode写markdown必备插件：</span></h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced">Markdown Preview Enhanced</a></li>
+</ul>
+<h2><span id="markdown">markdown</span></h2><p><a href="https://markdown.com.cn/basic-syntax">官方教程</a></p>
+<h1><span id="yare-主题">yare 主题</span></h1><ul>
+<li><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题配置</a></li>
+<li><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer中文说明</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>个人</category>
