@@ -95,6 +95,10 @@ toc: false
 </ul>
 </li>
 <li><a href="#yare-%E4%B8%BB%E9%A2%98">yare 主题</a></li>
+<li><a href="#%E6%96%87%E7%AB%A0%E5%A4%AA%E9%95%BF%E6%80%8E%E4%B9%88%E5%8A%9E">文章太长怎么办?</a><ul>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E8%BF%99%E4%B8%AA%E5%8D%B3%E5%8F%AF">添加这个即可</a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 
@@ -145,6 +149,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <li><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题配置</a></li>
 <li><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer中文说明</a></li>
 </ul>
+<h1><span id="文章太长怎么办">文章太长怎么办?</span></h1><h2><span id="添加这个即可">添加这个即可</span></h2><p><code>&lt;!--more--&gt;</code></p>
 ]]></content>
       <categories>
         <category>个人</category>
@@ -181,7 +186,8 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <li>图床<ul>
 <li><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></li>
 <li><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</li>
-<li><a href="https://imgchr.com/i/Vne6w4">路过图床</a><ul>
+<li><a href="https://imgchr.com/i/Vne6w4">路过图床</a><span id="more"></span>
+<ul>
 <li>unhealthy <a href="https://imgse.com/i/pCgBKQs"><img src="https://s1.ax1x.com/2023/07/08/pCgBKQs.jpg" alt="pCgBKQs.jpg"></a></li>
 </ul>
 </li>
