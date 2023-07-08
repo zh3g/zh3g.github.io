@@ -123,8 +123,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <p>随后修好主题里的config文件确保gitalk为<code>true</code><br>例如</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 2、Gitalk(https://github.com/gitalk/gitalk)</span><br><span class="line">gitalk:</span><br><span class="line">  enable: true # true</span><br><span class="line">  clientID: d186f3f35180f1d7ea10 # GitHub Application Client ID</span><br><span class="line">  clientSecret: 4e853408d31eaf16451af58d490d816a8ed985a5 # Client Secret</span><br><span class="line">  repo: zh3g.github.io # Repository name</span><br><span class="line">  owner: zh3g # GitHub ID</span><br><span class="line">  admin: zh3g # GitHub ID</span><br></pre></td></tr></table></figure>
 <h1><span id="hexo-blog-encrypt博客加密">hexo-blog-encrypt(博客加密)</span></h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2016-03-30 21:18:02</span></span><br><span class="line"><span class="attr">password:</span> <span class="string">hello</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<h1><span id="问题本地图片引用">问题:本地图片引用</span></h1><p>安装插件</p>
+<h1><span id></span></h1><h1><span id="问题本地图片引用">问题:本地图片引用</span></h1><p>安装插件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image -- save</span><br></pre></td></tr></table></figure>
 <p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code><br>在文档需要插图片的地方</p>
 (实测不行)
