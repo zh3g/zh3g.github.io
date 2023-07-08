@@ -7,9 +7,9 @@
 <h1><span id="命令行步骤">命令行步骤</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server 或者 hexo s</span><br><span class="line">```    </span><br><span class="line">出现博客地址 打开</span><br><span class="line"></span><br><span class="line"># 安装主题</span><br><span class="line">    git clone https://gitee.com/mirrors/ayer.git themes/ayer</span><br><span class="line">修改config文件 `theme: ayer`</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>hexo g<br>hexo s</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">修改主题配置文件之前一定要复制一份(防止出错) </span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line"># 注册gitee或github</span><br><span class="line">~(这里以github为例)~</span><br><span class="line">首先 新建仓库为 zh3g.github.io</span><br><span class="line"></span><br><span class="line"># github 与hexo配置</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>git config –global user.name “zh3g”<br>git config –global user.email “<a href="mailto:&#122;&#104;&#x61;&#x6e;&#103;&#49;&#x7a;&#x68;&#101;&#110;&#103;&#x7a;&#104;&#101;&#110;&#x67;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#x2e;&#x63;&#x6f;&#x6d;">&#122;&#104;&#x61;&#x6e;&#103;&#49;&#x7a;&#x68;&#101;&#110;&#103;&#x7a;&#104;&#101;&#110;&#x67;&#x40;&#111;&#x75;&#x74;&#x6c;&#x6f;&#111;&#107;&#x2e;&#x63;&#x6f;&#x6d;</a>“</p>
+<p>git config –global user.name “zh3g”<br>git config –global user.email “<a href="mailto:&#122;&#x68;&#x61;&#110;&#x67;&#49;&#x7a;&#x68;&#x65;&#110;&#103;&#122;&#104;&#x65;&#110;&#x67;&#x40;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#x6d;">&#122;&#x68;&#x61;&#110;&#x67;&#49;&#x7a;&#x68;&#x65;&#110;&#103;&#122;&#104;&#x65;&#110;&#x67;&#x40;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#x6d;</a>“</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">`ssh-keygen -t rsa -C &quot;zhang1zhengzheng@outlook.com&quot;`</span><br><span class="line">    (输入三次回车</span><br><span class="line"></span><br><span class="line">`cat ~/.ssh/id_rsa.pub`</span><br><span class="line">复制显示的密钥到ssh公钥</span><br><span class="line"></span><br><span class="line">`ssh -T git@github.com`</span><br><span class="line"> 找到config文件</span><br><span class="line"> 最后输入</span><br><span class="line">例如:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>deploy:<br>  type: ‘git’<br>  repository: <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:zh3g&#x2F;zh3g.github.io.git<br>  branch: master</p>
+<p>deploy:<br>  type: ‘git’<br>  repository: <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:zh3g&#x2F;zh3g.github.io.git<br>  branch: master</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line">    npm install hexo-deployer-git --save</span><br><span class="line">    hexo g</span><br><span class="line">    hexo d</span><br></pre></td></tr></table></figure>
 <h1><span id="写一个bat命令用于运行写好的博客">写一个bat命令用于运行写好的博客</span></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br><span class="line"></span><br><span class="line">Echo 请选择 Y. 启动三件套            N. 退出</span><br><span class="line">Echo.</span><br><span class="line">Set /p var=请选择:</span><br><span class="line">If /i %var%==Y (start cmd /k &quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;hexo s &quot;) else (Exit)</span><br><span class="line">Pause</span><br><span class="line">%0 </span><br></pre></td></tr></table></figure>
 
@@ -72,6 +72,17 @@ layout: &quot;tags&quot;
 
 - [主题配置](https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
 - [Ayer中文说明](https://shen-yu.gitee.io/2019/ayer/)
+
+
+# 这是文章目录
+
+&lt;!-- toc --&gt;
+
+
+
+&lt;!-- tocstop --&gt;
+
+
 
 
 
