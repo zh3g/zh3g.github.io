@@ -222,13 +222,10 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </li>
 <li><p><a href="https://zhuanlan.zhihu.com/p/490143994">免费文件存储分享网站合集 - 知乎</a></p>
 </li>
-<li><p>来小亮,给大伙整个活(live2d进阶)</p>
-<ul>
-<li>进阶:<a href="https://blog.csdn.net/qq_39610915/article/details/90679768">Hexo博客优化：在Next主题中设置进阶版Live2D看板娘</a></li>
 </ul>
-</li>
-</ul>
-]]></content>
+<!--- 来小亮,给大伙整个活(live2d进阶)
+     - 进阶:[Hexo博客优化：在Next主题中设置进阶版Live2D看板娘](https://blog.csdn.net/qq_39610915/article/details/90679768)
+-->]]></content>
       <categories>
         <category>个人</category>
       </categories>
