@@ -178,16 +178,16 @@ distractionFreeMode: true  #无干扰模式，不需要更改
   </entry>
   <entry>
     <title>实用教程</title>
-    <url>/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <url>/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="教程推荐不分先后">教程推荐(不分先后)</span></h1><!-- toc -->
 
 
 
 <!-- tocstop -->
 
-<p><del>抓紧学习</del>!<br><img src="/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image.png" alt="学习"></p>
+<p><del>抓紧学习</del>!<br><img src="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image.png" alt="学习"></p>
 <ul>
-<li><p><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
+<li><p><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
 <ul>
 <li>几部曲<del>不会数数</del><ul>
 <li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
@@ -296,11 +296,11 @@ distractionFreeMode: true  #无干扰模式，不需要更改
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart146" style="height: 300px"></canvas>
+    <canvas id="chart9518" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart146').getContext('2d');
+    var ctx = document.getElementById('chart9518').getContext('2d');
     var options = {
     type: 'line',
     data: {

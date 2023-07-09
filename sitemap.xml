@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://example.com/Player/index.html</loc>
+    
+    <lastmod>2023-07-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     
     <lastmod>2023-07-09</lastmod>
     
@@ -29,34 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/Player/index.html</loc>
-    
-    <lastmod>2023-07-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/index.html</loc>
-    
-    <lastmod>2023-07-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/Player/bilibili.html</loc>
-    
-    <lastmod>2023-07-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/Player/%E6%A8%A1%E7%89%88.html</loc>
     
     <lastmod>2023-07-09</lastmod>
     
