@@ -279,11 +279,11 @@ distractionFreeMode: true  #无干扰模式，不需要更改
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart4219" style="height: 300px"></canvas>
+    <canvas id="chart6701" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart4219').getContext('2d');
+    var ctx = document.getElementById('chart6701').getContext('2d');
     var options = {
     type: 'line',
     data: {
@@ -308,7 +308,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 
 
 
-<p><a href="googlea0e607549e412fbf.html">谷歌验证</a></p>
+<p>[谷歌验证](&#x2F;%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87&#x2F;googlea0e607549e412fbf.html</p>
 ]]></content>
       <categories>
         <category>无</category>
