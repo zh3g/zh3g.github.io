@@ -99,6 +99,7 @@ toc: false
 <li><a href="#%E6%B7%BB%E5%8A%A0%E8%BF%99%E4%B8%AA%E5%8D%B3%E5%8F%AF">添加这个即可</a></li>
 </ul>
 </li>
+<li><a href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F">新建文件夹或文件格式</a></li>
 </ul>
 <!-- tocstop -->
 
@@ -137,7 +138,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code><br>在文档需要插图片的地方</p>
 (实测不行)
 <p>改为 <code>![图片](图片名)</code><br><del>hexo修改文章路径</del><br><del>hexo默认文章路径为年&#x2F;月&#x2F;日&#x2F;文件名，目录层次过长不利于收录，所以在根目录的config.yml文件中，修改默认路径</del><br><del>permalink:</del> <del>:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</del><br><del>为</del><br><del>permalink:</del> <del>archives&#x2F;:title.html</del><br>千万别改(改完图片就失效了30min摸索的经验)</p>
-<h1><span id="修改新建文件博客提示词">修改新建文件(博客)提示词</span></h1><p><a href="https://zhuanlan.zhihu.com/p/384471848">参考</a><br><del>不适用于yare主题,现无解</del></p>
+<h1><span id="修改新建文件博客提示词">修改新建文件(博客)提示词</span></h1><p><del><a href="https://zhuanlan.zhihu.com/p/384471848">参考</a></del><br><del>不适用于yare主题,现无解</del><br>更新:scaffolds文件夹直接修改即可</p>
 <h1><span id="用vscode写markdown">用vscode写markdown</span></h1><h2><span id="用vscode写markdown必备插件">用vscode写markdown必备插件：</span></h2><ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a></li>
@@ -150,7 +151,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <li><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer中文说明</a></li>
 </ul>
 <h1><span id="文章太长怎么办">文章太长怎么办?</span></h1><h2><span id="添加这个即可">添加这个即可</span></h2><p><code>&lt;!--more--&gt;</code></p>
-]]></content>
+<h1><span id="新建文件夹或文件格式">新建文件夹或文件格式</span></h1>]]></content>
       <categories>
         <category>个人</category>
       </categories>
@@ -163,7 +164,8 @@ distractionFreeMode: true  #无干扰模式，不需要更改
     <url>/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="教程推荐不分先后">教程推荐(不分先后)</span></h1><p><del>抓紧学习</del>!<br><img src="/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image.png" alt="学习"></p>
 <ul>
-<li><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a><ul>
+<li><p><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/2023/07/08/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
+<ul>
 <li>几部曲<del>不会数数</del><ul>
 <li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
 <li><code>git commit -m &quot;注释&quot;</code></li>
@@ -178,12 +180,14 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </li>
 </ul>
 </li>
-<li>插件市场<ul>
+<li><p>插件市场</p>
+<ul>
 <li>hexo <a href="https://hexo.io/plugins/">插件市场</a></li>
 <li><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题</a></li>
 </ul>
 </li>
-<li>图床<ul>
+<li><p>图床</p>
+<ul>
 <li><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></li>
 <li><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</li>
 <li><a href="https://imgchr.com/i/Vne6w4">路过图床</a><span id="more"></span>
@@ -192,6 +196,8 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </ul>
 </li>
 </ul>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/490143994">免费文件存储分享网站合集 - 知乎</a></p>
 </li>
 </ul>
 ]]></content>
