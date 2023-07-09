@@ -3,55 +3,7 @@
   <entry>
     <title>github+hexo+yarn+插件免费搭建个人博客教程</title>
     <url>/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="目录">目录</span></h1><!-- toc -->
-
-<ul>
-<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a></li>
-<li><a href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%AD%A5%E9%AA%A4">命令行步骤</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98">安装主题</a></li>
-<li><a href="#%E6%B3%A8%E5%86%8Cgitee%E6%88%96github">注册gitee或github</a></li>
-<li><a href="#github-%E4%B8%8Ehexo%E9%85%8D%E7%BD%AE">github 与hexo配置</a></li>
-<li><a href="#%E5%86%99%E4%B8%80%E4%B8%AAbat%E5%91%BD%E4%BB%A4%E7%94%A8%E4%BA%8E%E8%BF%90%E8%A1%8C%E5%86%99%E5%A5%BD%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%AF%E4%BB%A5%E4%B8%8D%E5%86%99">写一个bat命令用于运行写好的博客(可以不写)</a></li>
-<li><a href="#%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6">必备插件</a><ul>
-<li><a href="#1hexo-generator-searchdbhttpsgithubcomtheme-nexthexo-generator-searchdb-%E6%90%9C%E7%B4%A2">1.<a href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb</a> 搜索</a></li>
-<li><a href="#2hexo-generator-index-pin-tophttpsgithubcomnetcanhexo-generator-index-pin-top">2.<a href="https://github.com/netcan/hexo-generator-index-pin-top">hexo-generator-index-pin-top</a></a></li>
-</ul>
-</li>
-<li><a href="#%E5%85%B6%E4%BB%96%E9%A1%B5%E9%9D%A2">其他页面</a><ul>
-<li><a href="#%E5%88%86%E7%B1%BB">分类</a></li>
-<li><a href="#%E6%A0%87%E7%AD%BE">标签</a></li>
-<li><a href="#%E7%9B%B8%E5%86%8C">相册</a></li>
-<li><a href="#%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">文章目录</a><ul>
-<li><a href="#%E8%A1%A5%E5%85%85">补充</a></li>
-</ul>
-</li>
-<li><a href="#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5">友情链接</a></li>
-</ul>
-</li>
-<li><a href="#%E5%8F%AF%E9%80%89%E6%8F%92%E4%BB%B6">可选插件</a><ul>
-<li><a href="#gitalkhttpsgithubcomgitalkgitalkblobmasterreadme-cnmd">gitalk</a></li>
-</ul>
-</li>
-<li><a href="#hexo-blog-encrypt%E5%8D%9A%E5%AE%A2%E5%8A%A0%E5%AF%86">hexo-blog-encrypt(博客加密)</a></li>
-<li><a href="#hexo-helper-live2d">hexo-helper-live2d</a><ul>
-<li><a href="#%E8%BF%9B%E9%98%B6">进阶</a></li>
-</ul>
-</li>
-<li><a href="#%E9%97%AE%E9%A2%98%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8">问题:本地图片引用</a></li>
-<li><a href="#%E4%BF%AE%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%8D%9A%E5%AE%A2%E6%8F%90%E7%A4%BA%E8%AF%8D">修改新建文件(博客)提示词</a></li>
-<li><a href="#%E7%94%A8vscode%E5%86%99markdown">用vscode写markdown</a><ul>
-<li><a href="#%E7%94%A8vscode%E5%86%99markdown%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6">用vscode写markdown必备插件：</a></li>
-<li><a href="#markdown">markdown</a></li>
-</ul>
-</li>
-<li><a href="#yare-%E4%B8%BB%E9%A2%98">yare 主题</a></li>
-<li><a href="#%E6%96%87%E7%AB%A0%E5%A4%AA%E9%95%BF%E6%80%8E%E4%B9%88%E5%8A%9E">文章太长怎么办?</a><ul>
-<li><a href="#%E6%B7%BB%E5%8A%A0%E8%BF%99%E4%B8%AA%E5%8D%B3%E5%8F%AF">添加这个即可</a></li>
-</ul>
-</li>
-<li><a href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F">新建文件夹或文件格式</a></li>
-</ul>
-<!-- tocstop -->
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="目录">目录</span></h1><!--toc-->
 
 <h1><span id="准备工作">准备工作</span></h1><p>安装GIT 和 node.js<br>安装HExo</p>
 <h1><span id="命令行步骤">命令行步骤</span></h1><pre><code>npm install hexo-cli -g
@@ -215,6 +167,11 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </ul>
 </li>
 <li><p><a href="https://zhuanlan.zhihu.com/p/490143994">免费文件存储分享网站合集 - 知乎</a></p>
+</li>
+<li><p>来小亮,给大伙整个活(live2d进阶)</p>
+<ul>
+<li>进阶:<a href="https://blog.csdn.net/qq_39610915/article/details/90679768">Hexo博客优化：在Next主题中设置进阶版Live2D看板娘</a></li>
+</ul>
 </li>
 </ul>
 ]]></content>
