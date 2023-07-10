@@ -50,6 +50,11 @@
 </ul>
 </li>
 <li><a href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F">新建文件夹或文件格式</a></li>
+<li><a href="#hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5">hexo多平台同步</a></li>
+<li><a href="#ayer">ayer</a><ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E6%8F%92%E4%BB%B6">基本插件</a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 
@@ -168,7 +173,10 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <li><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer中文说明</a></li>
 </ul>
 <h1><span id="文章太长怎么办">文章太长怎么办?</span></h1><h2><span id="添加这个即可">添加这个即可</span></h2><p><code>&lt;!--more--&gt;</code></p>
-<h1><span id="新建文件夹或文件格式">新建文件夹或文件格式</span></h1>]]></content>
+<h1><span id="新建文件夹或文件格式">新建文件夹或文件格式</span></h1><h1><span id="hexo多平台同步">hexo多平台同步</span></h1><p>参考:<a href="https://www.zhihu.com/question/21193762/answer/489124966">知乎 直上云霄 【使用hexo，如果换了电脑怎么更新博客？】问题回答</a></p>
+<h1><span id="ayer">ayer</span></h1><p><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">作者介绍</a></p>
+<h2><span id="基本插件">基本插件</span></h2><p> <img src="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/001.png" alt="插件"></p>
+]]></content>
       <categories>
         <category>个人</category>
       </categories>
@@ -227,7 +235,8 @@ distractionFreeMode: true  #无干扰模式，不需要更改
      - 进阶:[Hexo博客优化：在Next主题中设置进阶版Live2D看板娘](https://blog.csdn.net/qq_39610915/article/details/90679768)
 -->
 <ul>
-<li>hexo 跳过文件渲染<ul>
+<li><p>hexo 跳过文件渲染</p>
+<ul>
 <li>起因:谷歌要求主页必须有html文件的链接才行</li>
 <li>我不会弄(但我新建了一个html的文件节里面的index.md改为index.html并且内容改为html内容)</li>
 <li><del>我真是太机智了</del>于是乎我渲染出来接我是不行</li>
@@ -241,10 +250,8 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 <li>主题作者方法:在 head.ejs 里添加 html 标签<br>         <u>(后悔没早点看到)</u></li>
 </ul>
 </li>
-<li><a href="https://www.remove.bg/zh/upload%22%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%22">在线抠图软件_图片去除背景| remove.bg</a></li>
-<li><a href="https://convertio.co/zh/">文件转换器</a></li>
-<li><a href="https://onlineconvertfree.com/zh/convert-format/png-to-svg/">将PNG格式转换为SVG格式</a> (实测好用)      </li>
-<li><a href="https://blog.csdn.net/zgcr654321/article/details/86738005">使用Gitlab pages自动部署hexo博客</a></li>
+<li><p><a href="https://blog.csdn.net/zgcr654321/article/details/86738005">使用Gitlab pages自动部署hexo博客</a></p>
+</li>
 </ul>
 ]]></content>
       <categories>
@@ -300,11 +307,11 @@ distractionFreeMode: true  #无干扰模式，不需要更改
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart3610" style="height: 300px"></canvas>
+    <canvas id="chart9594" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart3610').getContext('2d');
+    var ctx = document.getElementById('chart9594').getContext('2d');
     var options = {
     type: 'line',
     data: {
