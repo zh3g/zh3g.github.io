@@ -50,7 +50,10 @@
 </ul>
 </li>
 <li><a href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F">新建文件夹或文件格式</a></li>
-<li><a href="#hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5">hexo多平台同步</a></li>
+<li><a href="#hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5">hexo多平台同步</a><ul>
+<li><a href="#git-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">Git 基本操作</a></li>
+</ul>
+</li>
 <li><a href="#ayer">ayer</a><ul>
 <li><a href="#%E5%9F%BA%E6%9C%AC%E6%8F%92%E4%BB%B6">基本插件</a></li>
 </ul>
@@ -174,6 +177,7 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </ul>
 <h1><span id="文章太长怎么办">文章太长怎么办?</span></h1><h2><span id="添加这个即可">添加这个即可</span></h2><p><code>&lt;!--more--&gt;</code></p>
 <h1><span id="新建文件夹或文件格式">新建文件夹或文件格式</span></h1><h1><span id="hexo多平台同步">hexo多平台同步</span></h1><p>参考:<a href="https://www.zhihu.com/question/21193762/answer/489124966">知乎 直上云霄 【使用hexo，如果换了电脑怎么更新博客？】问题回答</a></p>
+<h2><span id="git-基本操作">Git 基本操作</span></h2><p> <a href="https://www.runoob.com/git/git-basic-operations.html">git</a><br> <img src="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/002.png" alt="Alt text"></p>
 <h1><span id="ayer">ayer</span></h1><p><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">作者介绍</a></p>
 <h2><span id="基本插件">基本插件</span></h2><p> <img src="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/001.png" alt="插件"></p>
 ]]></content>
@@ -182,6 +186,157 @@ distractionFreeMode: true  #无干扰模式，不需要更改
       </categories>
       <tags>
         <tag>-hexo -vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>chatgpt</title>
+    <url>/2023/07/12/chatgpt/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>今天闲来无事,弄了一点new bing和gpt之类的<br>chrome的new bing<br>插件<a href="https://chrome.google.com/webstore/detail/new-bing-anywhere/hceobhjokpdbogjkplmfjeomkeckkngi">New Bing Anywhere</a><br>前提:魔法 Microsoft账户,等等</p>
+<blockquote>
+<p>参考<a href="https://mp.weixin.qq.com/s/h3gBBohvbv2CQ4fCTjHbPA">知识星球</a><br>原文:<br>总结|体验或使用【GPT3.5】【GPT4】的工具清单<br>持续更新至:2023年5月28日所有网址请添加https:&#x2F;&#x2F;</p>
+</blockquote>
+<!--ShowMeAI社区总结的经典测试3问，可以快速判断模型水平:3个问题!验明GPT-4真身;基于GPT的科研加速技巧汇总;Midjourney神仙教程;印象笔记A....-->
+
+<ul>
+<li><strong>不需要魔法</strong></li>
+</ul>
+<h1><span id="wwwhayocom-图1"> 【图1】</span></h1><ul>
+<li>Windowsios Android-模型:GPT3.5&#x2F;ChatGLM-6B等-说明:每天50次免费限制<br>slack.com&#x2F;intl&#x2F;zh-cn&#x2F;【图2】- Windowsios Android</li>
+<li>模型:克劳德、Notion等</li>
+<li>说明:使用outlook邮箱，需要自己添加模型到Slack，近期添加的克劳德可能无法使用【输入后没反应】</li>
+</ul>
+<h1><span id="wwwsciradarcomchat图3-web微信公众号">(图3】- web微信公众号</span></h1><ul>
+<li>模型:GPT3.5</li>
+<li>说明:每天免费10000字符，每条输入文字上限2000字符</li>
+</ul>
+<h1><span id="githubcomx2fnomic-aix2fgpt4all-图4">github.com&#x2F;nomic-ai&#x2F;gpt4all (图4】</span></h1><ul>
+<li><p>Mac&#x2F;Osx Windows Ubuntu-模型:在CPU上本地运行的开源大型语言模型</p>
+</li>
+<li><p>中文教程:<br>mp.weixin.qq.com&#x2F;s&#x2F;UbHfM2PbQCfpRf5dOmOS1g</p>
+</li>
+<li><p>需要魔法</p>
+</li>
+</ul>
+<h1><span id="wwwbingcom-a图5-web-ios-andriod-模型gpt4"> 【a图5】- web iOs Andriod-模型:GPT4</span></h1><ul>
+<li>说明:基于GPT4但是功能做了收束，免费，每轮对话不超过20个问题，每天不超过200个问题</li>
+</ul>
+<h1><span id="poecom-图6">poe.com (图6】</span></h1><ul>
+<li>Webios Andriod</li>
+<li>模型:GPT4&#x2F;克劳德+，克劳德&#x2F;聊天GPT&#x2F;   Dragonfly<br>–说明:GPT4每天免费1次，克劳德+每天免费3次，其他免费;安卓客户端可能会出现闪退</li>
+</ul>
+<h1><span id="wwwperplexityai-a图7"> 【a图7)</span></h1><ul>
+<li>web iosAndriod(可以申请waitlist)</li>
+<li>模型:基于GPT3</li>
+<li>说明:主打准确度，胡说八道概率低，体验优于聊天GPT，免费，非常推荐</li>
+</ul>
+<h1><span id="bardgooglecom-k-图8-web">bard.google.com K 图8】- web</span></h1><ul>
+<li>模型:PaLM 2</li>
+<li>说明:不支持中文，但是实时联网，搜索体验和流畅度都不错~</li>
+<li>补充:中英文翻译的脚本greasyfork.org&#x2F;en&#x2F;scripts&#x2F;466992-google-bard-%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91%E8%8B%B1%E6%96%87%E8%84%9A%E6%9C%AC<br>国内大模型</li>
+</ul>
+<h1><span id="讯飞星火大模型a图9-申请内测-xinghuoxfyuncnx2f">讯飞·星火大模型(a图9】-申请内测: xinghuo.xfyun.cn&#x2F;</span></h1><ul>
+<li>社区测评:【科大讯飞|星火认知大模型】火线内测＋申请窍门儿</li>
+</ul>
+<h1><span id="百度文心一言">百度·文心一言</span></h1><ul>
+<li>申请内测: yiyan.baidu.com&#x2F;</li>
+</ul>
+<h1><span id="阿里通义千问">阿里·通义千问</span></h1><ul>
+<li>申请内测: tongyi.aliyun.com&#x2F;</li>
+</ul>
+<h1><span id="昆仑万维天工">昆仑万维·天工</span></h1><ul>
+<li>申请内测: tiangong.kunlun.com&#x2F;</li>
+<li>社区测评: 【昆仑万维|天工】大模型测试初评</li>
+</ul>
+<h1><span id="商汤日日新api">商汤·日日新(API)</span></h1><ul>
+<li>申请内测: techday.sensetime.com&#x2F;</li>
+</ul>
+<h1><span id="360智脑">360智脑</span></h1><ul>
+<li>申请内测: <a href="http://www.so.com/zt/invite.htm1#/">www.so.com/zt/invite.htm1#/</a></li>
+</ul>
+<h1><span id="免费体验gpt4">免费体验GPT4</span></h1><p>ora.sh&#x2F;openai&#x2F;gpt4<br>-说明:GPT4每天免费10次;据社区大佬测试，出答案速度不太稳定，时快时慢<br>chat.forefront.ai&#x2F;<br>-说明:GPT4，限制每3小时不能超过5条消息</p>
+<h1><span id="steamshipcom">steamship.com</span></h1><ul>
+<li>说明:需要注册;先在顶栏点击GPT4 Plugin，然后在新的页面里点击创建一个新的实例，按需要填充即可。注意! max_token推荐默认选项</li>
+</ul>
+<hr>
+<h2><span id="大模型体验排名主观排名">大模型体验排名（主观排名)</span></h2><h3><span id="聊天gptplusgt克劳德gtperplexitygt聊天gptgt新必应gt克劳德gt通义千问序列猴子gt文心一言bard">聊天GPTPLUS&gt;克劳德+&gt;Perplexity&gt;聊天GPT&gt;新必应&gt;克劳德&gt;通义千问≥序列猴子&gt;文心一言≥Bard</span></h3><p>补充:<br>测试问题1：What yesterday’s today is tomorrow’s (昨天的当天是明天的什么)</p>
+<blockquote>
+<p>GPT-3.5回复：Yesterday (昨天)</p>
+<p>GPT-4回复：Past (前天)</p>
+<p>测试工具：Poe (<a href="https://poe.com/">https://poe.com/</a>)</p>
+</blockquote>
+<p>测试问题2：There are 9 birds in the tree, the hunter shoots one, how many birds are left in the tree (树上9只鸟，打掉1只，还剩几只)</p>
+<blockquote>
+<p>GPT-3.5回复：8只</p>
+<p>GPT-4回复：0只，其他被吓跑了</p>
+<p>测试工具：NewBing(<a href="https://www.bing.com/">https://www.bing.com/</a>)</p>
+</blockquote>
+<p>测试问题3：Why did Zhou Shuren beat up Lu Xun (鲁迅为什么暴打周树人)</p>
+<blockquote>
+<p>GPT-3.5回复：稀奇古怪的乱编理由</p>
+<p>GPT-4回复：鲁迅和周树人是同一个人</p>
+<p>测试工具：OpenPlayground (<a href="https://nat.dev/">https://nat.dev/</a>)</p>
+</blockquote>
+<p>魔法教程:</p>
+<h1><span id="windows">windows</span></h1><ul>
+<li>安装V2ray或clash花钱或找免费的节点与订阅<br>教程<a href="https://github.com/freefq/free">freefq&#x2F;free</a><br>(bulink.xyz注册（要翻墙）除可订阅本页免费节点，还有每月5G自建节点免费流量，不用打卡签到长期有效，欢迎体验<br>新开bulink镜像站burstlinker.com（不需要翻墙）)</li>
+<li>直接安装翻墙浏览器 <a href="https://github.com/Alvin9999/new-pac">Alvin9999&#x2F;new-pac</a>  ps:有一丁点限制,自行破解</li>
+<li>第三方vpn(免费or付费)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git入门</title>
+    <url>/2023/07/10/git%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>选自bilibili <a href="https://www.bilibili.com/video/BV1pX4y1S7Dq/?spm_id_from=333.337.search-card.all.click">30分钟弄懂所有工作Git必备操作 &#x2F; Git 入门教程</a></p>
+</blockquote>
+<h1><span id="git是什么">git是什么</span></h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明行的)<br>创建仓库:<br>去项目的文件夹输入<br>$ git init<br>(不需要联网)<br>用 git clone去克隆一个网络上的项目<br>例如: git clone <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a><br>(为所欲为)</p>
+<p>创建完仓库后,每一个文件都有一个状态<br>git init<br>新建 状态:未跟踪<br>单独跟踪一个文件<br>$ git add <name><br>删除:$ git rm <name> 或者用$ git rm –cache <name>(保留在目录里但不被跟踪)<br>修改<br>接下来用 git add <file-name>设置成缓存状态<br>假如<em>手滑</em> 不想把它设置成缓存状态用 git reset HEAD <name>来取消它的缓存状态<br>用 git commit命令来提交此次修改<br>一个文件的四个状态<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image1.png" alt="Alt text"><br>补充:git commit<br>输入git commit 然后回车<br>终端自动跳到编辑器里(应该是vim)</name></file-name></name></name></name></p>
+<ul>
+<li><ul>
+<li>按i键输入模式</li>
+<li>编辑完成后按 ESC和:wq键保存并退出<br>版本提交完成<br>-或者按git commit -m “本次修改的大致内容”<br>接着按回车</li>
+</ul>
+</li>
+</ul>
+<h2><span id="突然不想提交怎么办用git-reset-head~-soft来取消我们这次的提交但第一次提交撤销不了第二三次可以如何查看文件章台用git-status查看红色是修改但没暂存绿色是已暂存但没提交查询命令更细致git-diff查询之前历史的提交-git-logcommit后面的乱码是之前提交的哈希值接下来是提交作者提交时间还有我们提交时输入的一些信息git-log-pretty美化输出git-log-prettyx3doneline把每一次提交的信息都变成一行或自定义一个格式-git-log-prettyx3dformath-anarsh-简化哈希an-作者名字ar-修订日期距今ad-修订日期s-提交说明当然除了这样一条一条上传信息还可以用git-log-graph来以图形化的方式去呈现主要表现为分支gt这是本地">突然不想提交怎么办用git reset head~ –soft来取消我们这次的提交(但第一次提交撤销不了,第二三次可以)<br>如何查看文件章台<br>用git status查看<br>红色是修改但没暂存,绿色是已暂存但没提交<br>查询命令(更细致)git diff<br>查询之前历史的提交 git log(commit后面的乱码是之前提交的哈希值接下来是提交作者,提交时间还有我们提交时输入的一些信息)<br>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地</span></h2><p>远程仓库的一些使用:<br>代码托管平台:以github为例<br>右上角new repository<br>给原始仓库起名 公开 初始化</p>
+<ul>
+<li>用https来复制一下这个远程仓库的链接<br>切换回本地<br>用git remote add 的命令来链接我们远程的一个仓库(一般名字叫origin)<br>git remote add origin +https的链接<br>可以git remote看一下(当出现origin是说明添加好了)<br>输错怎么办可以用git remote rename&lt;原名&gt;&lt;改之后名字&gt; 这个命令来重命名<br>将本地代码推送之远程的仓库:用git push &lt;一个远程仓库比如书origin&gt; master<br>把本地的master分支推送过去<br>然后输入我们的用户名 密码(但有问题?)<br>回到github页面点击setting看到最后the developer settings然后点击personal access tokens<br>现在我们需要新建一个令牌去当我们的密码然后我们生成一个普通的经典的就可以<br>name 有效期 打开有关仓库的权限 点击生成<br>再次push一下用户名不变密码填我们复制的一个token<br>success</li>
+<li>比较简单的方式通过ssh协议去健全<br>首先用~&#x2F; .sh进入目录<br>进去后我们可以通过ssh-keygen去生成一个ssh秘钥通过-t选择一个生成的算法比如用rsa 用-b选择一个生成的大小比如4096 然后通过-C添加的一个评论(github推荐个人的邮箱理论上想写啥就写啥)<br>回车 可以看到他让我们起一下这个秘钥的名字(咱就起一个test) 接下俩然我们输入密码:(可以不填)<br>ls看一下里面的文件 test私钥 test.pub为公钥<br>看一下公钥用cat test.pub将公钥复制下来<br>来到github的setting界面 然后选择ssh keys<br>添加一个秘钥 把我们刚才复制的test.pub复制过来可以起一个名字<br>回到我们之前的那个项目然后选择clone点击ssh复制一下<br>接下来回到我们的测试目录(这个目录是空的)我们来克隆一下我们刚才复制过来的ssh 用git clone &lt;你的ssh&gt;</li>
+</ul>
+<blockquote>
+<p>有关分支的概念:<br>其实每次提交生成新版本是都会生成一个提交对象,每一个提交对象都有一个独一无二的哈希值,其实分支就是一个包含这个哈希值的一个文件,我们也可以简单理解为指向一个提交对象的指针,也就是说我们可以子啊一个提交对象上新建多个分支,因为分支是包含这个提交对象哈希值的一个文件.所以我想加多少就加多少,对不对<br>其实当我们最开始初始化本地仓库时就已经新建了一个master分支,我们每次提交操作都是在这个master分支上进行的<br>当我每次进行一个提交的时候我们的分支也跟着我们的提交对象一起进行向前的移动<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image2.png" alt="Alt text"><br>那我新建那么多分支干嘛?&lt;<del>一个分支不好吗</del><br>介绍经典的git流模型<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image3.png" alt="Alt text"><br>如何操作分支?<br>操作分支之前首先知道我们在哪个分支上</p>
+</blockquote>
+<ul>
+<li>zsh在前面就能看到你的分支</li>
+<li>通过git log (开括号里就是我们的分支)(origin&#x2F;master的意思:之前添加的远程仓库然后这个远程仓库里也有个master这个origin&#x2F;master其实就代表表我们远程仓库的master分支)<br>head其实戴白我们现在所处的分支</li>
+<li>还可用git status –&gt;on branch master 就代表我们现在的master分支</li>
+<li>或者我们可以通过git branch –list</li>
+</ul>
+<p>怎么创建分支呢<br>可以用 git branch &lt;比喻说feature1&gt;<br>我们git branch –list</p>
+<p>怎么切换分支呢?<br>可以通过:git take out feature1(查看分支 git a branch list)<br>用 vi来修改我们的代码(i键进入插入模式:按esc键然后:wq退出)</p>
+<ul>
+<li>我们可以提交一下 git add test file</li>
+<li>我们也可以用git commit -a直接把没有暂存的文件也提交了再加一个-m(或简写-am) “feature1”</li>
+</ul>
+<p>用git log查看 用git log –pretty&#x3D;one line<br>清一下屏 切换到master分支<br>我们可以新建一个feature2分支</p>
+<ul>
+<li>用git branch feature2,再切换回master</li>
+<li>或者git checkout -b feature2</li>
+</ul>
+<h2><span id="用vi编辑器修改text-file-文件编辑好后再提交一下用git-commit-am-festure2-如果我们想看到所有分支的提交可以用git-log-all-也可以用grabegit-log-all-graph接下来我们再切换回master分支那么到目前为止我们新建分支和切换分支讲的都差不多了">用vi编辑器修改text file 文件<br>编辑好后再提交一下用git commit -am “festure2”<br>- 如果我们想看到所有分支的提交可以用git log –all<br>- 也可以用grabe:git log –all graph<br>接下来我们再切换回master分支<br>那么到目前为止我们新建分支和切换分支讲的都差不多了</span></h2><h1><span id="重头戏">重头戏</span></h1><p>如何来合并分支<br>例如:让master分支跟feature one合并<br>(现在是master分支)git merge feature1<br>查看我们的文件:cat test_file<br>查看:git log –all –graph<br>继续合并:git merge feature2(但出现了conflict因为feature1和feature2我们修改了同样的地方)–需要自己解决冲突<br>看看哪有冲突git status:都修改了test_file文件<br>解决办法:直接进到我们text_file文件:vi text_file<br>&#x3D;&#x3D;上面是</p>
+]]></content>
+      <categories>
+        <category>个人提升</category>
+      </categories>
+      <tags>
+        <tag>日常学习</tag>
       </tags>
   </entry>
   <entry>
@@ -307,11 +462,11 @@ distractionFreeMode: true  #无干扰模式，不需要更改
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart9594" style="height: 300px"></canvas>
+    <canvas id="chart8234" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart9594').getContext('2d');
+    var ctx = document.getElementById('chart8234').getContext('2d');
     var options = {
     type: 'line',
     data: {
