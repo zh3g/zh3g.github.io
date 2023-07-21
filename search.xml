@@ -156,6 +156,26 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
+    <title>v2ray总结</title>
+    <url>/2023/07/21/v2ray%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>网络注定是个不安分的地方<br>一道墙之类的东西总会及其人们翻过它的欲望</p>
+</blockquote>
+<h1><span id="我的v2ray折腾记">我的v2ray折腾记</span></h1><h2><span id="工具">工具</span></h2><p>代理工具:v2ray clash clash.meta之类的<br>节点: 免费的&#x2F;付费的</p>
+<h2><span id="流程">流程</span></h2><p>先下载工具 再订阅节点 进行配置 愉快上网</p>
+<h2><span id="下载工具">下载工具</span></h2><p>v2ray:windows:<a href="https://github.com/2dust/v2rayN/releases/">https://github.com/2dust/v2rayN/releases/</a><br>android:<a href="https://github.com/2dust/v2rayNG/releases/">https://github.com/2dust/v2rayNG/releases/</a><br>MAC:<a href="https://github.com/yanue/V2rayU/releases">https://github.com/yanue/V2rayU/releases</a><br><a href="https://v2sx.github.io/V2Ray/">V2Ray客户端工具大全备用下载</a><br>clash.meta:<a href="https://wiki.metacubex.one/client/#linux">客户端</a></p>
+<h2><span id="订阅方式-bulink">订阅方式 </span></h2><h2><span id="导入方式">导入方式</span></h2><p>这里以v2ray为例</p>
+<span id="more"></span>
+<p><a href="https://imgse.com/i/pCbhImD"><img src="https://s1.ax1x.com/2023/07/22/pCbhImD.md.png" alt="pCbhImD.md.png"></a><br><a href="https://imgse.com/i/pCbh4OO"><img src="https://s1.ax1x.com/2023/07/22/pCbh4OO.png" alt="pCbh4OO.png"></a><br><a href="https://imgse.com/i/pCbho0e"><img src="https://s1.ax1x.com/2023/07/22/pCbho0e.md.png" alt="pCbho0e.md.png"></a><br><a href="https://imgse.com/i/pCbhWSx"><img src="https://s1.ax1x.com/2023/07/22/pCbhWSx.png" alt="pCbhWSx.png"></a><br><a href="https://imgse.com/i/pCbhfl6"><img src="https://s1.ax1x.com/2023/07/22/pCbhfl6.md.png" alt="pCbhfl6.md.png"></a><br><a href="https://imgse.com/i/pCbhh6K"><img src="https://s1.ax1x.com/2023/07/22/pCbhh6K.md.png" alt="pCbhh6K.md.png"></a><br><a href="https://imgse.com/i/pCbhTTH"><img src="https://s1.ax1x.com/2023/07/22/pCbhTTH.md.png" alt="pCbhTTH.md.png"></a><br><a href="https://imgse.com/i/pCbhHkd"><img src="https://s1.ax1x.com/2023/07/22/pCbhHkd.md.png" alt="pCbhHkd.md.png"></a><br><a href="https://imgse.com/i/pCbhqfI"><img src="https://s1.ax1x.com/2023/07/22/pCbhqfI.md.png" alt="pCbhqfI.md.png"></a><br><a href="https://imgse.com/i/pCbhOpt"><img src="https://s1.ax1x.com/2023/07/22/pCbhOpt.md.png" alt="pCbhOpt.md.png"></a><br><a href="https://imgse.com/i/pCbhbtA"><img src="https://s1.ax1x.com/2023/07/22/pCbhbtA.png" alt="pCbhbtA.png"></a></p>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>v2ray</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>chatgpt</title>
     <url>/2023/07/12/chatgpt/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>今天闲来无事,弄了一点new bing和gpt之类的<br>chrome的new bing<br>插件<a href="https://chrome.google.com/webstore/detail/new-bing-anywhere/hceobhjokpdbogjkplmfjeomkeckkngi">New Bing Anywhere</a><br>前提:魔法 Microsoft账户,等等</p>
@@ -439,11 +459,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart7928" style="height: 300px"></canvas>
+    <canvas id="chart3864" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart7928').getContext('2d');
+    var ctx = document.getElementById('chart3864').getContext('2d');
     var options = {
     type: 'line',
     data: {
