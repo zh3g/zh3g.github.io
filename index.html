@@ -256,97 +256,12 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ul>
-<h1><span id="windows">windows</span></h1><p>具体参考我的博客<a target="_blank" rel="noopener" href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
-<h2><span id="基本流程">基本流程</span></h2><p>包括：安装git 和 node.js<br>安装Hexo</p>
-<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a target="_blank" rel="noopener" href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<img src="https://imgse.com/i/pCbfe2V" alt="Alt text"><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<img src="https://imgse.com/i/pCbfZ80" alt="Alt text"><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
-<h2><span id="安装hexo">安装</span></h2><p>1 在本地新建一个文件夹用于安装博客的文件夹<br>2 进入文件夹右键点击GBH 打开一个git 窗口<br>3 将hexo官网的代码依次复制</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>4 <code>hexo sever&lt;=&gt;hexo s ; hexo generate&lt;=&gt;hexo g; hexo deploy &lt;=&gt;hexo d(hexo三件套 hexo clean; hexo g ;hexo d)</code><br>5 复制地址<code>http://localhost:4000</code>注意复制是别用ctrl+c会终止服务,可以右键复制粘贴 或shift+insert</p>
-<h2><span id="编辑个人博客">编辑个人博客</span></h2><p>1 同样在gbh中输入<code>hexo new post &quot;文章名字&quot;</code>或<code>hexo new &quot;文章名字&quot;</code>即可创建第一篇文章(在source_posts里的能看到) 用的是<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">markdown</a>(轻量级标记语言)编辑的<br>保存后 退出<br>2 运行 <code>hexo g</code>生成网页<code>hexo s</code>运行博客<br>3 打开博客就可以看见文章了</p>
-<h2><span id="更改博客样式">更改博客样式</span></h2><p>即:添加第三方主题:如butterfly ayer next…<br>1 打开<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a> 点击探索主题<br>2 以ayer主题为例 进行进一步安装….(省略之后再补)<br>3 实质按照主题说明 在hexo根目录 gbh上敲代码即可成功<br>4 在根目录的config 文件中(不特殊说明都是根目录的config)将</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br></pre></td></tr></table></figure>
-
-<p>替换为</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">ayer</span></span><br></pre></td></tr></table></figure>
-<p>(注意yml文件一般:后都有空格!)<br>保存退出<br>5 git窗口中输入hexo g 输入hexo s<br>点击<code>http://localhost:4000/</code>进行本地访问</p>
-<h2><span id="修改主题配置">修改主题配置</span></h2><p>根据每个主题的配置指南<br>1 在themes文件夹下修改config文件 改成你喜欢的字即可(提醒:最好在改之前复制一份防止改错,对)<br>2 还可以修改config文件 同理<br>3 修改完后 用hexo clean hexo g hexo s</p>
-<h2><span id="注册账号githubx2fgitee需要烦人的实名认证估计跟腾讯学的x2fgitlab没用过">注册账号github&#x2F;gitee(需要烦人的实名认证,估计跟腾讯学的)&#x2F;gitlab(没用过)</span></h2><p>太简单不教了<br>以github为例<br>1 新建仓库 名字一定设为xxx.github.io其他不用管直接默认即可</p>
-<h2><span id="将博客上传到github中">将博客上传到github中</span></h2><p>1 按照github官方提示进行设置即可例如</p>
-<pre><code>git config --global user.name &quot;xxx&quot;
-git config --global user.email &quot;xxx@xxx.com&quot;
-
-ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;
-(输入三次回车
-
-cat ~/.ssh/id_rsa.pub
-</code></pre>
-<p>复制显示的密钥到ssh公钥(github的个人设置中的 添加即可)</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p> 用来验证  返回successfully代表成功<br> 找到config文件<br> 最后输入<br>例如:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<img src="https://imgse.com/i/pCbfVCq" alt="Alt text"></p>
-<h2><span id="更新博客">更新博客</span></h2><p>每次先写时:<code>hexo new post &quot;文章&quot;</code><br>写完后:三件套<br>这里给一个我写的bat程序</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Echo start cmd /c <span class="string">&quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;</span>   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br></pre></td></tr></table></figure>
-
-<p>!终于结束了<br>更多博客部署问题可以在博客中关于我中私信我,或者参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.337.search-card.all.click">视频</a></p>
-<h1><span id="ubuntu">ubuntu</span></h1><p>这里是通过新建一个分支来保存博客源文件的(因为github上的master分支只有部分文件所以不能利用这个同步)</p>
-<h1><span id="windows上传源文件到hexo分支">windows上传源文件到hexo分支</span></h1><p>参考1.<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_30105599/article/details/118302086?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168994957916800211581424%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168994957916800211581424&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-118302086-null-null.142%5Ev90%5Ekoosearch_v1,239%5Ev3%5Einsert_chatgpt&utm_term=hexo%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%E6%80%8E%E4%B9%88%E5%90%8C%E6%AD%A5&spm=1018.2226.3001.4187">多台电脑同步更新Hexo博客</a></p>
-<h1><span id="ubuntu配置">ubuntu配置:</span></h1><h2><span id="搭建博客需要安装的软件">搭建博客需要安装的软件：</span></h2><p>git<br>node.js<br>hexo</p>
-<h2><span id="先更新源">先更新源：</span></h2><p>获得源上的软件包列表信息<br><code>sudo apt-get update</code><br>更新本地软件<br><code>sudo apt-get upgrade</code></p>
-<h2><span id="node安装">Node安装</span></h2><p>命令行安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt install npm</span><br></pre></td></tr></table></figure>
-
-<p>查看nodejs工具是否安装成功：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nodejs -v</span><br><span class="line">v8.10.0</span><br></pre></td></tr></table></figure>
-
-<h2><span id="git安装及配置">Git安装及配置</span></h2><p>1 安装Git<br>使用命令安装Git工具：</p>
-<p><code>sudo apt install git</code><br>查看是否安装成功：</p>
-<p><code>git --version</code><br><code>git version 2.17.1</code></p>
-<ol start="4">
-<li>Hexo安装及配置<br>先创建一个hexo操作的文件目录</li>
-</ol>
-<h2><span id="安装hexo">安装hexo</span></h2><p><code>npm install hexo-cli -g</code><br><code>npm install hexo -g</code><br>检查hexo是否安装成功</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo: 4.2.0</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Linux 5.3.0-45-generic linux x64</span><br><span class="line">http_parser: 2.7.1</span><br><span class="line">node: 8.10.0</span><br><span class="line">v8: 6.2.414.50</span><br><span class="line">uv: 1.18.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">ares: 1.14.0</span><br><span class="line">modules: 57</span><br><span class="line">nghttp2: 1.30.0</span><br><span class="line">openssl: 1.0.2n</span><br><span class="line">icu: 60.2</span><br><span class="line">unicode: 10.0</span><br><span class="line">cldr: 32.0.1</span><br><span class="line">tz: 2017c</span><br></pre></td></tr></table></figure>
-<h2><span id="git-bash将远程仓库克隆到本地">git bash将远程仓库克隆到本地</span></h2><p><code>git clone 仓库地址</code><br>然后进入项目目录，安装依赖启动博客服务器，生成静态文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>执行以上指令后，便可以在浏览器通过<a target="_blank" rel="noopener" href="http://localhost:4000/%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2">http://localhost:4000/访问博客</a></p>
-<p>另一台电脑发布文章</p>
-<p>同之前的教程一样，写好文章后</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<p>两台电脑同步写博客<br>我们的博客仓库有两个分支，master分支和hexo分支</p>
-<p>其中，master分支用于存放Hexo生成的静态资源文件，hexo分支用于存放网站的原始文件</p>
-<p>所以，我们在一台设备上写好一篇文章或进行了博客的修改后</p>
-<p>执行以下命令，将master中的静态资源文件更新</p>
-<p>在博客目录下的cmd中</p>
-<p><code>hexo clean</code><br><code>hexo d -g</code></p>
-<p>执行以下命令，将hexo中的网站原始文件更新</p>
-<p>在博客目录下的git bash中</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;描述&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
-
-
-<p>大功告成！</p>
-<h2><span id="注意事项">注意事项</span></h2><p>每次有新的操作的时候，别忘了在另一台电脑上更新</p>
-<p><code>git pull hexo</code></p>
-<h1><span id="android">android</span></h1><p>因为android能够调用底层的linux命令故可以用于搭建hexo</p>
-<h2><span id="工具">工具</span></h2><p>termux <a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/bin.mt.plus">MT管理器</a>(酷安下载)</p>
-<h2><span id="准备">准备</span></h2><p>1 termux下载<br><a target="_blank" rel="noopener" href="https://lanlan2017.github.io/blog/4a95e633/">termux 搭建hexo博客教程</a><br>我这里进行补充:<br>1 在下载好node.js和git后<br>直接git clone 源代码<br>接着<code>npm install hexo-deployer-git --save</code><br>一定要输</p>
-<p>2 获取ssh秘钥<br><code>git config --global user.name &quot;xxx&quot;</code><br><code>git config --global user.email &quot;xxx@xxx.com&quot;</code><br>最好用tsu下进行<br><code>ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code><br>(输入三次回车<br>找到文件.pub打开复制ssh秘钥<br>再去github添加<br>3 验证<code>ssh -T git@github.com</code><br>4 进行三件套<br>如果安装插件,就重新安装一遍即可</p>
-<h2><span id="问题">问题</span></h2><p>1 非tsu用户下live2d里面的package.json显示权限不够<br>我先是用chmod改权限为777,发现不行后<br>安装tsu<br>执行<code>npm install hexo-deployer-git --save</code><br>在运行正常<br>2 会显示node_modules文件出错,把正常npm复制替换后依然出错所以无法解决,可能是手机termux问题</p>
-<h1><span id="同步统一步骤">同步统一步骤</span></h1><h2><span id="上传">上传</span></h2><p>执行以下命令，将hexo中的网站原始文件更新</p>
-<p>在博客目录下的git bash中</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;描述&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
-
-
-<h2><span id="更新">更新</span></h2><p>每次有新的操作的时候，别忘了在另一台电脑上更新</p>
-<p><code>git pull hexo</code></p>
- 
+<h1 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h1><p>具体参考我的博客<a target="_blank" rel="noopener" href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
+<h2 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h2><p>包括：安装git 和 node.js<br>安装Hexo</p> 
+      <a class="article-more-link" href="/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -406,91 +321,11 @@ cat ~/.ssh/id_rsa.pub
 <!--ShowMeAI社区总结的经典测试3问，可以快速判断模型水平:3个问题!验明GPT-4真身;基于GPT的科研加速技巧汇总;Midjourney神仙教程;印象笔记A....-->
 
 <ul>
-<li><strong>不需要魔法</strong></li>
-</ul>
-<h1><span id="wwwhayocom-图1"> 【图1】</span></h1><ul>
-<li>Windowsios Android-模型:GPT3.5&#x2F;ChatGLM-6B等-说明:每天50次免费限制<br>slack.com&#x2F;intl&#x2F;zh-cn&#x2F;【图2】- Windowsios Android</li>
-<li>模型:克劳德、Notion等</li>
-<li>说明:使用outlook邮箱，需要自己添加模型到Slack，近期添加的克劳德可能无法使用【输入后没反应】</li>
-</ul>
-<h1><span id="wwwsciradarcomchat图3-web微信公众号">(图3】- web微信公众号</span></h1><ul>
-<li>模型:GPT3.5</li>
-<li>说明:每天免费10000字符，每条输入文字上限2000字符</li>
-</ul>
-<h1><span id="githubcomx2fnomic-aix2fgpt4all-图4">github.com&#x2F;nomic-ai&#x2F;gpt4all (图4】</span></h1><ul>
-<li><p>Mac&#x2F;Osx Windows Ubuntu-模型:在CPU上本地运行的开源大型语言模型</p>
-</li>
-<li><p>中文教程:<br>mp.weixin.qq.com&#x2F;s&#x2F;UbHfM2PbQCfpRf5dOmOS1g</p>
-</li>
-<li><p>需要魔法</p>
-</li>
-</ul>
-<h1><span id="wwwbingcom-a图5-web-ios-andriod-模型gpt4"> 【a图5】- web iOs Andriod-模型:GPT4</span></h1><ul>
-<li>说明:基于GPT4但是功能做了收束，免费，每轮对话不超过20个问题，每天不超过200个问题</li>
-</ul>
-<h1><span id="poecom-图6">poe.com (图6】</span></h1><ul>
-<li>Webios Andriod</li>
-<li>模型:GPT4&#x2F;克劳德+，克劳德&#x2F;聊天GPT&#x2F;   Dragonfly<br>–说明:GPT4每天免费1次，克劳德+每天免费3次，其他免费;安卓客户端可能会出现闪退</li>
-</ul>
-<h1><span id="wwwperplexityai-a图7"> 【a图7)</span></h1><ul>
-<li>web iosAndriod(可以申请waitlist)</li>
-<li>模型:基于GPT3</li>
-<li>说明:主打准确度，胡说八道概率低，体验优于聊天GPT，免费，非常推荐</li>
-</ul>
-<h1><span id="bardgooglecom-k-图8-web">bard.google.com K 图8】- web</span></h1><ul>
-<li>模型:PaLM 2</li>
-<li>说明:不支持中文，但是实时联网，搜索体验和流畅度都不错~</li>
-<li>补充:中英文翻译的脚本greasyfork.org&#x2F;en&#x2F;scripts&#x2F;466992-google-bard-%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91%E8%8B%B1%E6%96%87%E8%84%9A%E6%9C%AC<br>国内大模型</li>
-</ul>
-<h1><span id="讯飞星火大模型a图9-申请内测-xinghuoxfyuncnx2f">讯飞·星火大模型(a图9】-申请内测: xinghuo.xfyun.cn&#x2F;</span></h1><ul>
-<li>社区测评:【科大讯飞|星火认知大模型】火线内测＋申请窍门儿</li>
-</ul>
-<h1><span id="百度文心一言">百度·文心一言</span></h1><ul>
-<li>申请内测: yiyan.baidu.com&#x2F;</li>
-</ul>
-<h1><span id="阿里通义千问">阿里·通义千问</span></h1><ul>
-<li>申请内测: tongyi.aliyun.com&#x2F;</li>
-</ul>
-<h1><span id="昆仑万维天工">昆仑万维·天工</span></h1><ul>
-<li>申请内测: tiangong.kunlun.com&#x2F;</li>
-<li>社区测评: 【昆仑万维|天工】大模型测试初评</li>
-</ul>
-<h1><span id="商汤日日新api">商汤·日日新(API)</span></h1><ul>
-<li>申请内测: techday.sensetime.com&#x2F;</li>
-</ul>
-<h1><span id="360智脑">360智脑</span></h1><ul>
-<li>申请内测: <a target="_blank" rel="noopener" href="http://www.so.com/zt/invite.htm1#/">www.so.com/zt/invite.htm1#/</a></li>
-</ul>
-<h1><span id="免费体验gpt4">免费体验GPT4</span></h1><p>ora.sh&#x2F;openai&#x2F;gpt4<br>-说明:GPT4每天免费10次;据社区大佬测试，出答案速度不太稳定，时快时慢<br>chat.forefront.ai&#x2F;<br>-说明:GPT4，限制每3小时不能超过5条消息</p>
-<h1><span id="steamshipcom">steamship.com</span></h1><ul>
-<li>说明:需要注册;先在顶栏点击GPT4 Plugin，然后在新的页面里点击创建一个新的实例，按需要填充即可。注意! max_token推荐默认选项</li>
-</ul>
-<hr>
-<h2><span id="大模型体验排名主观排名">大模型体验排名（主观排名)</span></h2><h3><span id="聊天gptplusgt克劳德gtperplexitygt聊天gptgt新必应gt克劳德gt通义千问序列猴子gt文心一言bard">聊天GPTPLUS&gt;克劳德+&gt;Perplexity&gt;聊天GPT&gt;新必应&gt;克劳德&gt;通义千问≥序列猴子&gt;文心一言≥Bard</span></h3><p>补充:<br>测试问题1：What yesterday’s today is tomorrow’s (昨天的当天是明天的什么)</p>
-<blockquote>
-<p>GPT-3.5回复：Yesterday (昨天)</p>
-<p>GPT-4回复：Past (前天)</p>
-<p>测试工具：Poe (<a target="_blank" rel="noopener" href="https://poe.com/">https://poe.com/</a>)</p>
-</blockquote>
-<p>测试问题2：There are 9 birds in the tree, the hunter shoots one, how many birds are left in the tree (树上9只鸟，打掉1只，还剩几只)</p>
-<blockquote>
-<p>GPT-3.5回复：8只</p>
-<p>GPT-4回复：0只，其他被吓跑了</p>
-<p>测试工具：NewBing(<a target="_blank" rel="noopener" href="https://www.bing.com/">https://www.bing.com/</a>)</p>
-</blockquote>
-<p>测试问题3：Why did Zhou Shuren beat up Lu Xun (鲁迅为什么暴打周树人)</p>
-<blockquote>
-<p>GPT-3.5回复：稀奇古怪的乱编理由</p>
-<p>GPT-4回复：鲁迅和周树人是同一个人</p>
-<p>测试工具：OpenPlayground (<a target="_blank" rel="noopener" href="https://nat.dev/">https://nat.dev/</a>)</p>
-</blockquote>
-<p>魔法教程:</p>
-<h1><span id="windows">windows</span></h1><ul>
-<li>安装V2ray或clash花钱或找免费的节点与订阅<br>教程<a target="_blank" rel="noopener" href="https://github.com/freefq/free">freefq&#x2F;free</a><br>(bulink.xyz注册（要翻墙）除可订阅本页免费节点，还有每月5G自建节点免费流量，不用打卡签到长期有效，欢迎体验<br>新开bulink镜像站burstlinker.com（不需要翻墙）)</li>
-<li>直接安装翻墙浏览器 <a target="_blank" rel="noopener" href="https://github.com/Alvin9999/new-pac">Alvin9999&#x2F;new-pac</a>  ps:有一丁点限制,自行破解</li>
-<li>第三方vpn(免费or付费)</li>
-</ul>
- 
+<li><strong>不需要魔法</strong> 
+      <a class="article-more-link" href="/2023/07/12/chatgpt/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -546,42 +381,11 @@ cat ~/.ssh/id_rsa.pub
   <blockquote>
 <p>选自bilibili <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pX4y1S7Dq/?spm_id_from=333.337.search-card.all.click">30分钟弄懂所有工作Git必备操作 &#x2F; Git 入门教程</a></p>
 </blockquote>
-<h1><span id="git是什么">git是什么</span></h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明行的)<br>创建仓库:<br>去项目的文件夹输入<br>$ git init<br>(不需要联网)<br>用 git clone去克隆一个网络上的项目<br>例如: git clone <a target="_blank" rel="noopener" href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a><br>(为所欲为)</p>
-<p>创建完仓库后,每一个文件都有一个状态<br>git init<br>新建 状态:未跟踪<br>单独跟踪一个文件<br>$ git add <name><br>删除:$ git rm <name> 或者用$ git rm –cache <name>(保留在目录里但不被跟踪)<br>修改<br>接下来用 git add <file-name>设置成缓存状态<br>假如<em>手滑</em> 不想把它设置成缓存状态用 git reset HEAD <name>来取消它的缓存状态<br>用 git commit命令来提交此次修改<br>一个文件的四个状态<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image1.png" alt="Alt text"><br>补充:git commit<br>输入git commit 然后回车<br>终端自动跳到编辑器里(应该是vim)</name></file-name></name></name></name></p>
-<ul>
-<li><ul>
-<li>按i键输入模式</li>
-<li>编辑完成后按 ESC和:wq键保存并退出<br>版本提交完成<br>-或者按git commit -m “本次修改的大致内容”<br>接着按回车</li>
-</ul>
-</li>
-</ul>
-<h2><span id="突然不想提交怎么办用git-reset-head~-soft来取消我们这次的提交但第一次提交撤销不了第二三次可以如何查看文件章台用git-status查看红色是修改但没暂存绿色是已暂存但没提交查询命令更细致git-diff查询之前历史的提交-git-logcommit后面的乱码是之前提交的哈希值接下来是提交作者提交时间还有我们提交时输入的一些信息git-log-pretty美化输出git-log-prettyx3doneline把每一次提交的信息都变成一行或自定义一个格式-git-log-prettyx3dformath-anarsh-简化哈希an-作者名字ar-修订日期距今ad-修订日期s-提交说明当然除了这样一条一条上传信息还可以用git-log-graph来以图形化的方式去呈现主要表现为分支gt这是本地">突然不想提交怎么办用git reset head~ –soft来取消我们这次的提交(但第一次提交撤销不了,第二三次可以)<br>如何查看文件章台<br>用git status查看<br>红色是修改但没暂存,绿色是已暂存但没提交<br>查询命令(更细致)git diff<br>查询之前历史的提交 git log(commit后面的乱码是之前提交的哈希值接下来是提交作者,提交时间还有我们提交时输入的一些信息)<br>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地</span></h2><p>远程仓库的一些使用:<br>代码托管平台:以github为例<br>右上角new repository<br>给原始仓库起名 公开 初始化</p>
-<ul>
-<li>用https来复制一下这个远程仓库的链接<br>切换回本地<br>用git remote add 的命令来链接我们远程的一个仓库(一般名字叫origin)<br>git remote add origin +https的链接<br>可以git remote看一下(当出现origin是说明添加好了)<br>输错怎么办可以用git remote rename&lt;原名&gt;&lt;改之后名字&gt; 这个命令来重命名<br>将本地代码推送之远程的仓库:用git push &lt;一个远程仓库比如书origin&gt; master<br>把本地的master分支推送过去<br>然后输入我们的用户名 密码(但有问题?)<br>回到github页面点击setting看到最后the developer settings然后点击personal access tokens<br>现在我们需要新建一个令牌去当我们的密码然后我们生成一个普通的经典的就可以<br>name 有效期 打开有关仓库的权限 点击生成<br>再次push一下用户名不变密码填我们复制的一个token<br>success</li>
-<li>比较简单的方式通过ssh协议去健全<br>首先用~&#x2F; .sh进入目录<br>进去后我们可以通过ssh-keygen去生成一个ssh秘钥通过-t选择一个生成的算法比如用rsa 用-b选择一个生成的大小比如4096 然后通过-C添加的一个评论(github推荐个人的邮箱理论上想写啥就写啥)<br>回车 可以看到他让我们起一下这个秘钥的名字(咱就起一个test) 接下俩然我们输入密码:(可以不填)<br>ls看一下里面的文件 test私钥 test.pub为公钥<br>看一下公钥用cat test.pub将公钥复制下来<br>来到github的setting界面 然后选择ssh keys<br>添加一个秘钥 把我们刚才复制的test.pub复制过来可以起一个名字<br>回到我们之前的那个项目然后选择clone点击ssh复制一下<br>接下来回到我们的测试目录(这个目录是空的)我们来克隆一下我们刚才复制过来的ssh 用git clone &lt;你的ssh&gt;</li>
-</ul>
-<blockquote>
-<p>有关分支的概念:<br>其实每次提交生成新版本是都会生成一个提交对象,每一个提交对象都有一个独一无二的哈希值,其实分支就是一个包含这个哈希值的一个文件,我们也可以简单理解为指向一个提交对象的指针,也就是说我们可以子啊一个提交对象上新建多个分支,因为分支是包含这个提交对象哈希值的一个文件.所以我想加多少就加多少,对不对<br>其实当我们最开始初始化本地仓库时就已经新建了一个master分支,我们每次提交操作都是在这个master分支上进行的<br>当我每次进行一个提交的时候我们的分支也跟着我们的提交对象一起进行向前的移动<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image2.png" alt="Alt text"><br>那我新建那么多分支干嘛?&lt;<del>一个分支不好吗</del><br>介绍经典的git流模型<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image3.png" alt="Alt text"><br>如何操作分支?<br>操作分支之前首先知道我们在哪个分支上</p>
-</blockquote>
-<ul>
-<li>zsh在前面就能看到你的分支</li>
-<li>通过git log (开括号里就是我们的分支)(origin&#x2F;master的意思:之前添加的远程仓库然后这个远程仓库里也有个master这个origin&#x2F;master其实就代表表我们远程仓库的master分支)<br>head其实戴白我们现在所处的分支</li>
-<li>还可用git status –&gt;on branch master 就代表我们现在的master分支</li>
-<li>或者我们可以通过git branch –list</li>
-</ul>
-<p>怎么创建分支呢<br>可以用 git branch &lt;比喻说feature1&gt;<br>我们git branch –list</p>
-<p>怎么切换分支呢?<br>可以通过:git take out feature1(查看分支 git a branch list)<br>用 vi来修改我们的代码(i键进入插入模式:按esc键然后:wq退出)</p>
-<ul>
-<li>我们可以提交一下 git add test file</li>
-<li>我们也可以用git commit -a直接把没有暂存的文件也提交了再加一个-m(或简写-am) “feature1”</li>
-</ul>
-<p>用git log查看 用git log –pretty&#x3D;one line<br>清一下屏 切换到master分支<br>我们可以新建一个feature2分支</p>
-<ul>
-<li>用git branch feature2,再切换回master</li>
-<li>或者git checkout -b feature2</li>
-</ul>
-<h2><span id="用vi编辑器修改text-file-文件编辑好后再提交一下用git-commit-am-festure2-如果我们想看到所有分支的提交可以用git-log-all-也可以用grabegit-log-all-graph接下来我们再切换回master分支那么到目前为止我们新建分支和切换分支讲的都差不多了">用vi编辑器修改text file 文件<br>编辑好后再提交一下用git commit -am “festure2”<br>- 如果我们想看到所有分支的提交可以用git log –all<br>- 也可以用grabe:git log –all graph<br>接下来我们再切换回master分支<br>那么到目前为止我们新建分支和切换分支讲的都差不多了</span></h2><h1><span id="重头戏">重头戏</span></h1><p>如何来合并分支<br>例如:让master分支跟feature one合并<br>(现在是master分支)git merge feature1<br>查看我们的文件:cat test_file<br>查看:git log –all –graph<br>继续合并:git merge feature2(但出现了conflict因为feature1和feature2我们修改了同样的地方)–需要自己解决冲突<br>看看哪有冲突git status:都修改了test_file文件<br>解决办法:直接进到我们text_file文件:vi text_file<br>&#x3D;&#x3D;上面是</p>
- 
+<h1 id="git是什么"><a href="#git是什么" class="headerlink" title="git是什么"></a>git是什么</h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明性的)</p> 
+      <a class="article-more-link" href="/2023/07/10/git%E5%85%A5%E9%97%A8/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -640,9 +444,9 @@ cat ~/.ssh/id_rsa.pub
 
 <!-- tocstop -->
 
-<p><del>抓紧学习</del>!<br><img src="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image.png" alt="学习"></p>
+<p><del>抓紧学习</del>!<br><img src="/image.png" alt="学习"></p>
 <ul>
-<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image2.png" alt="gitee"><br><a target="_blank" rel="noopener" href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/image2.png" alt="gitee"><br><a target="_blank" rel="noopener" href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
 <ul>
 <li>几部曲<del>不会数数</del><ul>
 <li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
@@ -652,23 +456,7 @@ cat ~/.ssh/id_rsa.pub
 <li>git push -u origin master</li>
 </ul>
 </li>
-<li>上传文件示例<ul>
-<li><del><img src="https://gitee.com/zh3g/git/raw/master/001.png" alt="在线图片"> 没用</del></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>插件市场</p>
-<ul>
-<li>hexo <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">插件市场</a></li>
-<li><a target="_blank" rel="noopener" href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题</a></li>
-</ul>
-</li>
-<li><p>图床</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></li>
-<li><a target="_blank" rel="noopener" href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</li>
-<li><a target="_blank" rel="noopener" href="https://imgchr.com/i/Vne6w4">路过图床</a></li></ul></li></ul> 
+<li>上传文件示例 
       <a class="article-more-link" href="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"
         >阅读更多...</a
       >
@@ -684,6 +472,42 @@ cat ~/.ssh/id_rsa.pub
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
 
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-一张图片/googlea0e607549e412fbf"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+     
+    <div class="article-meta">
+      <a href="/2023/07/09/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/googlea0e607549e412fbf/" class="article-date">
+  <time datetime="2023-07-09T13:34:07.571Z" itemprop="datePublished">2023-07-09</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  google-site-verification: googlea0e607549e412fbf.html 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
     </footer>
   </div>
 
@@ -782,7 +606,7 @@ cat ~/.ssh/id_rsa.pub
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/image.png" alt="Alt text"></p>
+  <h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/image.png" alt="Alt text"></p>
 <ul>
 <li>afterDelay将在配置的 <code>files.autoSaveDelay</code> 后自动保存为保存的编辑器</li>
 <li>onFocusChange —— 当编辑器失去焦点时，将自动保存为保存的编辑器也就是鼠标不在VSCode里面时自动保存</li>
@@ -843,13 +667,13 @@ cat ~/.ssh/id_rsa.pub
     <div class="article-entry" itemprop="articleBody">
        
   <h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
-<h2><span id="这是图片">这是图片</span></h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
+<h2><span id="这是图片">这是图片</span></h2><p><img src="/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart9249" style="height: 300px"></canvas>
+    <canvas id="chart7928" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart9249').getContext('2d');
+    var ctx = document.getElementById('chart7928').getContext('2d');
     var options = {
     type: 'line',
     data: {
@@ -872,9 +696,6 @@ cat ~/.ssh/id_rsa.pub
     new Chart(ctx, options);
 </script>
 
-
-
-<p><a href="googlea0e607549e412fbf.html">谷歌验证</a><br>googlea0e607549e412fbf.html</p>
  
       <!-- reward -->
       
@@ -929,19 +750,14 @@ cat ~/.ssh/id_rsa.pub
     <div class="article-entry" itemprop="articleBody">
        
   <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
- 
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3> 
+      <a class="article-more-link" href="/2023/07/07/hello-world/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -975,7 +791,7 @@ cat ~/.ssh/id_rsa.pub
        
 <h2 itemprop="name">
   <a class="article-title" href="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/"
-    >github+hexo+yarn+插件免费搭建个人博客教程</a> 
+    >github+hexo+ayer+插件免费搭建个人博客教程</a> 
 </h2>
  
 
@@ -1059,13 +875,7 @@ cd blog
 npm install
 hexo server 或者 hexo s
 </code></pre>
-<p>出现博客地址 打开</p>
-<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><pre><code>git clone https://gitee.com/mirrors/ayer.git themes/ayer
-</code></pre>
-<p>修改config文件 <code>theme: ayer</code></p>
-<pre><code>hexo g -s
-</code></pre>
-<p>修改主题配置文件之前一定要复制一份(防止出错) </p> 
+<p>出现博客地址 打开</p> 
       <a class="article-more-link" href="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/"
         >阅读更多...</a
       >

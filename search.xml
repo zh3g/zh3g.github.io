@@ -58,7 +58,8 @@
 </ul>
 <h1><span id="windows">windows</span></h1><p>具体参考我的博客<a href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
 <h2><span id="基本流程">基本流程</span></h2><p>包括：安装git 和 node.js<br>安装Hexo</p>
-<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<img src="https://imgse.com/i/pCbfe2V" alt="Alt text"><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<img src="https://imgse.com/i/pCbfZ80" alt="Alt text"><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
+<span id="more"></span>
+<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<a href="https://imgse.com/i/pCbfe2V"><img src="https://s1.ax1x.com/2023/07/21/pCbfe2V.md.png" alt="pCbfe2V.md.png"></a><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<a href="https://imgse.com/i/pCbfZ80"><img src="https://s1.ax1x.com/2023/07/21/pCbfZ80.md.png" alt="pCbfZ80.md.png"></a><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
 <h2><span id="安装hexo">安装</span></h2><p>1 在本地新建一个文件夹用于安装博客的文件夹<br>2 进入文件夹右键点击GBH 打开一个git 窗口<br>3 将hexo官网的代码依次复制</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
@@ -89,7 +90,7 @@ cat ~/.ssh/id_rsa.pub
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<img src="https://imgse.com/i/pCbfVCq" alt="Alt text"></p>
+<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<a href="https://imgse.com/i/pCbfVCq"><img src="https://s1.ax1x.com/2023/07/21/pCbfVCq.md.png" alt="pCbfVCq.md.png"></a></p>
 <h2><span id="更新博客">更新博客</span></h2><p>每次先写时:<code>hexo new post &quot;文章&quot;</code><br>写完后:三件套<br>这里给一个我写的bat程序</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c <span class="string">&quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;</span>   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br></pre></td></tr></table></figure>
 
@@ -164,7 +165,7 @@ cat ~/.ssh/id_rsa.pub
 <!--ShowMeAI社区总结的经典测试3问，可以快速判断模型水平:3个问题!验明GPT-4真身;基于GPT的科研加速技巧汇总;Midjourney神仙教程;印象笔记A....-->
 
 <ul>
-<li><strong>不需要魔法</strong></li>
+<li><strong>不需要魔法</strong><span id="more"></span></li>
 </ul>
 <h1><span id="wwwhayocom-图1"> 【图1】</span></h1><ul>
 <li>Windowsios Android-模型:GPT3.5&#x2F;ChatGLM-6B等-说明:每天50次免费限制<br>slack.com&#x2F;intl&#x2F;zh-cn&#x2F;【图2】- Windowsios Android</li>
@@ -262,23 +263,25 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
 <p>选自bilibili <a href="https://www.bilibili.com/video/BV1pX4y1S7Dq/?spm_id_from=333.337.search-card.all.click">30分钟弄懂所有工作Git必备操作 &#x2F; Git 入门教程</a></p>
 </blockquote>
-<h1><span id="git是什么">git是什么</span></h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明行的)<br>创建仓库:<br>去项目的文件夹输入<br>$ git init<br>(不需要联网)<br>用 git clone去克隆一个网络上的项目<br>例如: git clone <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a><br>(为所欲为)</p>
-<p>创建完仓库后,每一个文件都有一个状态<br>git init<br>新建 状态:未跟踪<br>单独跟踪一个文件<br>$ git add <name><br>删除:$ git rm <name> 或者用$ git rm –cache <name>(保留在目录里但不被跟踪)<br>修改<br>接下来用 git add <file-name>设置成缓存状态<br>假如<em>手滑</em> 不想把它设置成缓存状态用 git reset HEAD <name>来取消它的缓存状态<br>用 git commit命令来提交此次修改<br>一个文件的四个状态<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image1.png" alt="Alt text"><br>补充:git commit<br>输入git commit 然后回车<br>终端自动跳到编辑器里(应该是vim)</name></file-name></name></name></name></p>
-<ul>
-<li><ul>
-<li>按i键输入模式</li>
-<li>编辑完成后按 ESC和:wq键保存并退出<br>版本提交完成<br>-或者按git commit -m “本次修改的大致内容”<br>接着按回车</li>
-</ul>
-</li>
-</ul>
-<h2><span id="突然不想提交怎么办用git-reset-head~-soft来取消我们这次的提交但第一次提交撤销不了第二三次可以如何查看文件章台用git-status查看红色是修改但没暂存绿色是已暂存但没提交查询命令更细致git-diff查询之前历史的提交-git-logcommit后面的乱码是之前提交的哈希值接下来是提交作者提交时间还有我们提交时输入的一些信息git-log-pretty美化输出git-log-prettyx3doneline把每一次提交的信息都变成一行或自定义一个格式-git-log-prettyx3dformath-anarsh-简化哈希an-作者名字ar-修订日期距今ad-修订日期s-提交说明当然除了这样一条一条上传信息还可以用git-log-graph来以图形化的方式去呈现主要表现为分支gt这是本地">突然不想提交怎么办用git reset head~ –soft来取消我们这次的提交(但第一次提交撤销不了,第二三次可以)<br>如何查看文件章台<br>用git status查看<br>红色是修改但没暂存,绿色是已暂存但没提交<br>查询命令(更细致)git diff<br>查询之前历史的提交 git log(commit后面的乱码是之前提交的哈希值接下来是提交作者,提交时间还有我们提交时输入的一些信息)<br>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地</span></h2><p>远程仓库的一些使用:<br>代码托管平台:以github为例<br>右上角new repository<br>给原始仓库起名 公开 初始化</p>
+<h1><span id="git是什么">git是什么</span></h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明性的)</p>
+<span id="more"></span>
+<p>创建仓库:<br>去项目的文件夹输入<br>$ git init<br>(不需要联网)<br>用 git clone去克隆一个网络上的项目<br>例如: git clone <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a><br>(为所欲为)</p>
+<p>创建完仓库后,每一个文件都有一个状态<br>git init<br>新建 状态:未跟踪<br>单独跟踪一个文件<br>$ git add <name><br>删除:$ git rm <name> 或者用$ git rm –cache <name>(保留在目录里但不被跟踪)<br>修改<br>接下来用 git add <file-name>设置成缓存状态<br>假如<em>手滑</em> 不想把它设置成缓存状态用 git reset HEAD <name>来取消它的缓存状态<br>用 git commit命令来提交此次修改<br>一个文件的四个状态</name></file-name></name></name></name></p>
+<p>补充:git commit<br>输入git commit 然后回车<br>终端自动跳到编辑器里(应该是vim)<br>  按i键输入模式<br>  编辑完成后按 ESC和:wq键保存并退出版本提交完成<br>-或者按git commit -m “本次修改的大致内容”<br>接着按回车</p>
+<p>突然不想提交怎么办用git reset head~ –soft来取消我们这次的提交(但第一次提交撤销不了,第二三次可以)<br>如何查看文件章台<br>用git status查看<br>红色是修改但没暂存,绿色是已暂存但没提交<br>查询命令(更细致)git diff<br>查询之前历史的提交 git log(commit后面的乱码是之前提交的哈希值接下来是提交作者,提交时间还有我们提交时输入的一些信息)</p>
+<p>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地</p>
+<hr>
+<p>远程仓库的一些使用:<br>代码托管平台:以github为例<br>右上角new repository<br>给原始仓库起名 公开 初始化</p>
 <ul>
 <li>用https来复制一下这个远程仓库的链接<br>切换回本地<br>用git remote add 的命令来链接我们远程的一个仓库(一般名字叫origin)<br>git remote add origin +https的链接<br>可以git remote看一下(当出现origin是说明添加好了)<br>输错怎么办可以用git remote rename&lt;原名&gt;&lt;改之后名字&gt; 这个命令来重命名<br>将本地代码推送之远程的仓库:用git push &lt;一个远程仓库比如书origin&gt; master<br>把本地的master分支推送过去<br>然后输入我们的用户名 密码(但有问题?)<br>回到github页面点击setting看到最后the developer settings然后点击personal access tokens<br>现在我们需要新建一个令牌去当我们的密码然后我们生成一个普通的经典的就可以<br>name 有效期 打开有关仓库的权限 点击生成<br>再次push一下用户名不变密码填我们复制的一个token<br>success</li>
 <li>比较简单的方式通过ssh协议去健全<br>首先用~&#x2F; .sh进入目录<br>进去后我们可以通过ssh-keygen去生成一个ssh秘钥通过-t选择一个生成的算法比如用rsa 用-b选择一个生成的大小比如4096 然后通过-C添加的一个评论(github推荐个人的邮箱理论上想写啥就写啥)<br>回车 可以看到他让我们起一下这个秘钥的名字(咱就起一个test) 接下俩然我们输入密码:(可以不填)<br>ls看一下里面的文件 test私钥 test.pub为公钥<br>看一下公钥用cat test.pub将公钥复制下来<br>来到github的setting界面 然后选择ssh keys<br>添加一个秘钥 把我们刚才复制的test.pub复制过来可以起一个名字<br>回到我们之前的那个项目然后选择clone点击ssh复制一下<br>接下来回到我们的测试目录(这个目录是空的)我们来克隆一下我们刚才复制过来的ssh 用git clone &lt;你的ssh&gt;</li>
 </ul>
 <blockquote>
-<p>有关分支的概念:<br>其实每次提交生成新版本是都会生成一个提交对象,每一个提交对象都有一个独一无二的哈希值,其实分支就是一个包含这个哈希值的一个文件,我们也可以简单理解为指向一个提交对象的指针,也就是说我们可以子啊一个提交对象上新建多个分支,因为分支是包含这个提交对象哈希值的一个文件.所以我想加多少就加多少,对不对<br>其实当我们最开始初始化本地仓库时就已经新建了一个master分支,我们每次提交操作都是在这个master分支上进行的<br>当我每次进行一个提交的时候我们的分支也跟着我们的提交对象一起进行向前的移动<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image2.png" alt="Alt text"><br>那我新建那么多分支干嘛?&lt;<del>一个分支不好吗</del><br>介绍经典的git流模型<br><img src="/2023/07/10/git%E5%85%A5%E9%97%A8/image3.png" alt="Alt text"><br>如何操作分支?<br>操作分支之前首先知道我们在哪个分支上</p>
+<p>有关分支的概念:<br>其实每次提交生成新版本是都会生成一个提交对象,每一个提交对象都有一个独一无二的哈希值,其实分支就是一个包含这个哈希值的一个文件,我们也可以简单理解为指向一个提交对象的指针,也就是说我们可以子啊一个提交对象上新建多个分支,因为分支是包含这个提交对象哈希值的一个文件.所以我想加多少就加多少,对不对</p>
 </blockquote>
+<p>其实当我们最开始初始化本地仓库时就已经新建了一个master分支,我们每次提交操作都是在这个master分支上进行的<br>当我每次进行一个提交的时候我们的分支也跟着我们的提交对象一起进行向前的移动</p>
+<p>那我新建那么多分支干嘛?&lt;<del>一个分支不好吗</del><br>介绍经典的git流模型</p>
+<p>如何操作分支?<br>操作分支之前首先知道我们在哪个分支上</p>
 <ul>
 <li>zsh在前面就能看到你的分支</li>
 <li>通过git log (开括号里就是我们的分支)(origin&#x2F;master的意思:之前添加的远程仓库然后这个远程仓库里也有个master这个origin&#x2F;master其实就代表表我们远程仓库的master分支)<br>head其实戴白我们现在所处的分支</li>
@@ -314,9 +317,9 @@ cat ~/.ssh/id_rsa.pub
 
 <!-- tocstop -->
 
-<p><del>抓紧学习</del>!<br><img src="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image.png" alt="学习"></p>
+<p><del>抓紧学习</del>!<br><img src="/image.png" alt="学习"></p>
 <ul>
-<li><p><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
+<li><p><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
 <ul>
 <li>几部曲<del>不会数数</del><ul>
 <li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
@@ -326,7 +329,8 @@ cat ~/.ssh/id_rsa.pub
 <li>git push -u origin master</li>
 </ul>
 </li>
-<li>上传文件示例<ul>
+<li>上传文件示例<span id="more"></span>
+<ul>
 <li><del><img src="https://gitee.com/zh3g/git/raw/master/001.png" alt="在线图片"> 没用</del></li>
 </ul>
 </li>
@@ -340,9 +344,11 @@ cat ~/.ssh/id_rsa.pub
 </li>
 <li><p>图床</p>
 <ul>
-<li><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></li>
-<li><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</li>
-<li><a href="https://imgchr.com/i/Vne6w4">路过图床</a><span id="more"></span>
+<li><p><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></p>
+</li>
+<li><p><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</p>
+</li>
+<li><p><a href="https://imgchr.com/i/Vne6w4">路过图床</a></p>
 <ul>
 <li>unhealthy <a href="https://imgse.com/i/pCgBKQs"><img src="https://s1.ax1x.com/2023/07/08/pCgBKQs.jpg" alt="pCgBKQs.jpg"></a></li>
 </ul>
@@ -383,6 +389,11 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/07/09/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/googlea0e607549e412fbf/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>google-site-verification: googlea0e607549e412fbf.html]]></content>
+  </entry>
+  <entry>
     <title>bilibili嵌入视频</title>
     <url>/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -407,7 +418,7 @@ cat ~/.ssh/id_rsa.pub
   <entry>
     <title>vscode自动更新</title>
     <url>/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/image.png" alt="Alt text"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/image.png" alt="Alt text"></p>
 <ul>
 <li>afterDelay将在配置的 <code>files.autoSaveDelay</code> 后自动保存为保存的编辑器</li>
 <li>onFocusChange —— 当编辑器失去焦点时，将自动保存为保存的编辑器也就是鼠标不在VSCode里面时自动保存</li>
@@ -426,13 +437,13 @@ cat ~/.ssh/id_rsa.pub
     <title>一张图片</title>
     <url>/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
-<h2><span id="这是图片">这是图片</span></h2><p><img src="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/01.png" alt="picture"></p>
+<h2><span id="这是图片">这是图片</span></h2><p><img src="/01.png" alt="picture"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart9249" style="height: 300px"></canvas>
+    <canvas id="chart7928" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart9249').getContext('2d');
+    var ctx = document.getElementById('chart7928').getContext('2d');
     var options = {
     type: 'line',
     data: {
@@ -455,9 +466,6 @@ cat ~/.ssh/id_rsa.pub
     new Chart(ctx, options);
 </script>
 
-
-
-<p><a href="googlea0e607549e412fbf.html">谷歌验证</a><br>googlea0e607549e412fbf.html</p>
 ]]></content>
       <categories>
         <category>无</category>
@@ -474,7 +482,9 @@ cat ~/.ssh/id_rsa.pub
 <h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3><span id="run-server">Run server</span></h3><span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
 <h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
@@ -492,7 +502,7 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
-    <title>github+hexo+yarn+插件免费搭建个人博客教程</title>
+    <title>github+hexo+ayer+插件免费搭建个人博客教程</title>
     <url>/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="目录">目录</span></h1><!-- toc -->
 
@@ -560,13 +570,14 @@ npm install
 hexo server 或者 hexo s
 </code></pre>
 <p>出现博客地址 打开</p>
+<span id="more"></span>
+
 <h1><span id="安装主题">安装主题</span></h1><pre><code>git clone https://gitee.com/mirrors/ayer.git themes/ayer
 </code></pre>
 <p>修改config文件 <code>theme: ayer</code></p>
 <pre><code>hexo g -s
 </code></pre>
 <p>修改主题配置文件之前一定要复制一份(防止出错) </p>
-<span id="more"></span>
 <h1><span id="注册gitee或github">注册gitee或github</span></h1><p><del>(这里以github为例)</del><br>首先 新建仓库为 zh3g.github.io</p>
 <h1><span id="github-与hexo配置">github 与hexo配置</span></h1><pre><code>git config --global user.name &quot;zh3g&quot;
 git config --global user.email &quot;zhang1zhengzheng@outlook.com&quot;
@@ -668,9 +679,9 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </ul>
 <h1><span id="文章太长怎么办">文章太长怎么办?</span></h1><h2><span id="添加这个即可">添加这个即可</span></h2><p><code>&lt;!--more--&gt;</code></p>
 <h1><span id="新建文件夹或文件格式">新建文件夹或文件格式</span></h1><h1><span id="hexo多平台同步">hexo多平台同步</span></h1><p>参考:<a href="https://www.zhihu.com/question/21193762/answer/489124966">知乎 直上云霄 【使用hexo，如果换了电脑怎么更新博客？】问题回答</a></p>
-<h2><span id="git-基本操作">Git 基本操作</span></h2><p> <a href="https://www.runoob.com/git/git-basic-operations.html">git</a><br> <img src="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/002.png" alt="Alt text"></p>
+<h2><span id="git-基本操作">Git 基本操作</span></h2><p> <a href="https://www.runoob.com/git/git-basic-operations.html">git</a><br> <img src="/002.png" alt="Alt text"></p>
 <h1><span id="ayer">ayer</span></h1><p><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">作者介绍</a></p>
-<h2><span id="基本插件">基本插件</span></h2><p> <img src="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/001.png" alt="插件"></p>
+<h2><span id="基本插件">基本插件</span></h2><p> <img src="/001.png" alt="插件"></p>
 ]]></content>
       <categories>
         <category>个人</category>

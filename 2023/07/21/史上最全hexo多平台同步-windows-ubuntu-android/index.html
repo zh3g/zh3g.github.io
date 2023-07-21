@@ -121,12 +121,6 @@ var _hmt = _hmt || [];
  
     </div>
       
-    <div class="tocbot"></div>
-
-
-
-
-  
     <div class="article-entry" itemprop="articleBody">
        
   <p>说来惭愧,因为中间隔得时间有点长,导致我弄得漫不经心,但最终费九牛二虎之力最终弄好了(我一直是小白再这方面)<del>还有马上开学了</del></p>
@@ -184,7 +178,8 @@ var _hmt = _hmt || [];
 </ul>
 <h1><span id="windows">windows</span></h1><p>具体参考我的博客<a target="_blank" rel="noopener" href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
 <h2><span id="基本流程">基本流程</span></h2><p>包括：安装git 和 node.js<br>安装Hexo</p>
-<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a target="_blank" rel="noopener" href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<img src="https://imgse.com/i/pCbfe2V" alt="Alt text"><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<img src="https://imgse.com/i/pCbfZ80" alt="Alt text"><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
+<span id="more"></span>
+<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a target="_blank" rel="noopener" href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<a target="_blank" rel="noopener" href="https://imgse.com/i/pCbfe2V"><img src="https://s1.ax1x.com/2023/07/21/pCbfe2V.md.png" alt="pCbfe2V.md.png"></a><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<a target="_blank" rel="noopener" href="https://imgse.com/i/pCbfZ80"><img src="https://s1.ax1x.com/2023/07/21/pCbfZ80.md.png" alt="pCbfZ80.md.png"></a><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
 <h2><span id="安装hexo">安装</span></h2><p>1 在本地新建一个文件夹用于安装博客的文件夹<br>2 进入文件夹右键点击GBH 打开一个git 窗口<br>3 将hexo官网的代码依次复制</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
@@ -215,7 +210,7 @@ cat ~/.ssh/id_rsa.pub
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<img src="https://imgse.com/i/pCbfVCq" alt="Alt text"></p>
+<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<a target="_blank" rel="noopener" href="https://imgse.com/i/pCbfVCq"><img src="https://s1.ax1x.com/2023/07/21/pCbfVCq.md.png" alt="pCbfVCq.md.png"></a></p>
 <h2><span id="更新博客">更新博客</span></h2><p>每次先写时:<code>hexo new post &quot;文章&quot;</code><br>写完后:三件套<br>这里给一个我写的bat程序</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Echo start cmd /c <span class="string">&quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;</span>   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br></pre></td></tr></table></figure>
 
@@ -564,22 +559,6 @@ cat ~/.ssh/id_rsa.pub
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
- 
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: ".tocbot",
-    contentSelector: ".article-entry",
-    headingSelector: "h1, h2, h3, h4, h5, h6",
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: "main",
-    positionFixedSelector: ".tocbot",
-    positionFixedClass: "is-position-fixed",
-    fixedSidebarOffset: "auto",
-  });
-</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
