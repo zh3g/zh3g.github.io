@@ -1,272 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>史上最全hexo多平台同步(windows+ubuntu+android)</title>
-    <url>/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>说来惭愧,因为中间隔得时间有点长,导致我弄得漫不经心,但最终费九牛二虎之力最终弄好了(我一直是小白再这方面)<del>还有马上开学了</del></p>
-<!-- toc -->
-
-<ul>
-<li><a href="#windows">windows</a><ul>
-<li><a href="#%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B">基本流程</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85git-%E5%92%8Cnodejs">安装git 和node.js</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85hexohttpshexoiozh-cn">安装<a href="https://hexo.io/zh-cn/">hexo</a></a></li>
-<li><a href="#%E7%BC%96%E8%BE%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2">编辑个人博客</a></li>
-<li><a href="#%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E6%A0%B7%E5%BC%8F">更改博客样式</a></li>
-<li><a href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">修改主题配置</a></li>
-<li><a href="#%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7githubgitee%E9%9C%80%E8%A6%81%E7%83%A6%E4%BA%BA%E7%9A%84%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E4%BC%B0%E8%AE%A1%E8%B7%9F%E8%85%BE%E8%AE%AF%E5%AD%A6%E7%9A%84gitlab%E6%B2%A1%E7%94%A8%E8%BF%87">注册账号github&#x2F;gitee(需要烦人的实名认证,估计跟腾讯学的)&#x2F;gitlab(没用过)</a></li>
-<li><a href="#%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%B8%AD">将博客上传到github中</a></li>
-<li><a href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2">更新博客</a></li>
-</ul>
-</li>
-<li><a href="#ubuntu">ubuntu</a></li>
-<li><a href="#windows%E4%B8%8A%E4%BC%A0%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0hexo%E5%88%86%E6%94%AF">windows上传源文件到hexo分支</a></li>
-<li><a href="#ubuntu%E9%85%8D%E7%BD%AE">ubuntu配置:</a><ul>
-<li><a href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E7%9A%84%E8%BD%AF%E4%BB%B6">搭建博客需要安装的软件：</a></li>
-<li><a href="#%E5%85%88%E6%9B%B4%E6%96%B0%E6%BA%90">先更新源：</a></li>
-<li><a href="#node%E5%AE%89%E8%A3%85">Node安装</a></li>
-<li><a href="#git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE">Git安装及配置</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85hexo">安装hexo</a></li>
-<li><a href="#git-bash%E5%B0%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0">git bash将远程仓库克隆到本地</a></li>
-<li><a href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</a></li>
-</ul>
-</li>
-<li><a href="#android">android</a><ul>
-<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
-<li><a href="#%E5%87%86%E5%A4%87">准备</a></li>
-<li><a href="#%E9%97%AE%E9%A2%98">问题</a></li>
-</ul>
-</li>
-<li><a href="#%E5%90%8C%E6%AD%A5%E7%BB%9F%E4%B8%80%E6%AD%A5%E9%AA%A4">同步统一步骤</a><ul>
-<li><a href="#%E4%B8%8A%E4%BC%A0">上传</a></li>
-<li><a href="#%E6%9B%B4%E6%96%B0">更新</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-<p>&#96;</p>
-<ul>
-<li>置顶<code>top: true</code></li>
-<li>是否折叠<code>&lt;!--more--&gt;</code></li>
-<li>快捷键<ul>
-<li>ctrl+B</li>
-<li>ctrl+I</li>
-<li>复制链接 选中文本后ctrl+v<br>好,进入正题</li>
-</ul>
-</li>
-</ul>
-<h1><span id="windows">windows</span></h1><p>具体参考我的博客<a href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
-<h2><span id="基本流程">基本流程</span></h2><p>包括：安装git 和 node.js<br>安装Hexo</p>
-<span id="more"></span>
-<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<a href="https://imgse.com/i/pCbfe2V"><img src="https://s1.ax1x.com/2023/07/21/pCbfe2V.md.png" alt="pCbfe2V.md.png"></a><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<a href="https://imgse.com/i/pCbfZ80"><img src="https://s1.ax1x.com/2023/07/21/pCbfZ80.md.png" alt="pCbfZ80.md.png"></a><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
-<h2><span id="安装hexo">安装</span></h2><p>1 在本地新建一个文件夹用于安装博客的文件夹<br>2 进入文件夹右键点击GBH 打开一个git 窗口<br>3 将hexo官网的代码依次复制</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>4 <code>hexo sever&lt;=&gt;hexo s ; hexo generate&lt;=&gt;hexo g; hexo deploy &lt;=&gt;hexo d(hexo三件套 hexo clean; hexo g ;hexo d)</code><br>5 复制地址<code>http://localhost:4000</code>注意复制是别用ctrl+c会终止服务,可以右键复制粘贴 或shift+insert</p>
-<h2><span id="编辑个人博客">编辑个人博客</span></h2><p>1 同样在gbh中输入<code>hexo new post &quot;文章名字&quot;</code>或<code>hexo new &quot;文章名字&quot;</code>即可创建第一篇文章(在source_posts里的能看到) 用的是<a href="https://markdown.com.cn/basic-syntax/">markdown</a>(轻量级标记语言)编辑的<br>保存后 退出<br>2 运行 <code>hexo g</code>生成网页<code>hexo s</code>运行博客<br>3 打开博客就可以看见文章了</p>
-<h2><span id="更改博客样式">更改博客样式</span></h2><p>即:添加第三方主题:如butterfly ayer next…<br>1 打开<a href="https://hexo.io/zh-cn/">hexo</a> 点击探索主题<br>2 以ayer主题为例 进行进一步安装….(省略之后再补)<br>3 实质按照主题说明 在hexo根目录 gbh上敲代码即可成功<br>4 在根目录的config 文件中(不特殊说明都是根目录的config)将</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br></pre></td></tr></table></figure>
-
-<p>替换为</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">ayer</span></span><br></pre></td></tr></table></figure>
-<p>(注意yml文件一般:后都有空格!)<br>保存退出<br>5 git窗口中输入hexo g 输入hexo s<br>点击<code>http://localhost:4000/</code>进行本地访问</p>
-<h2><span id="修改主题配置">修改主题配置</span></h2><p>根据每个主题的配置指南<br>1 在themes文件夹下修改config文件 改成你喜欢的字即可(提醒:最好在改之前复制一份防止改错,对)<br>2 还可以修改config文件 同理<br>3 修改完后 用hexo clean hexo g hexo s</p>
-<h2><span id="注册账号githubx2fgitee需要烦人的实名认证估计跟腾讯学的x2fgitlab没用过">注册账号github&#x2F;gitee(需要烦人的实名认证,估计跟腾讯学的)&#x2F;gitlab(没用过)</span></h2><p>太简单不教了<br>以github为例<br>1 新建仓库 名字一定设为xxx.github.io其他不用管直接默认即可</p>
-<h2><span id="将博客上传到github中">将博客上传到github中</span></h2><p>1 按照github官方提示进行设置即可例如</p>
-<pre><code>git config --global user.name &quot;xxx&quot;
-git config --global user.email &quot;xxx@xxx.com&quot;
-
-ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;
-(输入三次回车
-
-cat ~/.ssh/id_rsa.pub
-</code></pre>
-<p>复制显示的密钥到ssh公钥(github的个人设置中的 添加即可)</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p> 用来验证  返回successfully代表成功<br> 找到config文件<br> 最后输入<br>例如:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<a href="https://imgse.com/i/pCbfVCq"><img src="https://s1.ax1x.com/2023/07/21/pCbfVCq.md.png" alt="pCbfVCq.md.png"></a></p>
-<h2><span id="更新博客">更新博客</span></h2><p>每次先写时:<code>hexo new post &quot;文章&quot;</code><br>写完后:三件套<br>这里给一个我写的bat程序</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c <span class="string">&quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;</span>   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br></pre></td></tr></table></figure>
-
-<p>!终于结束了<br>更多博客部署问题可以在博客中关于我中私信我,或者参考<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.337.search-card.all.click">视频</a></p>
-<h1><span id="ubuntu">ubuntu</span></h1><p>这里是通过新建一个分支来保存博客源文件的(因为github上的master分支只有部分文件所以不能利用这个同步)</p>
-<h1><span id="windows上传源文件到hexo分支">windows上传源文件到hexo分支</span></h1><p>参考1.<a href="https://blog.csdn.net/qq_30105599/article/details/118302086?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168994957916800211581424%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168994957916800211581424&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-118302086-null-null.142%5Ev90%5Ekoosearch_v1,239%5Ev3%5Einsert_chatgpt&utm_term=hexo%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%E6%80%8E%E4%B9%88%E5%90%8C%E6%AD%A5&spm=1018.2226.3001.4187">多台电脑同步更新Hexo博客</a></p>
-<h1><span id="ubuntu配置">ubuntu配置:</span></h1><h2><span id="搭建博客需要安装的软件">搭建博客需要安装的软件：</span></h2><p>git<br>node.js<br>hexo</p>
-<h2><span id="先更新源">先更新源：</span></h2><p>获得源上的软件包列表信息<br><code>sudo apt-get update</code><br>更新本地软件<br><code>sudo apt-get upgrade</code></p>
-<h2><span id="node安装">Node安装</span></h2><p>命令行安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt install npm</span><br></pre></td></tr></table></figure>
-
-<p>查看nodejs工具是否安装成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nodejs -v</span><br><span class="line">v8.10.0</span><br></pre></td></tr></table></figure>
-
-<h2><span id="git安装及配置">Git安装及配置</span></h2><p>1 安装Git<br>使用命令安装Git工具：</p>
-<p><code>sudo apt install git</code><br>查看是否安装成功：</p>
-<p><code>git --version</code><br><code>git version 2.17.1</code></p>
-<ol start="4">
-<li>Hexo安装及配置<br>先创建一个hexo操作的文件目录</li>
-</ol>
-<h2><span id="安装hexo">安装hexo</span></h2><p><code>npm install hexo-cli -g</code><br><code>npm install hexo -g</code><br>检查hexo是否安装成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo: 4.2.0</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Linux 5.3.0-45-generic linux x64</span><br><span class="line">http_parser: 2.7.1</span><br><span class="line">node: 8.10.0</span><br><span class="line">v8: 6.2.414.50</span><br><span class="line">uv: 1.18.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">ares: 1.14.0</span><br><span class="line">modules: 57</span><br><span class="line">nghttp2: 1.30.0</span><br><span class="line">openssl: 1.0.2n</span><br><span class="line">icu: 60.2</span><br><span class="line">unicode: 10.0</span><br><span class="line">cldr: 32.0.1</span><br><span class="line">tz: 2017c</span><br></pre></td></tr></table></figure>
-<h2><span id="git-bash将远程仓库克隆到本地">git bash将远程仓库克隆到本地</span></h2><p><code>git clone 仓库地址</code><br>然后进入项目目录，安装依赖启动博客服务器，生成静态文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>执行以上指令后，便可以在浏览器通过<a href="http://localhost:4000/%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2">http://localhost:4000/访问博客</a></p>
-<p>另一台电脑发布文章</p>
-<p>同之前的教程一样，写好文章后</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<p>两台电脑同步写博客<br>我们的博客仓库有两个分支，master分支和hexo分支</p>
-<p>其中，master分支用于存放Hexo生成的静态资源文件，hexo分支用于存放网站的原始文件</p>
-<p>所以，我们在一台设备上写好一篇文章或进行了博客的修改后</p>
-<p>执行以下命令，将master中的静态资源文件更新</p>
-<p>在博客目录下的cmd中</p>
-<p><code>hexo clean</code><br><code>hexo d -g</code></p>
-<p>执行以下命令，将hexo中的网站原始文件更新</p>
-<p>在博客目录下的git bash中</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;描述&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
-
-
-<p>大功告成！</p>
-<h2><span id="注意事项">注意事项</span></h2><p>每次有新的操作的时候，别忘了在另一台电脑上更新</p>
-<p><code>git pull hexo</code></p>
-<h1><span id="android">android</span></h1><p>因为android能够调用底层的linux命令故可以用于搭建hexo</p>
-<h2><span id="工具">工具</span></h2><p>termux <a href="https://www.coolapk.com/apk/bin.mt.plus">MT管理器</a>(酷安下载)</p>
-<h2><span id="准备">准备</span></h2><p>1 termux下载<br><a href="https://lanlan2017.github.io/blog/4a95e633/">termux 搭建hexo博客教程</a><br>我这里进行补充:<br>1 在下载好node.js和git后<br>直接git clone 源代码<br>接着<code>npm install hexo-deployer-git --save</code><br>一定要输</p>
-<p>2 获取ssh秘钥<br><code>git config --global user.name &quot;xxx&quot;</code><br><code>git config --global user.email &quot;xxx@xxx.com&quot;</code><br>最好用tsu下进行<br><code>ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code><br>(输入三次回车<br>找到文件.pub打开复制ssh秘钥<br>再去github添加<br>3 验证<code>ssh -T git@github.com</code><br>4 进行三件套<br>如果安装插件,就重新安装一遍即可</p>
-<h2><span id="问题">问题</span></h2><p>1 非tsu用户下live2d里面的package.json显示权限不够<br>我先是用chmod改权限为777,发现不行后<br>安装tsu<br>执行<code>npm install hexo-deployer-git --save</code><br>在运行正常<br>2 会显示node_modules文件出错,把正常npm复制替换后依然出错所以无法解决,可能是手机termux问题</p>
-<h1><span id="同步统一步骤">同步统一步骤</span></h1><h2><span id="上传">上传</span></h2><p>执行以下命令，将hexo中的网站原始文件更新</p>
-<p>在博客目录下的git bash中</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;描述&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
-
-
-<h2><span id="更新">更新</span></h2><p>每次有新的操作的时候，别忘了在另一台电脑上更新</p>
-<p><code>git pull hexo</code></p>
-]]></content>
+    <title>bilibili嵌入视频</title>
+    <url>/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="68108cb866ac82c5c2fe092f9195f9e596decae15577c2f0675c65f8f52d62b0">0fccd7f6df5c90b5412c12ff50aec4d3d780ea6cfa703f92841b8637dcb936f809cb0a012bc19d24d8cd17591beac60dfe6a2ddc6c723bfb0a702cd655da391c515846d6a2a8b1cf60676ca892bce9a516d102dc852fa38759690e1b977136fa418a1d2837532274e73b9f215f1dcca8b4b14194c922bbddaef0641cd50288e9e6f0be0a6018dad0090b97b58b2136c25aa9714c267c86b8c66e151bf1ae12c466932349e6c7a78a4fb01ef7d6f9bce0abe4bbead884c23f22698836ba7f551ab81bf55c7e4ddc445311a1ad44aaa51220f2fdd72cfb1663735d7bb33bf58231d702847448f23e32f1107c892d93a2d5e550c31ace622f48853a20cf20d673323534e35e2e2dcf120c84cca1a91d1d16c61e1abc30fd90804fa1495571b8b0b27a9d80077164ba216f5ce8f408d34cf7cb4b4ab663f227d5c72dae2d902bd44fe9d75a5ddb9c78ad52a57cfccf4d336a69387e36fd293dceaf6c73104353195398d19d24ee480a9730a94d470e99140ab887449b3b93f63148e089610cbcdebb370a0860d714c0fb734ff6f13cc3c9cae7fde8714f7cc56d615effbc3ea70e5f47591cb057040f9c9c93671f5dbd134a304515fdcaf4e4f0d1d24d09bc62682f4454d92fe8e7de211580ad6af4ca0923ede93676377f753d945366832dce755fce0eb0840ef2cfa565c604314e8f2ad1799f4c6cfd76ae1f90d68829bfff7744626e8a3b836a4fa8bcb33ced46893a50d0ff1a44578e49ce6bef080a46b6fac2554dd417d781a55d787a6bcab1adef9086ab6ba2526fa5bc306a18f44fb74362c92d11dabcb883b375322fdb2a205859c1d109529d709256f9143bd5d5d374bf7e92735f9bfffcd5c6fc4024cf58a64bb4d5f16d6f1efbf826ba5cd45d8eac13c25969aa8c9a308390824680fc734f1bd20dffe745fece2ae57d1382e98be21d5357d244d694edae10992bd8a15d3bd8602ae8785a8c8c992b2904e073c3f0227105a21ce7a935553808685c9ae1fa1e1454a23e1270b694368dd2bb175d0650e58744dc962ca4dd4a5112c7062b923e7c0f5689b6f73b8bfdccbcf748eba3804972aae4f924807f4cdb340bfa3ebe48eca8b8a99686a8048b1e116710944b9073262cdfc77b3678c49f595697c96e014e3930f14d1c18afa9908a1ebd31ad93bb3e8f76bff66c6ae821406d276efe8f8a4ccb335ce8faad42fe3a164fb72c85b22505a376f9e9bb093bfb947145858fbc8b83ec0512d2f918f217810108e8796f0236ec2c583608c7080c7bebeb9ddbf53fd8b08cdf399d2458d81661ddf780bc4c5607da37bc11b18f12873ba9f592e337934b59b0bac21c88b81ea72cf4cd71e1c6e815081891bb555445a95bb930074f0e60b9b6de294ff6c0c91357f992505be0e8077341feecadedd696b721b47673dda41a468039e6e6b148c3b872e8541e22c3df4f155da6dcc3f651dd7ae023fa49e3575ba96238435feaae31af1729d6f4a62ce4078b4844c1e7946cd93bf1ed655f133c8858e9ad8f714255c10d15ea5a9705456c6ef109c9d7859e2e8dc0d6d4d93b6a6c0d7b2720b41eec40614a16df0e6e5d06159290312e45a0a71c410bbf23870e87269d865d86a1b623ade7d5bdfa37d5cf18295d14cd19c5ddfe58635487d35f5a493c8a9c7453e87b455dacae525329cdadb936450b1edae88c6cd28c1708fc662c76985fa44a05cfedfb8c643c5fbf215555b1f8f6f0fc6365fb92321faf0d36880a1bdd0edcd3db82e6c376bee114d2796c24d92499eb4e9ab39d76a49ae65962f56cd75b1db05bf5c6bf25478d5fe89a6f6e64ed50bf3e781d541470d07c5ab2b73b5df359009ff6d1908f09045f0bba4de1ef0fb847bd3bac29ffe53982f49857b831680b9c89b00a419a4db70af553a5722d2c8cb27fce9f46f55744d96fa061e9de264a57996fd87c5e4937877ca4af23ac51d435f51bb257b610c6d8533f30bbb935266d157ce903460372df496544c44cc50effcc342fabd497fd375db476b5aa66419a1d0c08899b762d8a0c8e2c40e8951c67de0ca5e16f3471d4c289958d2319477a6518345cc2fb29c4de75f12c92ea6539810248fcba9d469981f3b17c6e3d3202613902fb9c6809ad67187d9835d32130857dd1fba498e66659db9100c54f00ea3ae84bc6d9616ef0d4dd07c63eb0940d8a32e23808bbf814df3c0d805b139ca45b3013f94dd457b7052364e6e331741df53c51cabf52086732804e3c3f2d84c08abf4ec25762291bb8b6524f6fe1887b19f0bae26494ba3f17b5af50eb427c6fa7784110e96882a2600d1e23082972791248703b67733363417b0b52ffb68e910fc622408f867ad6aabe70c5a9276fe1137c16b254e37eeccea5cd9492e79a9fece873b21207e3d69d4e63b14da50fdc85ba803f1dafe7b3fed0a0cfb123398231540a864d9db1424f5c6ecd2d9054f02203cd8f6fa783debced32e52baab0c5304d4b77ca3aae09e440a26d3631f86ec1706140611d7a8b43c3fcc8d6b058927c64852f914e0a45c23cef89c757ec4bba624c69a360623e300e4557ba4b2d0561f1e6b7e22be88d64b6b049eece5badd7535a0a84371fe489247731f2884eb5796bc0ade827cad9732d7f0963ef8058228c3d563cccb13224cfcfdca90ce7a28c7bc872ba8431d9fbd3f262721b74ed6501d1ccceff2c7b661223cb53a27bcae6c1a8731acf5118625506063345c94eb080e400ca69f8f8db0729975227162b4ded9b077bf4856973c6918e853086b1ec125bae5f579752467cfa25796b57e91ce5ca301ec8202c37e25e81a2983ef700faef07e57bfcf6a65c836d795f6c5e6141aae76b1cf043b43b12972adbb3011e56fdeb50830c280095d0857227eae773304b0b32ec456fcc9fb40ac81346676702b5d9f3c5a1eda36459496ded6e8b59327443ea2a5a55d253f900041d810244b12b1131172b2ffef064e2e83f73765502a5c0a0501c4318444d594337347e8a63f43c391d9c18b82b09f9fb65759de1dc56f1396fa36c3bf7e598cdd2c174ff0254a2f3aff987fc26d4fad325200afa43de259fc1d3220cf860772ffdff4e9acebfd7fee3cd9aad7b05617d64399d1e040c4abe71e2c421d8431e90f01066a47055227962091ef82ff56b294a4ea289e8f7cb944ff51254b10a9f83d3fa754897c1db968785796c66dbadf328dcbfe5fc5f0a2bcdea35ec7fa85195e311eefa586da773bca6f9ac5ecf3411d9a64bf446e71f7d235af1c3af0da6682929ccace8ac06bc75ee582725fcaf9c740c64b1cdf9520743b0d44717a69ed307d164cccc59dc85b97aa5a34a3e2f435a69d526af26158476246c8cb937333ddfa2a0f61814876448006a2e7dd4e146f3d0adc078f305e85c72ab7fe2ab3e13eef1f55038156e536d54d9dee5da547e404d5193564933b52099e8a962b9bdc1587654c6251babeb475abd2a1329beb2c39be80d3cda768a557d6b3f13e1b0068c940db49a82db0d2513aa6aaebe2930ebcd05ae938cad0dd55f2048d7107b5ce2a91ead7c8da01607de25cd8de9a86993fa2d1d61799a6915d57b4579252d7bd70fe4d80110295193fe07fbbfcdc7c6cf4589714a3a33e02733879e1af641399bf1f797446d9976a71110551ff85bb9ec770812f5e78e59e21ebbd7f9b6f6d01dbbd2f2b9222bcbbf8dc3adb99530f805b71976ce9a4b2d4371358ac018d356bbd12186eb3fca0071b8435714889ae79f95077c3a759bee739bb0cb6cc2548badb755b8f8badf83b49bccbdce37755101c991069ad56b57a948b7d1de13c9ef416759a8818b4543239ec5284a51b8e938493156a229ce1c6acd53305cb4b64c50a2f2e605729aa99a4d95b4f5493cc853fa12d13206257370f5f4b5ca4da4e1ea4a22f72df84d2edeeebf3256f38d7d86b2a923604bd935f0d1a18487485644c1c6a5bec6c5d0526cd58876788efc860a28075105f05578da6406033783b65d06b90c1a1a6209b02c4ac45a7239fa2bdaf11bd9e6d577b6d9e4dbbc8a224bae17c966bde586b59791f6d71a8ba67e767503b9c754e6d21910c0ca0eb41a19645fef48cd81715ea239582e4a3430d4cc9baf15616ecd1d18df554478584d075527b158ed26473cedc3bdb22f3da399bdea60b1db63a1a2ad1bd7345e64da7607c9c17a7a232ecf15514f23b50fb3dcea994624354adb7eab09bde788b7c15698f2ae2c7f6d1663cf657ebafd4ea6a81672d88e4afe1a3578d9719d5cebc51cadea3d2e9258b37d206765f86fd73304ecf9d7b857bef8abd791420846cf1275c676cfd3cc02b53bd7af4465edf50493bf97750585c26bf9a9705c86734428e9b2e941c33f797be9831cfdf6bc3a9e7b5bf00c45c6514d1e64896bc421df0e3186ec11daec5feb542bcab67fbdd8dc7002476d71e83433a436a64a63bc20d55e3ce656875dec98169225fb3c0f570fcbf98fc373235b99f9d4493a98aa9c652c7da21fbabcb94dfa1bc133db201940e5612406c9998194fda3413d547e3010140a2f6faacdd383c7e1f9b847497f10720bdde2213042df3d379058ace25ceb9b0fda2f788c349b425167b9f2ac21f8685d4679a588a0bf79abf4f210bf73f4bfadc90d2743478116e81f19fdffe32aafd227a20399090f67f8968bc459574868d81c8c98bc3d832df07096b86e582cfcfe7e94d26d41181a6798fa87fc22c2df8ee8318f12d5c5ed7620c6f4ed14a33a18412df0a600d190805931051e9483e8fcfe0493e8fca6a9b9867cbf5bba761f52863c65ec38d4fab3a42f21495ff12364df02f006fc34921400a16978bad578de66138a851e2069eafdc98750775078dcd658d2ab98f61cb210975fd2dc659c3c2d12eae34dcc89f552ae0de95f6d4798b71a1f6cc2e62b0dc8141e727b8ce8d6ceccc2b5e4125d24dfd035c9db0fc32391e775d5fdc91b4ebf1c597ce4072d42b27f10a5305fc2441588f4330f11eac2802669f2ee61fb9c56bc2c3c5e49e524cf8deed7083f90ce2c9be35431d0083cbc98f38fe4f6d8f1b89d724105b5379b6c80a15250bf00a9fb28323bf707f5629fbb4a873f6b3d2684c58bd95a93e0120441316bad1bc503f8d36f6e0fe118515ab9e3e3ecd7cc8e3e99d41f1d48dbaa2c3ae1f92172741f80323964f3a53942c5bc24aac85d74ee0c58d47c5bcc8a2c3118dc0bba</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>个人</category>
+        <category>视频嵌入</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python学习笔记</title>
-    <url>/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>Life is short. You need Python。<br>                                      ——Bruce Eckel</p>
-</blockquote>
-<blockquote>
-<p>只有勇敢地割掉与时代发展不相符的瑕疵部分，才能<br>缔造出真正的完美体验！</p>
-</blockquote>
-<!-- toc -->
-
-<ul>
-<li><a href="#python%E5%AD%A6%E8%8B%B1%E8%AF%AD">python学英语</a></li>
-<li><a href="#%E5%89%8D%E6%8F%90">前提</a></li>
-<li><a href="#2023722">2023&#x2F;7&#x2F;22</a><ul>
-<li><a href="#py%E6%96%87%E4%BB%B6%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C">.py文件怎么运行?</a></li>
-<li><a href="#windows%E7%9A%84python%E6%96%87%E4%BB%B6%E6%80%8E%E6%A0%B7%E6%9B%B4%E6%96%B0">windows的python文件怎样更新</a></li>
-<li><a href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0bif">显示所有python内置函数(BIF)</a></li>
-<li><a href="#python%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E8%BE%93%E5%85%A5%E6%96%B9%E6%B3%95">python特殊字符输入方法</a></li>
-<li><a href="#%E5%B0%8F%E6%8A%80%E5%B7%A7">小技巧</a><ul>
-<li><a href="#true-true">True + True</a></li>
-</ul>
-</li>
-<li><a href="#%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD">类型判断</a></li>
-<li><a href="#idle%E6%B8%85%E5%B1%8F%E6%96%B9%E6%B3%95">idle清屏方法</a></li>
-<li><a href="#%E6%96%AD%E8%A8%80assert">断言assert</a><ul>
-<li><a href="#%E5%90%91%E5%88%97%E8%A1%A8%E6%B7%BB%E5%8A%A0%E5%85%83%E7%B4%A0">向列表添加元素</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8%E5%A5%97%E5%A8%83">列表套娃</a></li>
-<li><a href="#randomchoice">random.choice</a></li>
-<li><a href="#%E4%BB%8E%E5%88%97%E8%A1%A8%E4%B8%AD%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0">从列表中删除元素</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8%E5%88%87%E7%89%87">列表切片</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8%E7%9A%84%E8%BF%90%E7%AE%97">列表的运算</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-<h1><span id="python学英语">python学英语</span></h1><p>变量(variable) 字符串(str)</p>
-<h1><span id="前提">前提</span></h1><p>本资料均来自课程和网上查找 且仅展示我不熟悉的知识点 (会在不同程度上补充)</p>
-<h1><span id="2023x2f7x2f22">2023&#x2F;7&#x2F;22</span></h1><h2><span id="py文件怎么运行">.py文件怎么运行?</span></h2><p>将python设为全局变量<br>在cmd窗口中python .py文件所在路径即可<br>手机termux中可以用pkg install python(最好先安装tsu)</p>
-<h2><span id="windows的python文件怎样更新">windows的python文件怎样更新</span></h2><p>暂时不想升级<del>逃避逃避</del></p>
-<h2><span id="显示所有python内置函数bif">显示所有python内置函数(BIF)</span></h2><p><code>dir(__builtins__)</code></p>
-<h2><span id="python特殊字符输入方法">python特殊字符输入方法</span></h2><ol>
-<li>使用转义符号（\）对字符串中的引号进行转义</li>
-<li>只需要在字符串前边加一个英文字母r即可<span id="more"></span>
-<img src="/image.png" alt="Alt text"></li>
-<li>无论是否为原始字符串，都不能以反斜杠作为结尾（注：反斜杠放在字符串的末尾表示该字符串还没有结束，换行继续的意思)<br>解决方法用\转义</li>
-</ol>
-<h2><span id="小技巧">小技巧</span></h2><ol>
-<li>输入长文本时可以用<code>&quot;&quot;&quot;长文本&quot;&quot;&quot;</code>进行输入(当然也可以用<code>\n</code>在换行时)但是文本比较多是就麻烦了</li>
-</ol>
-<h3><span id="true-true">True + True</span></h3><p><code>True + True =2</code>直接运行是错的<br>但是输入<code>True + True</code>回车时是2<br>1,2输出后是(1,2)<br>字符串输出后带’’但是print后没有</p>
-<h2><span id="类型判断">类型判断</span></h2><ol>
-<li>type告诉你何种类型 <code>type</code></li>
-<li>判断某个字符是否为某种类型 <code>isinstance</code></li>
-</ol>
-<h2><span id="idle清屏方法">idle清屏方法</span></h2><p>参考<a href="https://blog.csdn.net/cxcxrs/article/details/81219395">真实可行的Python清屏命令</a><br>下载文件,更改idle配置<br>直接ctrl+l就可以清屏</p>
-<h2><span id="断言assert">断言assert</span></h2><p>暂时不懂 但估计和正则表达式中正&#x2F;反向先&#x2F;后行断言差不多<br>例子<br><code>assert 1 &lt;= 3</code>能执行<br><code>assert 1 &gt;= 3</code>报错<br>##列表</p>
-<ol>
-<li>list:将列表打印出来<br><code>list(range(10))</code><br><code>list(&quot;hello&quot;)</code></li>
-<li>range(a,b,c)记住左闭右开即可</li>
-</ol>
-<h3><span id="向列表添加元素">向列表添加元素</span></h3><ol>
-<li>.append向右添加一个元素<br><code>number.append(6)</code></li>
-<li>.extend可以添加多个元素(简单理解为一个列表在接上一个列表)<br><code>number.extend([8,9])</code> </li>
-<li>.insert可以利用所以在指定位置添加元素<br><code>列表.insert(索引:要插入的位置,要添加的元素)</code><br><code>number.insert(0.0)</code>注意是从0开始数的<br>还可以是倒数从-1,-2开始不过是倒数<br>算了,猜错了<br>是从列表中所以所在元素的前一位</li>
-<li>一个不用函数的变换<br>即令<code>number[索引] = 一个替换的元素</code><br>可以做到 交换列表中的元素<br><code>eggs[1],eggs[3] = eggs[3],eggs[1]</code></li>
-</ol>
-<h3><span id="列表套娃">列表套娃</span></h3><p>从列表中获取元素<br><code>eggs = [&quot;鸡蛋&quot;,&quot;铁蛋&quot;,[&quot;天鹅蛋&quot;,&quot;企鹅蛋&quot;,&quot;加拿大蛋&quot;],&quot;鸭蛋&quot;]</code><br>获取 加拿大蛋<br><code>eggs[2][2]</code></p>
-<h3><span id="randomchoice">random.choice</span></h3><p>从一个非空的列表中随机获取一个元素<br><code>random.choice(prizes)</code></p>
-<h3><span id="从列表中删除元素">从列表中删除元素</span></h3><ol>
-<li>remove方法<br><code>列表.remove(元素名称)</code><br><code>eggs.remove(&quot;铁蛋&quot;)</code></li>
-<li>pop(弹)<br>1.)列表.pop()会将弹出去的数打印出来,列表弹出对应的数<br>2.)列白.pop(索引)同理 </li>
-<li>del(实际上是利用del能够删除变量的特性操作的)<br>用法<code>del 列表名[索引]</code><br><code>del eggs(0)</code><br>del 变量名(变量,列表之类的)</li>
-</ol>
-<h3><span id="列表切片">列表切片</span></h3><p>1.)<code>list[元素1的索引:元素2的索引+1]</code><br>list[]是左闭右开的(和range类似)所以终止索引需要+1<br><code>list[2:5]</code><br>2.) 简化写法:<code>list[:2]</code>表示从0开始到2结束且不包含2其等价于<code>list[0:2]</code><br><code>list[2:]</code>表示从2开始,直到最后<br><code>list[:]</code>表示从开始到结束<br>3.)步长:默认不输是1 <code>list[0:9:2]</code>结果每个相隔2 同时步长可正可负<br>4.) 利用del和步长删除列表的奇数项<code>del list1[::2]</code><br>5.) 利用切片进行列表替换 <code>list[:2]=[&quot;超人&quot;,&quot;神奇女侠&quot;]</code>可以做到不等长替换</p>
-<h3><span id="列表的运算">列表的运算</span></h3><ol>
-<li>列表大小比较:单元素列表将元素转化为Ascall码进行大小比较</li>
-<li>多元素列表则先比较第一个元素,如果第一个元素大,则其所在列表更大</li>
-<li>列表相加 列表与数字相乘 </li>
-<li>判断元素是否在列表内 <code>&quot;小甲鱼&quot; in list1</code>or<code>&quot;小乌龟&quot;not in list1</code></li>
-<li>综合利用去除某一列表的重复元素</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">old_list = [<span class="string">&quot;西班牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;牙买加&quot;</span>,<span class="string">&quot;匈牙利&quot;</span>]</span><br><span class="line">new_list = []</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> old_list:</span><br><span class="line">    <span class="keyword">if</span> each <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">        new_list.append(each)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>个人</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>v2ray总结</title>
-    <url>/2023/07/21/v2ray%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>网络注定是个不安分的地方<br>一道墙之类的东西总会及其人们翻过它的欲望</p>
-</blockquote>
-<h1><span id="我的v2ray折腾记">我的v2ray折腾记</span></h1><h2><span id="工具">工具</span></h2><p>代理工具:v2ray clash clash.meta之类的<br>节点: 免费的&#x2F;付费的</p>
-<h2><span id="流程">流程</span></h2><p>先下载工具 再订阅节点 进行配置 愉快上网</p>
-<h2><span id="下载工具">下载工具</span></h2><p>v2ray:windows:<a href="https://github.com/2dust/v2rayN/releases/">https://github.com/2dust/v2rayN/releases/</a><br>android:<a href="https://github.com/2dust/v2rayNG/releases/">https://github.com/2dust/v2rayNG/releases/</a><br>MAC:<a href="https://github.com/yanue/V2rayU/releases">https://github.com/yanue/V2rayU/releases</a><br><a href="https://v2sx.github.io/V2Ray/">V2Ray客户端工具大全备用下载</a><br>clash.meta:<a href="https://wiki.metacubex.one/client/#linux">客户端</a></p>
-<h2><span id="订阅方式-bulink">订阅方式 </span></h2><h2><span id="导入方式">导入方式</span></h2><p>这里以v2ray为例</p>
-<span id="more"></span>
-<p><a href="https://imgse.com/i/pCbhImD"><img src="https://s1.ax1x.com/2023/07/22/pCbhImD.md.png" alt="pCbhImD.md.png"></a><br><a href="https://imgse.com/i/pCbh4OO"><img src="https://s1.ax1x.com/2023/07/22/pCbh4OO.png" alt="pCbh4OO.png"></a><br><a href="https://imgse.com/i/pCbho0e"><img src="https://s1.ax1x.com/2023/07/22/pCbho0e.md.png" alt="pCbho0e.md.png"></a><br><a href="https://imgse.com/i/pCbhWSx"><img src="https://s1.ax1x.com/2023/07/22/pCbhWSx.png" alt="pCbhWSx.png"></a><br><a href="https://imgse.com/i/pCbhfl6"><img src="https://s1.ax1x.com/2023/07/22/pCbhfl6.md.png" alt="pCbhfl6.md.png"></a><br><a href="https://imgse.com/i/pCbhh6K"><img src="https://s1.ax1x.com/2023/07/22/pCbhh6K.md.png" alt="pCbhh6K.md.png"></a><br><a href="https://imgse.com/i/pCbhTTH"><img src="https://s1.ax1x.com/2023/07/22/pCbhTTH.md.png" alt="pCbhTTH.md.png"></a><br><a href="https://imgse.com/i/pCbhHkd"><img src="https://s1.ax1x.com/2023/07/22/pCbhHkd.md.png" alt="pCbhHkd.md.png"></a><br><a href="https://imgse.com/i/pCbhqfI"><img src="https://s1.ax1x.com/2023/07/22/pCbhqfI.md.png" alt="pCbhqfI.md.png"></a><br><a href="https://imgse.com/i/pCbhOpt"><img src="https://s1.ax1x.com/2023/07/22/pCbhOpt.md.png" alt="pCbhOpt.md.png"></a><br><a href="https://imgse.com/i/pCbhbtA"><img src="https://s1.ax1x.com/2023/07/22/pCbhbtA.png" alt="pCbhbtA.png"></a></p>
-]]></content>
-      <categories>
-        <category>个人</category>
-      </categories>
-      <tags>
-        <tag>v2ray</tag>
+        <tag>bilibili</tag>
       </tags>
   </entry>
   <entry>
@@ -427,122 +181,146 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
-    <title>教程与资源</title>
-    <url>/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="教程推荐不分先后">教程推荐(不分先后)</span></h1><!-- toc -->
+    <title>Hello World</title>
+    <url>/2023/07/07/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3><span id="run-server">Run server</span></h3><span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>个人</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python学习笔记</title>
+    <url>/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>Life is short. You need Python。<br>                                      ——Bruce Eckel</p>
+</blockquote>
+<blockquote>
+<p>只有勇敢地割掉与时代发展不相符的瑕疵部分，才能<br>缔造出真正的完美体验！</p>
+</blockquote>
+<!-- toc -->
 
 <ul>
-<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0gitee%E4%BB%93%E5%BA%93%E7%9A%84%E6%AD%A5%E9%AA%A4httpsblogcsdnnetfayoung3568articledetails119488325">上传文件到gitee仓库的步骤</a></li>
-<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B">上传文件示例</a></li>
-<li><a href="#%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA">插件市场</a></li>
-<li><a href="#%E5%9B%BE%E5%BA%8A">图床</a></li>
-<li><a href="#hexo-%E8%B7%B3%E8%BF%87%E6%96%87%E4%BB%B6%E6%B8%B2%E6%9F%93">hexo 跳过文件渲染</a></li>
-</ul>
-<ul>
-<li><a href="#%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90">资源推荐</a><ul>
-<li><a href="#%E5%A4%9A%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86">多平台下载工具合集</a><ul>
-<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
-<li><a href="#%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">网盘资源下载</a></li>
+<li><a href="#python%E5%AD%A6%E8%8B%B1%E8%AF%AD">python学英语</a></li>
+<li><a href="#%E5%89%8D%E6%8F%90">前提</a></li>
+<li><a href="#2023722">2023&#x2F;7&#x2F;22</a><ul>
+<li><a href="#py%E6%96%87%E4%BB%B6%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C">.py文件怎么运行?</a></li>
+<li><a href="#windows%E7%9A%84python%E6%96%87%E4%BB%B6%E6%80%8E%E6%A0%B7%E6%9B%B4%E6%96%B0">windows的python文件怎样更新</a></li>
+<li><a href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0bif">显示所有python内置函数(BIF)</a></li>
+<li><a href="#python%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E8%BE%93%E5%85%A5%E6%96%B9%E6%B3%95">python特殊字符输入方法</a></li>
+<li><a href="#%E5%B0%8F%E6%8A%80%E5%B7%A7">小技巧</a><ul>
+<li><a href="#true-true">True + True</a></li>
 </ul>
 </li>
-<li><a href="#python%E8%B5%84%E6%BA%90">python资源</a></li>
+<li><a href="#%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD">类型判断</a></li>
+<li><a href="#idle%E6%B8%85%E5%B1%8F%E6%96%B9%E6%B3%95">idle清屏方法</a></li>
+<li><a href="#%E6%96%AD%E8%A8%80assert">断言assert</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8">列表</a><ul>
+<li><a href="#%E5%90%91%E5%88%97%E8%A1%A8%E6%B7%BB%E5%8A%A0%E5%85%83%E7%B4%A0">向列表添加元素</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8%E5%A5%97%E5%A8%83">列表套娃</a></li>
+<li><a href="#randomchoice">random.choice</a></li>
+<li><a href="#%E4%BB%8E%E5%88%97%E8%A1%A8%E4%B8%AD%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0">从列表中删除元素</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8%E5%88%87%E7%89%87">列表切片</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8%E7%9A%84%E8%BF%90%E7%AE%97">列表的运算</a></li>
+<li><a href="#%E5%92%8C%E5%88%97%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E6%96%B9%E6%B3%95">和列表相关的方法</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
 
-<p><del>抓紧学习</del>!<br><a href="https://imgse.com/i/pCqSsF1"><img src="https://s1.ax1x.com/2023/07/22/pCqSsF1.png" alt="pCqSsF1.png"></a></p>
-<h2><span id="上传文件到gitee仓库的步骤"></span></h2><p>  <a href="https://imgse.com/i/pCqSDoR"><img src="https://s1.ax1x.com/2023/07/22/pCqSDoR.png" alt="pCqSDoR.png"></a> </p>
-<ul>
-<li>几部曲<del>不会数数</del><ul>
-<li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
-<li><code>git commit -m &quot;注释&quot;</code></li>
-<li><code>git remote add origin</code> <a href="https://gitee.com/zh3g/git">https://gitee.com/zh3g/git</a> (不知道是否每次都用) </li>
-<li><code>git pull --rebase origin master</code>(如果远程仓库为空可以跳过这一步，如果远程仓库不为空，则必须进行这一步，否则会报错。)</li>
-<li>git push -u origin master</li>
-</ul>
-</li>
-</ul>
-<h2><span id="上传文件示例">上传文件示例</span></h2><span id="more"></span>
-<ul>
-<li><del><img src="https://gitee.com/zh3g/git/raw/master/001.png" alt="在线图片"> 没用</del></li>
-</ul>
-<h2><span id="插件市场">插件市场</span></h2><ul>
-<li>hexo <a href="https://hexo.io/plugins/">插件市场</a></li>
-<li><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题</a></li>
-</ul>
-<h2><span id="图床">图床</span></h2><ul>
-<li><p><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></p>
-</li>
-<li><p><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</p>
-</li>
-<li><p><a href="https://imgchr.com/i/Vne6w4">路过图床</a></p>
-<ul>
-<li><a href="https://imgse.com/i/pCgBKQs"><img src="https://s1.ax1x.com/2023/07/08/pCgBKQs.md.jpg" alt="pCgBKQs.md.jpg"></a></li>
-</ul>
-</li>
-<li><p><a href="https://zhuanlan.zhihu.com/p/490143994">免费文件存储分享网站合集 - 知乎</a></p>
-</li>
-</ul>
-<!--- 来小亮,给大伙整个活(live2d进阶)
-     - 进阶:[Hexo博客优化：在Next主题中设置进阶版Live2D看板娘](https://blog.csdn.net/qq_39610915/article/details/90679768)
--->
-<h2><span id="hexo-跳过文件渲染">hexo 跳过文件渲染</span></h2><pre><code>- 起因:谷歌要求主页必须有html文件的链接才行
-- 我不会弄(但我新建了一个html的文件节里面的index.md改为index.html并且内容改为html内容)
-- ~~我真是太机智了~~于是乎我渲染出来接我是不行
-- 参考文章 跳过了css渲染(success) 
-  - [Hexo博客技巧：添加自定义html页面](https://blog.csdn.net/weixin_58068682/article/details/116611715)
-  - [hexo跳过渲染](http://qtdebug.com/hexo-skip-render/#:~:text=Hexo.%20Hexo%20%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E8%A7%81%E6%96%87%E7%AB%A0%E9%83%BD%E6%98%AF%E7%BB%8F%E7%94%B1%E6%B8%B2%E6%9F%93%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%8C%E8%80%8C%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E7%9A%84%E6%A0%B7%E5%BC%8F%E9%83%BD%E7%9B%B4%E6%8E%A5%E7%94%B1%20Hexo%20%E7%9A%84%E4%B8%BB%E9%A2%98%E6%8E%A7%E5%88%B6%EF%BC%8C%E6%89%80%E4%BB%A5%20Hexo%20%E5%8D%9A%E5%AE%A2%E5%A4%A7%E9%83%A8%E5%88%86%E9%83%BD%E5%91%88%E7%8E%B0%E5%87%BA%E4%B8%80%E7%A7%8D%E9%AB%98%E5%BA%A6%E7%9A%84%E7%BB%9F%E4%B8%80%E5%8C%96%E4%B8%8E%E8%A7%84%E8%8C%83%E5%8C%96%E3%80%82.%20%E4%B8%8D%E8%BF%87,%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%20%E3%80%82.%20%E5%A6%82%E6%9E%9C%E8%A6%81%E5%BF%BD%E7%95%A5%20source%20%E4%B8%8B%E7%9A%84%20test%20%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E9%85%8D%E7%BD%AE%EF%BC%9A.%201.)
-- ~~结果:没验证成功~~
-- 最简单的方法是将html复制到source文件夹(在跳过css渲染) over
-- 主题作者方法:在 head.ejs 里添加 html 标签
-               &lt;u&gt;(后悔没早点看到)&lt;/u&gt;
-</code></pre>
-<ul>
-<li><a href="https://blog.csdn.net/zgcr654321/article/details/86738005">使用Gitlab pages自动部署hexo博客</a></li>
-</ul>
-<h1><span id="资源推荐">资源推荐</span></h1><h2><span id="多平台下载工具合集">多平台下载工具合集</span></h2><h3><span id="工具">工具</span></h3><p>看链接<a href="https://www.youxiaohou.com/download.html">相关软件下载</a>  有IDM NDM Xdown(多平台)–多线程下载<br>还有ariaNg<a href="http://aria2.scrongyao.com/">Aria2中文网 </a></p>
-<blockquote>
-<p><em>油小猴</em></p>
+<h1><span id="python学英语">python学英语</span></h1><p>变量(variable) 字符串(str)</p>
+<h1><span id="前提">前提</span></h1><p>本资料均来自课程和网上查找 且仅展示我不熟悉的知识点 (会在不同程度上补充)</p>
+<h1><span id="2023x2f7x2f22">2023&#x2F;7&#x2F;22</span></h1><h2><span id="py文件怎么运行">.py文件怎么运行?</span></h2><p>将python设为全局变量<br>在cmd窗口中python .py文件所在路径即可<br>手机termux中可以用pkg install python(最好先安装tsu)</p>
+<h2><span id="windows的python文件怎样更新">windows的python文件怎样更新</span></h2><p>暂时不想升级<del>逃避逃避</del></p>
+<h2><span id="显示所有python内置函数bif">显示所有python内置函数(BIF)</span></h2><p><code>dir(__builtins__)</code></p>
+<h2><span id="python特殊字符输入方法">python特殊字符输入方法</span></h2><ol>
+<li>使用转义符号（\）对字符串中的引号进行转义</li>
+<li>只需要在字符串前边加一个英文字母r即可<span id="more"></span>
+<img src="/image.png" alt="Alt text"></li>
+<li>无论是否为原始字符串，都不能以反斜杠作为结尾（注：反斜杠放在字符串的末尾表示该字符串还没有结束，换行继续的意思)<br>解决方法用\转义</li>
+</ol>
+<h2><span id="小技巧">小技巧</span></h2><ol>
+<li>输入长文本时可以用<code>&quot;&quot;&quot;长文本&quot;&quot;&quot;</code>进行输入(当然也可以用<code>\n</code>在换行时)但是文本比较多是就麻烦了</li>
+</ol>
+<h3><span id="true-true">True + True</span></h3><p><code>True + True =2</code>直接运行是错的<br>但是输入<code>True + True</code>回车时是2<br>1,2输出后是(1,2)<br>字符串输出后带’’但是print后没有</p>
+<h2><span id="类型判断">类型判断</span></h2><ol>
+<li>type告诉你何种类型 <code>type</code></li>
+<li>判断某个字符是否为某种类型 <code>isinstance</code></li>
+</ol>
+<h2><span id="idle清屏方法">idle清屏方法</span></h2><p>参考<a href="https://blog.csdn.net/cxcxrs/article/details/81219395">真实可行的Python清屏命令</a><br>下载文件,更改idle配置<br>直接ctrl+l就可以清屏</p>
+<h2><span id="断言assert">断言assert</span></h2><p>暂时不懂 但估计和正则表达式中正&#x2F;反向先&#x2F;后行断言差不多<br>例子<br><code>assert 1 &lt;= 3</code>能执行<br><code>assert 1 &gt;= 3</code>报错</p>
+<h2><span id="列表">列表</span></h2><ol>
+<li>list:将列表打印出来<br><code>list(range(10))</code><br><code>list(&quot;hello&quot;)</code></li>
+<li>range(a,b,c)记住左闭右开即可</li>
+</ol>
+<h3><span id="向列表添加元素">向列表添加元素</span></h3><ol>
+<li>.append向右添加一个元素<br><code>number.append(6)</code></li>
+<li>.extend可以添加多个元素(简单理解为一个列表在接上一个列表)<br><code>number.extend([8,9])</code> </li>
+<li>.insert可以利用所以在指定位置添加元素<br><code>列表.insert(索引:要插入的位置,要添加的元素)</code><br><code>number.insert(0.0)</code>注意是从0开始数的<br>还可以是倒数从-1,-2开始不过是倒数<br>算了,猜错了<br>是从列表中所以所在元素的前一位</li>
+<li>一个不用函数的变换<br>即令<code>number[索引] = 一个替换的元素</code><br>可以做到 交换列表中的元素<br><code>eggs[1],eggs[3] = eggs[3],eggs[1]</code></li>
+</ol>
+<h3><span id="列表套娃">列表套娃</span></h3><p>从列表中获取元素<br><code>eggs = [&quot;鸡蛋&quot;,&quot;铁蛋&quot;,[&quot;天鹅蛋&quot;,&quot;企鹅蛋&quot;,&quot;加拿大蛋&quot;],&quot;鸭蛋&quot;]</code><br>获取 加拿大蛋<br><code>eggs[2][2]</code></p>
+<h3><span id="randomchoice">random.choice</span></h3><p>从一个非空的列表中随机获取一个元素<br><code>random.choice(prizes)</code></p>
+<h3><span id="从列表中删除元素">从列表中删除元素</span></h3><ol>
+<li>remove方法<br><code>列表.remove(元素名称)</code><br><code>eggs.remove(&quot;铁蛋&quot;)</code></li>
+<li>pop(弹)<br>1.)列表.pop()会将弹出去的数打印出来,列表弹出对应的数<br>2.)列白.pop(索引)同理 </li>
+<li>del(实际上是利用del能够删除变量的特性操作的)<br>用法<code>del 列表名[索引]</code><br><code>del eggs(0)</code><br>del 变量名(变量,列表之类的)</li>
+</ol>
+<h3><span id="列表切片">列表切片</span></h3><p>1.)<code>list[元素1的索引:元素2的索引+1]</code><br>list[]是左闭右开的(和range类似)所以终止索引需要+1<br><code>list[2:5]</code><br>2.) 简化写法:<code>list[:2]</code>表示从0开始到2结束且不包含2其等价于<code>list[0:2]</code><br><code>list[2:]</code>表示从2开始,直到最后<br><code>list[:]</code>表示从开始到结束<br>3.)步长:默认不输是1 <code>list[0:9:2]</code>结果每个相隔2 同时步长可正可负<br>4.) 利用del和步长删除列表的奇数项<code>del list1[::2]</code><br>5.) 利用切片进行列表替换 <code>list[:2]=[&quot;超人&quot;,&quot;神奇女侠&quot;]</code>可以做到不等长替换</p>
+<h3><span id="列表的运算">列表的运算</span></h3><ol>
+<li>列表大小比较:单元素列表将元素转化为Ascall码进行大小比较</li>
+<li>多元素列表则先比较第一个元素,如果第一个元素大,则其所在列表更大</li>
+<li>列表相加 列表与数字相乘 </li>
+<li>判断元素是否在列表内 <code>&quot;小甲鱼&quot; in list1</code>or<code>&quot;小乌龟&quot;not in list1</code></li>
+<li>综合利用去除某一列表的重复元素</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">old_list = [<span class="string">&quot;西班牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;牙买加&quot;</span>,<span class="string">&quot;匈牙利&quot;</span>]</span><br><span class="line">new_list = []</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> old_list:</span><br><span class="line">    <span class="keyword">if</span> each <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">        new_list.append(each)</span><br></pre></td></tr></table></figure>
+<h3><span id="和列表相关的方法">和列表相关的方法</span></h3>]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>v2ray总结</title>
+    <url>/2023/07/21/v2ray%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>网络注定是个不安分的地方<br>一道墙之类的东西总会及其人们翻过它的欲望</p>
 </blockquote>
-<h3><span id="网盘资源下载">网盘资源下载</span></h3><p><a href="https://greasyfork.org/zh-CN/scripts/449291-%E6%94%B9-%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B">（改）网盘直链下载助手 </a></p>
-<blockquote>
-<p><em>油小猴</em></p>
-</blockquote>
-<p><a href="https://greasyfork.org/zh-CN/scripts/431256-%E8%BF%85%E9%9B%B7%E4%BA%91%E7%9B%98">迅雷云盘</a>:建议先导入bt文件或资源再进行idm命令行下载</p>
-<blockquote>
-<p><em>迅雷云盘</em></p>
-</blockquote>
-<h2><span id="python资源">python资源</span></h2><p>这是假的<br><del><a href="https://www.manongbook.com/download/315.html">《零基础入门学习Python(第2版) 》</a></del><br>弄出来丢脸(打着免费的幌子明目张胆的收钱)<br><a href="https://imgse.com/i/pCq9zR0"><img src="https://s1.ax1x.com/2023/07/22/pCq9zR0.md.png" alt="pCq9zR0.md.png"></a><br><a href="https://imgse.com/i/pCqCSzV"><img src="https://s1.ax1x.com/2023/07/22/pCqCSzV.md.png" alt="pCqCSzV.md.png"></a><br>正经资源<br><a href="https://pic.itmresources.com/archives/53951">(‘《零基础入门学习Python（第2版）》pdf电子书附源码课件 …</a><br>配套b站课程 <a href="https://www.bilibili.com/video/BV1Qa4y1Y7vW/?spm_id_from=333.999.0.0">《零基础入门学习Python》(第2版)【快速解读版】</a><br>我直接推她 声音太好听了</p>
+<h1><span id="我的v2ray折腾记">我的v2ray折腾记</span></h1><h2><span id="工具">工具</span></h2><p>代理工具:v2ray clash clash.meta之类的<br>节点: 免费的&#x2F;付费的</p>
+<h2><span id="流程">流程</span></h2><p>先下载工具 再订阅节点 进行配置 愉快上网</p>
+<h2><span id="下载工具">下载工具</span></h2><p>v2ray:windows:<a href="https://github.com/2dust/v2rayN/releases/">https://github.com/2dust/v2rayN/releases/</a><br>android:<a href="https://github.com/2dust/v2rayNG/releases/">https://github.com/2dust/v2rayNG/releases/</a><br>MAC:<a href="https://github.com/yanue/V2rayU/releases">https://github.com/yanue/V2rayU/releases</a><br><a href="https://v2sx.github.io/V2Ray/">V2Ray客户端工具大全备用下载</a><br>clash.meta:<a href="https://wiki.metacubex.one/client/#linux">客户端</a></p>
+<h2><span id="订阅方式-bulink">订阅方式 </span></h2><h2><span id="导入方式">导入方式</span></h2><p>这里以v2ray为例</p>
+<span id="more"></span>
+<p><a href="https://imgse.com/i/pCbhImD"><img src="https://s1.ax1x.com/2023/07/22/pCbhImD.md.png" alt="pCbhImD.md.png"></a><br><a href="https://imgse.com/i/pCbh4OO"><img src="https://s1.ax1x.com/2023/07/22/pCbh4OO.png" alt="pCbh4OO.png"></a><br><a href="https://imgse.com/i/pCbho0e"><img src="https://s1.ax1x.com/2023/07/22/pCbho0e.md.png" alt="pCbho0e.md.png"></a><br><a href="https://imgse.com/i/pCbhWSx"><img src="https://s1.ax1x.com/2023/07/22/pCbhWSx.png" alt="pCbhWSx.png"></a><br><a href="https://imgse.com/i/pCbhfl6"><img src="https://s1.ax1x.com/2023/07/22/pCbhfl6.md.png" alt="pCbhfl6.md.png"></a><br><a href="https://imgse.com/i/pCbhh6K"><img src="https://s1.ax1x.com/2023/07/22/pCbhh6K.md.png" alt="pCbhh6K.md.png"></a><br><a href="https://imgse.com/i/pCbhTTH"><img src="https://s1.ax1x.com/2023/07/22/pCbhTTH.md.png" alt="pCbhTTH.md.png"></a><br><a href="https://imgse.com/i/pCbhHkd"><img src="https://s1.ax1x.com/2023/07/22/pCbhHkd.md.png" alt="pCbhHkd.md.png"></a><br><a href="https://imgse.com/i/pCbhqfI"><img src="https://s1.ax1x.com/2023/07/22/pCbhqfI.md.png" alt="pCbhqfI.md.png"></a><br><a href="https://imgse.com/i/pCbhOpt"><img src="https://s1.ax1x.com/2023/07/22/pCbhOpt.md.png" alt="pCbhOpt.md.png"></a><br><a href="https://imgse.com/i/pCbhbtA"><img src="https://s1.ax1x.com/2023/07/22/pCbhbtA.png" alt="pCbhbtA.png"></a></p>
 ]]></content>
       <categories>
         <category>个人</category>
       </categories>
       <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>bilibili嵌入视频</title>
-    <url>/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="68108cb866ac82c5c2fe092f9195f9e596decae15577c2f0675c65f8f52d62b0">0fccd7f6df5c90b5412c12ff50aec4d3d780ea6cfa703f92841b8637dcb936f809cb0a012bc19d24d8cd17591beac60dfe6a2ddc6c723bfb0a702cd655da391c515846d6a2a8b1cf60676ca892bce9a516d102dc852fa38759690e1b977136fa418a1d2837532274e73b9f215f1dcca8b4b14194c922bbddaef0641cd50288e9e6f0be0a6018dad0090b97b58b2136c25aa9714c267c86b8c66e151bf1ae12c466932349e6c7a78a4fb01ef7d6f9bce0abe4bbead884c23f22698836ba7f551ab81bf55c7e4ddc445311a1ad44aaa51220f2fdd72cfb1663735d7bb33bf58231d702847448f23e32f1107c892d93a2d5e550c31ace622f48853a20cf20d673323534e35e2e2dcf120c84cca1a91d1d16c61e1abc30fd90804fa1495571b8b0b27a9d80077164ba216f5ce8f408d34cf7cb4b4ab663f227d5c72dae2d902bd44fe9d75a5ddb9c78ad52a57cfccf4d336a69387e36fd293dceaf6c73104353195398d19d24ee480a9730a94d470e99140ab887449b3b93f63148e089610cbcdebb370a0860d714c0fb734ff6f13cc3c9cae7fde8714f7cc56d615effbc3ea70e5f47591cb057040f9c9c93671f5dbd134a304515fdcaf4e4f0d1d24d09bc62682f4454d92fe8e7de211580ad6af4ca0923ede93676377f753d945366832dce755fce0eb0840ef2cfa565c604314e8f2ad1799f4c6cfd76ae1f90d68829bfff7744626e8a3b836a4fa8bcb33ced46893a50d0ff1a44578e49ce6bef080a46b6fac2554dd417d781a55d787a6bcab1adef9086ab6ba2526fa5bc306a18f44fb74362c92d11dabcb883b375322fdb2a205859c1d109529d709256f9143bd5d5d374bf7e92735f9bfffcd5c6fc4024cf58a64bb4d5f16d6f1efbf826ba5cd45d8eac13c25969aa8c9a308390824680fc734f1bd20dffe745fece2ae57d1382e98be21d5357d244d694edae10992bd8a15d3bd8602ae8785a8c8c992b2904e073c3f0227105a21ce7a935553808685c9ae1fa1e1454a23e1270b694368dd2bb175d0650e58744dc962ca4dd4a5112c7062b923e7c0f5689b6f73b8bfdccbcf748eba3804972aae4f924807f4cdb340bfa3ebe48eca8b8a99686a8048b1e116710944b9073262cdfc77b3678c49f595697c96e014e3930f14d1c18afa9908a1ebd31ad93bb3e8f76bff66c6ae821406d276efe8f8a4ccb335ce8faad42fe3a164fb72c85b22505a376f9e9bb093bfb947145858fbc8b83ec0512d2f918f217810108e8796f0236ec2c583608c7080c7bebeb9ddbf53fd8b08cdf399d2458d81661ddf780bc4c5607da37bc11b18f12873ba9f592e337934b59b0bac21c88b81ea72cf4cd71e1c6e815081891bb555445a95bb930074f0e60b9b6de294ff6c0c91357f992505be0e8077341feecadedd696b721b47673dda41a468039e6e6b148c3b872e8541e22c3df4f155da6dcc3f651dd7ae023fa49e3575ba96238435feaae31af1729d6f4a62ce4078b4844c1e7946cd93bf1ed655f133c8858e9ad8f714255c10d15ea5a9705456c6ef109c9d7859e2e8dc0d6d4d93b6a6c0d7b2720b41eec40614a16df0e6e5d06159290312e45a0a71c410bbf23870e87269d865d86a1b623ade7d5bdfa37d5cf18295d14cd19c5ddfe58635487d35f5a493c8a9c7453e87b455dacae525329cdadb936450b1edae88c6cd28c1708fc662c76985fa44a05cfedfb8c643c5fbf215555b1f8f6f0fc6365fb92321faf0d36880a1bdd0edcd3db82e6c376bee114d2796c24d92499eb4e9ab39d76a49ae65962f56cd75b1db05bf5c6bf25478d5fe89a6f6e64ed50bf3e781d541470d07c5ab2b73b5df359009ff6d1908f09045f0bba4de1ef0fb847bd3bac29ffe53982f49857b831680b9c89b00a419a4db70af553a5722d2c8cb27fce9f46f55744d96fa061e9de264a57996fd87c5e4937877ca4af23ac51d435f51bb257b610c6d8533f30bbb935266d157ce903460372df496544c44cc50effcc342fabd497fd375db476b5aa66419a1d0c08899b762d8a0c8e2c40e8951c67de0ca5e16f3471d4c289958d2319477a6518345cc2fb29c4de75f12c92ea6539810248fcba9d469981f3b17c6e3d3202613902fb9c6809ad67187d9835d32130857dd1fba498e66659db9100c54f00ea3ae84bc6d9616ef0d4dd07c63eb0940d8a32e23808bbf814df3c0d805b139ca45b3013f94dd457b7052364e6e331741df53c51cabf52086732804e3c3f2d84c08abf4ec25762291bb8b6524f6fe1887b19f0bae26494ba3f17b5af50eb427c6fa7784110e96882a2600d1e23082972791248703b67733363417b0b52ffb68e910fc622408f867ad6aabe70c5a9276fe1137c16b254e37eeccea5cd9492e79a9fece873b21207e3d69d4e63b14da50fdc85ba803f1dafe7b3fed0a0cfb123398231540a864d9db1424f5c6ecd2d9054f02203cd8f6fa783debced32e52baab0c5304d4b77ca3aae09e440a26d3631f86ec1706140611d7a8b43c3fcc8d6b058927c64852f914e0a45c23cef89c757ec4bba624c69a360623e300e4557ba4b2d0561f1e6b7e22be88d64b6b049eece5badd7535a0a84371fe489247731f2884eb5796bc0ade827cad9732d7f0963ef8058228c3d563cccb13224cfcfdca90ce7a28c7bc872ba8431d9fbd3f262721b74ed6501d1ccceff2c7b661223cb53a27bcae6c1a8731acf5118625506063345c94eb080e400ca69f8f8db0729975227162b4ded9b077bf4856973c6918e853086b1ec125bae5f579752467cfa25796b57e91ce5ca301ec8202c37e25e81a2983ef700faef07e57bfcf6a65c836d795f6c5e6141aae76b1cf043b43b12972adbb3011e56fdeb50830c280095d0857227eae773304b0b32ec456fcc9fb40ac81346676702b5d9f3c5a1eda36459496ded6e8b59327443ea2a5a55d253f900041d810244b12b1131172b2ffef064e2e83f73765502a5c0a0501c4318444d594337347e8a63f43c391d9c18b82b09f9fb65759de1dc56f1396fa36c3bf7e598cdd2c174ff0254a2f3aff987fc26d4fad325200afa43de259fc1d3220cf860772ffdff4e9acebfd7fee3cd9aad7b05617d64399d1e040c4abe71e2c421d8431e90f01066a47055227962091ef82ff56b294a4ea289e8f7cb944ff51254b10a9f83d3fa754897c1db968785796c66dbadf328dcbfe5fc5f0a2bcdea35ec7fa85195e311eefa586da773bca6f9ac5ecf3411d9a64bf446e71f7d235af1c3af0da6682929ccace8ac06bc75ee582725fcaf9c740c64b1cdf9520743b0d44717a69ed307d164cccc59dc85b97aa5a34a3e2f435a69d526af26158476246c8cb937333ddfa2a0f61814876448006a2e7dd4e146f3d0adc078f305e85c72ab7fe2ab3e13eef1f55038156e536d54d9dee5da547e404d5193564933b52099e8a962b9bdc1587654c6251babeb475abd2a1329beb2c39be80d3cda768a557d6b3f13e1b0068c940db49a82db0d2513aa6aaebe2930ebcd05ae938cad0dd55f2048d7107b5ce2a91ead7c8da01607de25cd8de9a86993fa2d1d61799a6915d57b4579252d7bd70fe4d80110295193fe07fbbfcdc7c6cf4589714a3a33e02733879e1af641399bf1f797446d9976a71110551ff85bb9ec770812f5e78e59e21ebbd7f9b6f6d01dbbd2f2b9222bcbbf8dc3adb99530f805b71976ce9a4b2d4371358ac018d356bbd12186eb3fca0071b8435714889ae79f95077c3a759bee739bb0cb6cc2548badb755b8f8badf83b49bccbdce37755101c991069ad56b57a948b7d1de13c9ef416759a8818b4543239ec5284a51b8e938493156a229ce1c6acd53305cb4b64c50a2f2e605729aa99a4d95b4f5493cc853fa12d13206257370f5f4b5ca4da4e1ea4a22f72df84d2edeeebf3256f38d7d86b2a923604bd935f0d1a18487485644c1c6a5bec6c5d0526cd58876788efc860a28075105f05578da6406033783b65d06b90c1a1a6209b02c4ac45a7239fa2bdaf11bd9e6d577b6d9e4dbbc8a224bae17c966bde586b59791f6d71a8ba67e767503b9c754e6d21910c0ca0eb41a19645fef48cd81715ea239582e4a3430d4cc9baf15616ecd1d18df554478584d075527b158ed26473cedc3bdb22f3da399bdea60b1db63a1a2ad1bd7345e64da7607c9c17a7a232ecf15514f23b50fb3dcea994624354adb7eab09bde788b7c15698f2ae2c7f6d1663cf657ebafd4ea6a81672d88e4afe1a3578d9719d5cebc51cadea3d2e9258b37d206765f86fd73304ecf9d7b857bef8abd791420846cf1275c676cfd3cc02b53bd7af4465edf50493bf97750585c26bf9a9705c86734428e9b2e941c33f797be9831cfdf6bc3a9e7b5bf00c45c6514d1e64896bc421df0e3186ec11daec5feb542bcab67fbdd8dc7002476d71e83433a436a64a63bc20d55e3ce656875dec98169225fb3c0f570fcbf98fc373235b99f9d4493a98aa9c652c7da21fbabcb94dfa1bc133db201940e5612406c9998194fda3413d547e3010140a2f6faacdd383c7e1f9b847497f10720bdde2213042df3d379058ace25ceb9b0fda2f788c349b425167b9f2ac21f8685d4679a588a0bf79abf4f210bf73f4bfadc90d2743478116e81f19fdffe32aafd227a20399090f67f8968bc459574868d81c8c98bc3d832df07096b86e582cfcfe7e94d26d41181a6798fa87fc22c2df8ee8318f12d5c5ed7620c6f4ed14a33a18412df0a600d190805931051e9483e8fcfe0493e8fca6a9b9867cbf5bba761f52863c65ec38d4fab3a42f21495ff12364df02f006fc34921400a16978bad578de66138a851e2069eafdc98750775078dcd658d2ab98f61cb210975fd2dc659c3c2d12eae34dcc89f552ae0de95f6d4798b71a1f6cc2e62b0dc8141e727b8ce8d6ceccc2b5e4125d24dfd035c9db0fc32391e775d5fdc91b4ebf1c597ce4072d42b27f10a5305fc2441588f4330f11eac2802669f2ee61fb9c56bc2c3c5e49e524cf8deed7083f90ce2c9be35431d0083cbc98f38fe4f6d8f1b89d724105b5379b6c80a15250bf00a9fb28323bf707f5629fbb4a873f6b3d2684c58bd95a93e0120441316bad1bc503f8d36f6e0fe118515ab9e3e3ecd7cc8e3e99d41f1d48dbaa2c3ae1f92172741f80323964f3a53942c5bc24aac85d74ee0c58d47c5bcc8a2c3118dc0bba</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>个人</category>
-        <category>视频嵌入</category>
-      </categories>
-      <tags>
-        <tag>bilibili</tag>
+        <tag>v2ray</tag>
       </tags>
   </entry>
   <entry>
@@ -570,11 +348,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart2467" style="height: 300px"></canvas>
+    <canvas id="chart2973" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart2467').getContext('2d');
+    var ctx = document.getElementById('chart2973').getContext('2d');
     var options = {
     type: 'line',
     data: {
@@ -607,27 +385,155 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/07/07/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>史上最全hexo多平台同步(windows+ubuntu+android)</title>
+    <url>/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>说来惭愧,因为中间隔得时间有点长,导致我弄得漫不经心,但最终费九牛二虎之力最终弄好了(我一直是小白再这方面)<del>还有马上开学了</del></p>
+<!-- toc -->
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><span id="more"></span>
+<ul>
+<li><a href="#windows">windows</a><ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B">基本流程</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85git-%E5%92%8Cnodejs">安装git 和node.js</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85hexohttpshexoiozh-cn">安装<a href="https://hexo.io/zh-cn/">hexo</a></a></li>
+<li><a href="#%E7%BC%96%E8%BE%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2">编辑个人博客</a></li>
+<li><a href="#%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E6%A0%B7%E5%BC%8F">更改博客样式</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">修改主题配置</a></li>
+<li><a href="#%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7githubgitee%E9%9C%80%E8%A6%81%E7%83%A6%E4%BA%BA%E7%9A%84%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E4%BC%B0%E8%AE%A1%E8%B7%9F%E8%85%BE%E8%AE%AF%E5%AD%A6%E7%9A%84gitlab%E6%B2%A1%E7%94%A8%E8%BF%87">注册账号github&#x2F;gitee(需要烦人的实名认证,估计跟腾讯学的)&#x2F;gitlab(没用过)</a></li>
+<li><a href="#%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%B8%AD">将博客上传到github中</a></li>
+<li><a href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2">更新博客</a></li>
+</ul>
+</li>
+<li><a href="#ubuntu">ubuntu</a></li>
+<li><a href="#windows%E4%B8%8A%E4%BC%A0%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0hexo%E5%88%86%E6%94%AF">windows上传源文件到hexo分支</a></li>
+<li><a href="#ubuntu%E9%85%8D%E7%BD%AE">ubuntu配置:</a><ul>
+<li><a href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E7%9A%84%E8%BD%AF%E4%BB%B6">搭建博客需要安装的软件：</a></li>
+<li><a href="#%E5%85%88%E6%9B%B4%E6%96%B0%E6%BA%90">先更新源：</a></li>
+<li><a href="#node%E5%AE%89%E8%A3%85">Node安装</a></li>
+<li><a href="#git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE">Git安装及配置</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85hexo">安装hexo</a></li>
+<li><a href="#git-bash%E5%B0%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0">git bash将远程仓库克隆到本地</a></li>
+<li><a href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</a></li>
+</ul>
+</li>
+<li><a href="#android">android</a><ul>
+<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
+<li><a href="#%E5%87%86%E5%A4%87">准备</a></li>
+<li><a href="#%E9%97%AE%E9%A2%98">问题</a></li>
+</ul>
+</li>
+<li><a href="#%E5%90%8C%E6%AD%A5%E7%BB%9F%E4%B8%80%E6%AD%A5%E9%AA%A4">同步统一步骤</a><ul>
+<li><a href="#%E4%B8%8A%E4%BC%A0">上传</a></li>
+<li><a href="#%E6%9B%B4%E6%96%B0">更新</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>&#96;</p>
+<ul>
+<li>置顶<code>top: true</code></li>
+<li>是否折叠<code>&lt;!--more--&gt;</code></li>
+<li>快捷键<ul>
+<li>ctrl+B</li>
+<li>ctrl+I</li>
+<li>复制链接 选中文本后ctrl+v<br>好,进入正题</li>
+</ul>
+</li>
+</ul>
+<h1><span id="windows">windows</span></h1><p>具体参考我的博客<a href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
+<h2><span id="基本流程">基本流程</span></h2><p>包括：安装git 和 node.js<br>安装Hexo</p>
+<span id="more"></span>
+<h2><span id="安装git-和nodejs">安装git 和node.js</span></h2><p>1 打开<a href="https://git-scm.com/">git官网</a>点击download进行下载 选择电脑对应的版本<a href="https://imgse.com/i/pCbfe2V"><img src="https://s1.ax1x.com/2023/07/21/pCbfe2V.md.png" alt="pCbfe2V.md.png"></a><br>2 直接下一步即可,也可以更改安装目录<br>3 安装完后在桌面或文件夹右键出现git bash即可<br>4 安装nodejs 打开官网点击下载<a href="https://imgse.com/i/pCbfZ80"><img src="https://s1.ax1x.com/2023/07/21/pCbfZ80.md.png" alt="pCbfZ80.md.png"></a><br>5 同样下一步即可<br>6 判断安装是否成功:打开cmd 输入<code>node -v</code>出现版本号代表安装成功</p>
+<h2><span id="安装hexo">安装</span></h2><p>1 在本地新建一个文件夹用于安装博客的文件夹<br>2 进入文件夹右键点击GBH 打开一个git 窗口<br>3 将hexo官网的代码依次复制</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>4 <code>hexo sever&lt;=&gt;hexo s ; hexo generate&lt;=&gt;hexo g; hexo deploy &lt;=&gt;hexo d(hexo三件套 hexo clean; hexo g ;hexo d)</code><br>5 复制地址<code>http://localhost:4000</code>注意复制是别用ctrl+c会终止服务,可以右键复制粘贴 或shift+insert</p>
+<h2><span id="编辑个人博客">编辑个人博客</span></h2><p>1 同样在gbh中输入<code>hexo new post &quot;文章名字&quot;</code>或<code>hexo new &quot;文章名字&quot;</code>即可创建第一篇文章(在source_posts里的能看到) 用的是<a href="https://markdown.com.cn/basic-syntax/">markdown</a>(轻量级标记语言)编辑的<br>保存后 退出<br>2 运行 <code>hexo g</code>生成网页<code>hexo s</code>运行博客<br>3 打开博客就可以看见文章了</p>
+<h2><span id="更改博客样式">更改博客样式</span></h2><p>即:添加第三方主题:如butterfly ayer next…<br>1 打开<a href="https://hexo.io/zh-cn/">hexo</a> 点击探索主题<br>2 以ayer主题为例 进行进一步安装….(省略之后再补)<br>3 实质按照主题说明 在hexo根目录 gbh上敲代码即可成功<br>4 在根目录的config 文件中(不特殊说明都是根目录的config)将</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>替换为</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">ayer</span></span><br></pre></td></tr></table></figure>
+<p>(注意yml文件一般:后都有空格!)<br>保存退出<br>5 git窗口中输入hexo g 输入hexo s<br>点击<code>http://localhost:4000/</code>进行本地访问</p>
+<h2><span id="修改主题配置">修改主题配置</span></h2><p>根据每个主题的配置指南<br>1 在themes文件夹下修改config文件 改成你喜欢的字即可(提醒:最好在改之前复制一份防止改错,对)<br>2 还可以修改config文件 同理<br>3 修改完后 用hexo clean hexo g hexo s</p>
+<h2><span id="注册账号githubx2fgitee需要烦人的实名认证估计跟腾讯学的x2fgitlab没用过">注册账号github&#x2F;gitee(需要烦人的实名认证,估计跟腾讯学的)&#x2F;gitlab(没用过)</span></h2><p>太简单不教了<br>以github为例<br>1 新建仓库 名字一定设为xxx.github.io其他不用管直接默认即可</p>
+<h2><span id="将博客上传到github中">将博客上传到github中</span></h2><p>1 按照github官方提示进行设置即可例如</p>
+<pre><code>git config --global user.name &quot;xxx&quot;
+git config --global user.email &quot;xxx@xxx.com&quot;
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;
+(输入三次回车
+
+cat ~/.ssh/id_rsa.pub
+</code></pre>
+<p>复制显示的密钥到ssh公钥(github的个人设置中的 添加即可)</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p> 用来验证  返回successfully代表成功<br> 找到config文件<br> 最后输入<br>例如:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>最后打开github仓库的settings里的pages等到有这样的标识是代表可以访问<a href="https://imgse.com/i/pCbfVCq"><img src="https://s1.ax1x.com/2023/07/21/pCbfVCq.md.png" alt="pCbfVCq.md.png"></a></p>
+<h2><span id="更新博客">更新博客</span></h2><p>每次先写时:<code>hexo new post &quot;文章&quot;</code><br>写完后:三件套<br>这里给一个我写的bat程序</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Echo start cmd /c <span class="string">&quot;hexo clean&amp;&amp;hexo g&amp;&amp;hexo d &quot;</span>   </span><br><span class="line"></span><br><span class="line">@Echo Off</span><br></pre></td></tr></table></figure>
+
+<p>!终于结束了<br>更多博客部署问题可以在博客中关于我中私信我,或者参考<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.337.search-card.all.click">视频</a></p>
+<h1><span id="ubuntu">ubuntu</span></h1><p>这里是通过新建一个分支来保存博客源文件的(因为github上的master分支只有部分文件所以不能利用这个同步)</p>
+<h1><span id="windows上传源文件到hexo分支">windows上传源文件到hexo分支</span></h1><p>参考1.<a href="https://blog.csdn.net/qq_30105599/article/details/118302086?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168994957916800211581424%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168994957916800211581424&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-118302086-null-null.142%5Ev90%5Ekoosearch_v1,239%5Ev3%5Einsert_chatgpt&utm_term=hexo%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%E6%80%8E%E4%B9%88%E5%90%8C%E6%AD%A5&spm=1018.2226.3001.4187">多台电脑同步更新Hexo博客</a></p>
+<h1><span id="ubuntu配置">ubuntu配置:</span></h1><h2><span id="搭建博客需要安装的软件">搭建博客需要安装的软件：</span></h2><p>git<br>node.js<br>hexo</p>
+<h2><span id="先更新源">先更新源：</span></h2><p>获得源上的软件包列表信息<br><code>sudo apt-get update</code><br>更新本地软件<br><code>sudo apt-get upgrade</code></p>
+<h2><span id="node安装">Node安装</span></h2><p>命令行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt install npm</span><br></pre></td></tr></table></figure>
+
+<p>查看nodejs工具是否安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nodejs -v</span><br><span class="line">v8.10.0</span><br></pre></td></tr></table></figure>
+
+<h2><span id="git安装及配置">Git安装及配置</span></h2><p>1 安装Git<br>使用命令安装Git工具：</p>
+<p><code>sudo apt install git</code><br>查看是否安装成功：</p>
+<p><code>git --version</code><br><code>git version 2.17.1</code></p>
+<ol start="4">
+<li>Hexo安装及配置<br>先创建一个hexo操作的文件目录</li>
+</ol>
+<h2><span id="安装hexo">安装hexo</span></h2><p><code>npm install hexo-cli -g</code><br><code>npm install hexo -g</code><br>检查hexo是否安装成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo: 4.2.0</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Linux 5.3.0-45-generic linux x64</span><br><span class="line">http_parser: 2.7.1</span><br><span class="line">node: 8.10.0</span><br><span class="line">v8: 6.2.414.50</span><br><span class="line">uv: 1.18.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">ares: 1.14.0</span><br><span class="line">modules: 57</span><br><span class="line">nghttp2: 1.30.0</span><br><span class="line">openssl: 1.0.2n</span><br><span class="line">icu: 60.2</span><br><span class="line">unicode: 10.0</span><br><span class="line">cldr: 32.0.1</span><br><span class="line">tz: 2017c</span><br></pre></td></tr></table></figure>
+<h2><span id="git-bash将远程仓库克隆到本地">git bash将远程仓库克隆到本地</span></h2><p><code>git clone 仓库地址</code><br>然后进入项目目录，安装依赖启动博客服务器，生成静态文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>执行以上指令后，便可以在浏览器通过<a href="http://localhost:4000/%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2">http://localhost:4000/访问博客</a></p>
+<p>另一台电脑发布文章</p>
+<p>同之前的教程一样，写好文章后</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<p>两台电脑同步写博客<br>我们的博客仓库有两个分支，master分支和hexo分支</p>
+<p>其中，master分支用于存放Hexo生成的静态资源文件，hexo分支用于存放网站的原始文件</p>
+<p>所以，我们在一台设备上写好一篇文章或进行了博客的修改后</p>
+<p>执行以下命令，将master中的静态资源文件更新</p>
+<p>在博客目录下的cmd中</p>
+<p><code>hexo clean</code><br><code>hexo d -g</code></p>
+<p>执行以下命令，将hexo中的网站原始文件更新</p>
+<p>在博客目录下的git bash中</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;描述&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+
+
+<p>大功告成！</p>
+<h2><span id="注意事项">注意事项</span></h2><p>每次有新的操作的时候，别忘了在另一台电脑上更新</p>
+<p><code>git pull hexo</code></p>
+<h1><span id="android">android</span></h1><p>因为android能够调用底层的linux命令故可以用于搭建hexo</p>
+<h2><span id="工具">工具</span></h2><p>termux <a href="https://www.coolapk.com/apk/bin.mt.plus">MT管理器</a>(酷安下载)</p>
+<h2><span id="准备">准备</span></h2><p>1 termux下载<br><a href="https://lanlan2017.github.io/blog/4a95e633/">termux 搭建hexo博客教程</a><br>我这里进行补充:<br>1 在下载好node.js和git后<br>直接git clone 源代码<br>接着<code>npm install hexo-deployer-git --save</code><br>一定要输</p>
+<p>2 获取ssh秘钥<br><code>git config --global user.name &quot;xxx&quot;</code><br><code>git config --global user.email &quot;xxx@xxx.com&quot;</code><br>最好用tsu下进行<br><code>ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code><br>(输入三次回车<br>找到文件.pub打开复制ssh秘钥<br>再去github添加<br>3 验证<code>ssh -T git@github.com</code><br>4 进行三件套<br>如果安装插件,就重新安装一遍即可</p>
+<h2><span id="问题">问题</span></h2><p>1 非tsu用户下live2d里面的package.json显示权限不够<br>我先是用chmod改权限为777,发现不行后<br>安装tsu<br>执行<code>npm install hexo-deployer-git --save</code><br>在运行正常<br>2 会显示node_modules文件出错,把正常npm复制替换后依然出错所以无法解决,可能是手机termux问题</p>
+<h1><span id="同步统一步骤">同步统一步骤</span></h1><h2><span id="上传">上传</span></h2><p>执行以下命令，将hexo中的网站原始文件更新</p>
+<p>在博客目录下的git bash中</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;描述&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+
+
+<h2><span id="更新">更新</span></h2><p>每次有新的操作的时候，别忘了在另一台电脑上更新</p>
+<p><code>git pull hexo</code></p>
 ]]></content>
       <categories>
         <category>个人</category>
-        <category>教程</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -821,6 +727,102 @@ distractionFreeMode: true  #无干扰模式，不需要更改
       <tags>
         <tag>hexo</tag>
         <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教程与资源</title>
+    <url>/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="教程推荐不分先后">教程推荐(不分先后)</span></h1><!-- toc -->
+
+<ul>
+<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0gitee%E4%BB%93%E5%BA%93%E7%9A%84%E6%AD%A5%E9%AA%A4httpsblogcsdnnetfayoung3568articledetails119488325">上传文件到gitee仓库的步骤</a></li>
+<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B">上传文件示例</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA">插件市场</a></li>
+<li><a href="#%E5%9B%BE%E5%BA%8A">图床</a></li>
+<li><a href="#hexo-%E8%B7%B3%E8%BF%87%E6%96%87%E4%BB%B6%E6%B8%B2%E6%9F%93">hexo 跳过文件渲染</a></li>
+</ul>
+<ul>
+<li><a href="#%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90">资源推荐</a><ul>
+<li><a href="#%E5%A4%9A%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86">多平台下载工具合集</a><ul>
+<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
+<li><a href="#%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">网盘资源下载</a></li>
+</ul>
+</li>
+<li><a href="#python%E8%B5%84%E6%BA%90">python资源</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<p><del>抓紧学习</del>!<br><a href="https://imgse.com/i/pCqSsF1"><img src="https://s1.ax1x.com/2023/07/22/pCqSsF1.png" alt="pCqSsF1.png"></a></p>
+<h2><span id="上传文件到gitee仓库的步骤"></span></h2><p>  <a href="https://imgse.com/i/pCqSDoR"><img src="https://s1.ax1x.com/2023/07/22/pCqSDoR.png" alt="pCqSDoR.png"></a> </p>
+<ul>
+<li>几部曲<del>不会数数</del><ul>
+<li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
+<li><code>git commit -m &quot;注释&quot;</code></li>
+<li><code>git remote add origin</code> <a href="https://gitee.com/zh3g/git">https://gitee.com/zh3g/git</a> (不知道是否每次都用) </li>
+<li><code>git pull --rebase origin master</code>(如果远程仓库为空可以跳过这一步，如果远程仓库不为空，则必须进行这一步，否则会报错。)</li>
+<li>git push -u origin master</li>
+</ul>
+</li>
+</ul>
+<h2><span id="上传文件示例">上传文件示例</span></h2><span id="more"></span>
+<ul>
+<li><del><img src="https://gitee.com/zh3g/git/raw/master/001.png" alt="在线图片"> 没用</del></li>
+</ul>
+<h2><span id="插件市场">插件市场</span></h2><ul>
+<li>hexo <a href="https://hexo.io/plugins/">插件市场</a></li>
+<li><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题</a></li>
+</ul>
+<h2><span id="图床">图床</span></h2><ul>
+<li><p><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></p>
+</li>
+<li><p><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</p>
+</li>
+<li><p><a href="https://imgchr.com/i/Vne6w4">路过图床</a></p>
+<ul>
+<li><a href="https://imgse.com/i/pCgBKQs"><img src="https://s1.ax1x.com/2023/07/08/pCgBKQs.md.jpg" alt="pCgBKQs.md.jpg"></a></li>
+</ul>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/490143994">免费文件存储分享网站合集 - 知乎</a></p>
+</li>
+</ul>
+<!--- 来小亮,给大伙整个活(live2d进阶)
+     - 进阶:[Hexo博客优化：在Next主题中设置进阶版Live2D看板娘](https://blog.csdn.net/qq_39610915/article/details/90679768)
+-->
+<h2><span id="hexo-跳过文件渲染">hexo 跳过文件渲染</span></h2><pre><code>- 起因:谷歌要求主页必须有html文件的链接才行
+- 我不会弄(但我新建了一个html的文件节里面的index.md改为index.html并且内容改为html内容)
+- ~~我真是太机智了~~于是乎我渲染出来接我是不行
+- 参考文章 跳过了css渲染(success) 
+  - [Hexo博客技巧：添加自定义html页面](https://blog.csdn.net/weixin_58068682/article/details/116611715)
+  - [hexo跳过渲染](http://qtdebug.com/hexo-skip-render/#:~:text=Hexo.%20Hexo%20%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E8%A7%81%E6%96%87%E7%AB%A0%E9%83%BD%E6%98%AF%E7%BB%8F%E7%94%B1%E6%B8%B2%E6%9F%93%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%8C%E8%80%8C%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E7%9A%84%E6%A0%B7%E5%BC%8F%E9%83%BD%E7%9B%B4%E6%8E%A5%E7%94%B1%20Hexo%20%E7%9A%84%E4%B8%BB%E9%A2%98%E6%8E%A7%E5%88%B6%EF%BC%8C%E6%89%80%E4%BB%A5%20Hexo%20%E5%8D%9A%E5%AE%A2%E5%A4%A7%E9%83%A8%E5%88%86%E9%83%BD%E5%91%88%E7%8E%B0%E5%87%BA%E4%B8%80%E7%A7%8D%E9%AB%98%E5%BA%A6%E7%9A%84%E7%BB%9F%E4%B8%80%E5%8C%96%E4%B8%8E%E8%A7%84%E8%8C%83%E5%8C%96%E3%80%82.%20%E4%B8%8D%E8%BF%87,%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%20%E3%80%82.%20%E5%A6%82%E6%9E%9C%E8%A6%81%E5%BF%BD%E7%95%A5%20source%20%E4%B8%8B%E7%9A%84%20test%20%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E9%85%8D%E7%BD%AE%EF%BC%9A.%201.)
+- ~~结果:没验证成功~~
+- 最简单的方法是将html复制到source文件夹(在跳过css渲染) over
+- 主题作者方法:在 head.ejs 里添加 html 标签
+               &lt;u&gt;(后悔没早点看到)&lt;/u&gt;
+</code></pre>
+<ul>
+<li><a href="https://blog.csdn.net/zgcr654321/article/details/86738005">使用Gitlab pages自动部署hexo博客</a></li>
+</ul>
+<h1><span id="资源推荐">资源推荐</span></h1><h2><span id="多平台下载工具合集">多平台下载工具合集</span></h2><h3><span id="工具">工具</span></h3><p>看链接<a href="https://www.youxiaohou.com/download.html">相关软件下载</a>  有IDM NDM Xdown(多平台)–多线程下载<br>还有ariaNg<a href="http://aria2.scrongyao.com/">Aria2中文网 </a></p>
+<blockquote>
+<p><em>油小猴</em></p>
+</blockquote>
+<h3><span id="网盘资源下载">网盘资源下载</span></h3><p><a href="https://greasyfork.org/zh-CN/scripts/449291-%E6%94%B9-%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B">（改）网盘直链下载助手 </a></p>
+<blockquote>
+<p><em>油小猴</em></p>
+</blockquote>
+<p><a href="https://greasyfork.org/zh-CN/scripts/431256-%E8%BF%85%E9%9B%B7%E4%BA%91%E7%9B%98">迅雷云盘</a>:建议先导入bt文件或资源再进行idm命令行下载</p>
+<blockquote>
+<p><em>迅雷云盘</em></p>
+</blockquote>
+<h2><span id="python资源">python资源</span></h2><p>这是假的<br><del><a href="https://www.manongbook.com/download/315.html">《零基础入门学习Python(第2版) 》</a></del><br>弄出来丢脸(打着免费的幌子明目张胆的收钱)<br><a href="https://imgse.com/i/pCq9zR0"><img src="https://s1.ax1x.com/2023/07/22/pCq9zR0.md.png" alt="pCq9zR0.md.png"></a><br><a href="https://imgse.com/i/pCqCSzV"><img src="https://s1.ax1x.com/2023/07/22/pCqCSzV.md.png" alt="pCqCSzV.md.png"></a><br>正经资源<br><a href="https://pic.itmresources.com/archives/53951">(‘《零基础入门学习Python（第2版）》pdf电子书附源码课件 …</a><br>配套b站课程 <a href="https://www.bilibili.com/video/BV1Qa4y1Y7vW/?spm_id_from=333.999.0.0">《零基础入门学习Python》(第2版)【快速解读版】</a><br>我直接推她 声音太好听了</p>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
       </tags>
   </entry>
 </search>
