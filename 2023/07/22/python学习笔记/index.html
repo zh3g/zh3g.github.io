@@ -105,7 +105,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.3k</span>
+            <span class="post-count">1.5k</span>
         </span>
     </span>
 
@@ -114,7 +114,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">4 分钟</span>
+            <span class="post-count">5 分钟</span>
         </span>
     </span>
 </div>
@@ -156,12 +156,17 @@ var _hmt = _hmt || [];
 <li><a href="#%E5%92%8C%E5%88%97%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E6%96%B9%E6%B3%95">和列表相关的方法</a></li>
 </ul>
 </li>
+<li><a href="#%E5%85%83%E7%BB%84">元组</a><ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E8%AE%BF%E9%97%AE%E5%85%83%E7%BB%84">创建和访问元组</a></li>
+<li><a href="#%E6%9B%B4%E6%96%B0%E5%92%8C%E5%88%A0%E9%99%A4%E5%85%83%E7%A5%96">更新和删除元祖</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
 
-<h1><span id="python学英语">python学英语</span></h1><p>变量(variable) 字符串(str)</p>
+<h1><span id="python学英语">python学英语</span></h1><p>变量(variable) 字符串(str) 元祖(tuple)</p>
 <h1><span id="前提">前提</span></h1><p>本资料均来自课程和网上查找 且仅展示我不熟悉的知识点 (会在不同程度上补充)</p>
 <h1><span id="2023x2f7x2f22">2023&#x2F;7&#x2F;22</span></h1><h2><span id="py文件怎么运行">.py文件怎么运行?</span></h2><p>将python设为全局变量<br>在cmd窗口中python .py文件所在路径即可<br>手机termux中可以用pkg install python(最好先安装tsu)</p>
 <h2><span id="windows的python文件怎样更新">windows的python文件怎样更新</span></h2><p>暂时不想升级<del>逃避逃避</del></p>
@@ -208,7 +213,25 @@ var _hmt = _hmt || [];
 <li>综合利用去除某一列表的重复元素</li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">old_list = [<span class="string">&quot;西班牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;牙买加&quot;</span>,<span class="string">&quot;匈牙利&quot;</span>]</span><br><span class="line">new_list = []</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> old_list:</span><br><span class="line">    <span class="keyword">if</span> each <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">        new_list.append(each)</span><br></pre></td></tr></table></figure>
-<h3><span id="和列表相关的方法">和列表相关的方法</span></h3> 
+<h3><span id="和列表相关的方法">和列表相关的方法</span></h3><ol>
+<li>统计列表中各元素出现的个数<code>list1.index(1)</code></li>
+<li>统计列表中指定元素第一次出现的索引<code>list1.reverse()</code></li>
+<li>对列表进行倒序输出<code>list1.reverse()</code></li>
+<li>对列表正序整理<code>list1.sort()</code></li>
+<li>队列表倒序整理<code>list1.sort(reverse = True)</code> &lt;–重点</li>
+</ol>
+<h2><span id="元组">元组</span></h2><h3><span id="创建和访问元组">创建和访问元组</span></h3><p><del>tuple一个无厘头的东西</del></p>
+<ol>
+<li><p>特别像列表 支持索引 切片之类的 ,但是不支持利用元组的索引进行替换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">tuple1 = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>)</span><br><span class="line"><span class="built_in">type</span>(tuple1)</span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;tuple&#x27;</span>&gt;</span><br><span class="line">tuple1[<span class="number">1</span>]</span><br><span class="line"><span class="number">2</span></span><br><span class="line">tuple1[<span class="number">5</span>:] <span class="comment"># 支持切片</span></span><br><span class="line">(<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>)</span><br><span class="line">tuple1[:<span class="number">5</span>]</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</span><br><span class="line">tuple2 = tuple1 <span class="comment"># 支持复制</span></span><br><span class="line">tuple2</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>tuple1[1] = 1</code>会报错 </p>
+</li>
+<li><p>创建元组时</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tuple1 = (<span class="number">520</span>) <span class="comment">#这是int</span></span><br><span class="line">tuple1 = (<span class="number">520</span>,) <span class="comment">#这是元组</span></span><br><span class="line">tuple1 = <span class="number">520</span>, <span class="comment"># 这是元组</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>总结:<code>.</code>是创建元组的关键</p>
+<h3><span id="更新和删除元祖">更新和删除元祖</span></h3> 
       <!-- reward -->
       
       <div id="reword-out">
@@ -290,6 +313,15 @@ var _hmt = _hmt || [];
 
    
   <nav class="article-nav">
+    
+      <a href="/2023/07/22/windows%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            windows文件备份
+          
+        </div>
+      </a>
     
     
       <a href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/" class="article-nav-link">
