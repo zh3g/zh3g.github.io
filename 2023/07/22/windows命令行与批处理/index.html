@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title> zh3g</title>
+      <title>windows命令行与批处理 |  zh3g</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon3.ico" />
@@ -72,217 +72,8 @@ var _hmt = _hmt || [];
       
       
     <main class="content on">
-      
-<section class="cover">
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover7.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">zh3g</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
-
-
-<!-- Subtitle -->
-
-  <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['每个人都会有那么一瞬间， 觉得整个世界为自己作了一次配角。', '世界那么大，我想我的野心再大，它也装得下。', '想要的都拥有，得不到的都释怀'],
-        startDelay: 0,
-        typeSpeed: 200,
-        loop: true,
-        backSpeed: 100,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
-  
-<div id="main">
-  <section class="outer">
-  
-  
-  
-
-<div class="notice" style="margin-top:50px">
-    <i class="ri-heart-fill"></i>
-    <div class="notice-content" id="broad"></div>
-</div>
-<script type="text/javascript">
-    fetch('https://v1.hitokoto.cn')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("broad").innerHTML = data.hitokoto;
-        })
-        .catch(console.error)
-</script>
-
-<style>
-    .notice {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-    }
-
-    .notice i {
-        float: left;
-        color: #999;
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
-
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
-    }
-</style>
-  
-  <article class="articles">
-    
-    
-    
-    
-    <article
-  id="post-史上最全hexo多平台同步-windows-ubuntu-android"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/"
-    >史上最全hexo多平台同步(windows+ubuntu+android)
-  <i class="article-topping">置顶</i>
-</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/" class="article-date">
-  <time datetime="2023-07-21T12:10:38.000Z" itemprop="datePublished">2023-07-21</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>说来惭愧,因为中间隔得时间有点长,导致我弄得漫不经心,但最终费九牛二虎之力最终弄好了(我一直是小白再这方面)<del>还有马上开学了</del></p>
-<!-- toc -->
-
-<ul>
-<li><a href="#windows">windows</a><ul>
-<li><a href="#%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B">基本流程</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85git-%E5%92%8Cnodejs">安装git 和node.js</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85hexohttpshexoiozh-cn">安装<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a></a></li>
-<li><a href="#%E7%BC%96%E8%BE%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2">编辑个人博客</a></li>
-<li><a href="#%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E6%A0%B7%E5%BC%8F">更改博客样式</a></li>
-<li><a href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">修改主题配置</a></li>
-<li><a href="#%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7githubgitee%E9%9C%80%E8%A6%81%E7%83%A6%E4%BA%BA%E7%9A%84%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E4%BC%B0%E8%AE%A1%E8%B7%9F%E8%85%BE%E8%AE%AF%E5%AD%A6%E7%9A%84gitlab%E6%B2%A1%E7%94%A8%E8%BF%87">注册账号github&#x2F;gitee(需要烦人的实名认证,估计跟腾讯学的)&#x2F;gitlab(没用过)</a></li>
-<li><a href="#%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%B8%AD">将博客上传到github中</a></li>
-<li><a href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2">更新博客</a></li>
-</ul>
-</li>
-<li><a href="#ubuntu">ubuntu</a></li>
-<li><a href="#windows%E4%B8%8A%E4%BC%A0%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0hexo%E5%88%86%E6%94%AF">windows上传源文件到hexo分支</a></li>
-<li><a href="#ubuntu%E9%85%8D%E7%BD%AE">ubuntu配置:</a><ul>
-<li><a href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E7%9A%84%E8%BD%AF%E4%BB%B6">搭建博客需要安装的软件：</a></li>
-<li><a href="#%E5%85%88%E6%9B%B4%E6%96%B0%E6%BA%90">先更新源：</a></li>
-<li><a href="#node%E5%AE%89%E8%A3%85">Node安装</a></li>
-<li><a href="#git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE">Git安装及配置</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85hexo">安装hexo</a></li>
-<li><a href="#git-bash%E5%B0%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0">git bash将远程仓库克隆到本地</a></li>
-<li><a href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</a></li>
-</ul>
-</li>
-<li><a href="#android">android</a><ul>
-<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
-<li><a href="#%E5%87%86%E5%A4%87">准备</a></li>
-<li><a href="#%E9%97%AE%E9%A2%98">问题</a></li>
-</ul>
-</li>
-<li><a href="#%E5%90%8C%E6%AD%A5%E7%BB%9F%E4%B8%80%E6%AD%A5%E9%AA%A4">同步统一步骤</a><ul>
-<li><a href="#%E4%B8%8A%E4%BC%A0">上传</a></li>
-<li><a href="#%E6%9B%B4%E6%96%B0">更新</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-<p>&#96;</p>
-<ul>
-<li>置顶<code>top: true</code></li>
-<li>是否折叠<code>&lt;!--more--&gt;</code></li>
-<li>快捷键<ul>
-<li>ctrl+B</li>
-<li>ctrl+I</li>
-<li>复制链接 选中文本后ctrl+v<br>好,进入正题</li>
-</ul>
-</li>
-</ul>
-<h1 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h1><p>具体参考我的博客<a target="_blank" rel="noopener" href="https://zh3g.github.io/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/">《基本教程》</a></p>
-<h2 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h2><p>包括：安装git 和 node.js<br>安装Hexo</p> 
-      <a class="article-more-link" href="/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
+      <section class="outer">
+  <article
   id="post-windows命令行与批处理"
   class="article article-type-post"
   itemscope
@@ -293,10 +84,9 @@ var _hmt = _hmt || [];
     
     <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/22/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86/"
-    >windows命令行与批处理</a> 
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  windows命令行与批处理
+</h1>
  
 
       
@@ -309,7 +99,26 @@ var _hmt = _hmt || [];
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a>
   </div>
-   
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
       
     <div class="article-entry" itemprop="articleBody">
@@ -550,625 +359,135 @@ var _hmt = _hmt || [];
  
       <!-- reward -->
       
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
     </div>
     
 
     <!-- copyright -->
     
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
        
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/07/22/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cmd/" rel="tag">cmd</a></li></ul>
 
     </footer>
   </div>
 
    
-   
+  <nav class="article-nav">
+    
+    
+      <a href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">python学习笔记</div>
+      </a>
+    
+  </nav>
+
   
-</article>
-
-    
-    <article
-  id="post-python学习笔记"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
-    >python学习笔记</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2023-07-22T06:28:37.000Z" itemprop="datePublished">2023-07-22</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <blockquote>
-<p>Life is short. You need Python。<br>                                      ——Bruce Eckel</p>
-</blockquote>
-<blockquote>
-<p>只有勇敢地割掉与时代发展不相符的瑕疵部分，才能<br>缔造出真正的完美体验！</p>
-</blockquote>
-<!-- toc -->
+<div class="gitalk" id="gitalk-container"></div>
 
-<ul>
-<li><a href="#python%E5%AD%A6%E8%8B%B1%E8%AF%AD">python学英语</a></li>
-<li><a href="#%E5%89%8D%E6%8F%90">前提</a></li>
-<li><a href="#2023722">2023&#x2F;7&#x2F;22</a><ul>
-<li><a href="#py%E6%96%87%E4%BB%B6%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C">.py文件怎么运行?</a></li>
-<li><a href="#windows%E7%9A%84python%E6%96%87%E4%BB%B6%E6%80%8E%E6%A0%B7%E6%9B%B4%E6%96%B0">windows的python文件怎样更新</a></li>
-<li><a href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0bif">显示所有python内置函数(BIF)</a></li>
-<li><a href="#python%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E8%BE%93%E5%85%A5%E6%96%B9%E6%B3%95">python特殊字符输入方法</a></li>
-<li><a href="#%E5%B0%8F%E6%8A%80%E5%B7%A7">小技巧</a><ul>
-<li><a href="#true-true">True + True</a></li>
-</ul>
-</li>
-<li><a href="#%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD">类型判断</a></li>
-<li><a href="#idle%E6%B8%85%E5%B1%8F%E6%96%B9%E6%B3%95">idle清屏方法</a></li>
-<li><a href="#%E6%96%AD%E8%A8%80assert">断言assert</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8">列表</a><ul>
-<li><a href="#%E5%90%91%E5%88%97%E8%A1%A8%E6%B7%BB%E5%8A%A0%E5%85%83%E7%B4%A0">向列表添加元素</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8%E5%A5%97%E5%A8%83">列表套娃</a></li>
-<li><a href="#randomchoice">random.choice</a></li>
-<li><a href="#%E4%BB%8E%E5%88%97%E8%A1%A8%E4%B8%AD%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0">从列表中删除元素</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8%E5%88%87%E7%89%87">列表切片</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8%E7%9A%84%E8%BF%90%E7%AE%97">列表的运算</a></li>
-<li><a href="#%E5%92%8C%E5%88%97%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E6%96%B9%E6%B3%95">和列表相关的方法</a></li>
-</ul>
-</li>
-<li><a href="#%E5%85%83%E7%BB%84">元组</a><ul>
-<li><a href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E8%AE%BF%E9%97%AE%E5%85%83%E7%BB%84">创建和访问元组</a></li>
-<li><a href="#%E6%9B%B4%E6%96%B0%E5%92%8C%E5%88%A0%E9%99%A4%E5%85%83%E7%A5%96">更新和删除元祖</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
 
-<h1 id="python学英语"><a href="#python学英语" class="headerlink" title="python学英语"></a>python学英语</h1><p>变量(variable) 字符串(str) 元祖(tuple)</p>
-<h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>本资料均来自课程和网上查找 且仅展示我不熟悉的知识点 (会在不同程度上补充)</p>
-<h1 id="2023-x2F-7-x2F-22"><a href="#2023-x2F-7-x2F-22" class="headerlink" title="2023&#x2F;7&#x2F;22"></a>2023&#x2F;7&#x2F;22</h1><h2 id="py文件怎么运行"><a href="#py文件怎么运行" class="headerlink" title=".py文件怎么运行?"></a>.py文件怎么运行?</h2><p>将python设为全局变量<br>在cmd窗口中python .py文件所在路径即可<br>手机termux中可以用pkg install python(最好先安装tsu)</p>
-<h2 id="windows的python文件怎样更新"><a href="#windows的python文件怎样更新" class="headerlink" title="windows的python文件怎样更新"></a>windows的python文件怎样更新</h2><p>暂时不想升级<del>逃避逃避</del></p>
-<h2 id="显示所有python内置函数-BIF"><a href="#显示所有python内置函数-BIF" class="headerlink" title="显示所有python内置函数(BIF)"></a>显示所有python内置函数(BIF)</h2><p><code>dir(__builtins__)</code></p>
-<h2 id="python特殊字符输入方法"><a href="#python特殊字符输入方法" class="headerlink" title="python特殊字符输入方法"></a>python特殊字符输入方法</h2><ol>
-<li>使用转义符号（\）对字符串中的引号进行转义</li>
-<li>只需要在字符串前边加一个英文字母r即可 
-      <a class="article-more-link" href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
 
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
 
-    </footer>
-  </div>
 
-   
-   
-  
-</article>
+<script src="https://cdn.staticfile.org/blueimp-md5/2.19.0/js/md5.min.js"></script>
 
-    
-    <article
-  id="post-v2ray总结"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/"
-    >v2ray总结</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/" class="article-date">
-  <time datetime="2023-07-21T15:59:59.000Z" itemprop="datePublished">2023-07-21</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <blockquote>
-<p>网络注定是个不安分的地方<br>一道墙之类的东西总会及其人们翻过它的欲望</p>
-</blockquote>
-<h1 id="我的v2ray折腾记"><a href="#我的v2ray折腾记" class="headerlink" title="我的v2ray折腾记"></a>我的v2ray折腾记</h1><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>代理工具:v2ray clash clash.meta之类的<br>节点: 免费的&#x2F;付费的</p>
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>先下载工具 再订阅节点 进行配置 愉快上网</p>
-<h2 id="下载工具"><a href="#下载工具" class="headerlink" title="下载工具"></a>下载工具</h2><p>v2ray:windows:<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases/">https://github.com/2dust/v2rayN/releases/</a><br>android:<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayNG/releases/">https://github.com/2dust/v2rayNG/releases/</a><br>MAC:<a target="_blank" rel="noopener" href="https://github.com/yanue/V2rayU/releases">https://github.com/yanue/V2rayU/releases</a><br><a target="_blank" rel="noopener" href="https://v2sx.github.io/V2Ray/">V2Ray客户端工具大全备用下载</a><br>clash.meta:<a target="_blank" rel="noopener" href="https://wiki.metacubex.one/client/#linux">客户端</a></p>
-<h2 id="订阅方式-bulink"><a href="#订阅方式-bulink" class="headerlink" title="订阅方式 bulink"></a>订阅方式 <a target="_blank" rel="noopener" href="https://www.burstlinker.com/">bulink</a></h2><h2 id="导入方式"><a href="#导入方式" class="headerlink" title="导入方式"></a>导入方式</h2><p>这里以v2ray为例</p> 
-      <a class="article-more-link" href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/v2ray/" rel="tag">v2ray</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-chatgpt"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/12/chatgpt/"
-    >chatgpt</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/12/chatgpt/" class="article-date">
-  <time datetime="2023-07-12T14:33:46.000Z" itemprop="datePublished">2023-07-12</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>今天闲来无事,弄了一点new bing和gpt之类的<br>chrome的new bing<br>插件<a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/new-bing-anywhere/hceobhjokpdbogjkplmfjeomkeckkngi">New Bing Anywhere</a><br>前提:魔法 Microsoft账户,等等</p>
-<blockquote>
-<p>参考<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/h3gBBohvbv2CQ4fCTjHbPA">知识星球</a><br>原文:<br>总结|体验或使用【GPT3.5】【GPT4】的工具清单<br>持续更新至:2023年5月28日所有网址请添加https:&#x2F;&#x2F;</p>
-</blockquote>
-<!--ShowMeAI社区总结的经典测试3问，可以快速判断模型水平:3个问题!验明GPT-4真身;基于GPT的科研加速技巧汇总;Midjourney神仙教程;印象笔记A....-->
-
-<ul>
-<li><strong>不需要魔法</strong> 
-      <a class="article-more-link" href="/2023/07/12/chatgpt/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/" rel="tag">AI</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-git入门"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/10/git%E5%85%A5%E9%97%A8/"
-    >git入门</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/10/git%E5%85%A5%E9%97%A8/" class="article-date">
-  <time datetime="2023-07-10T06:06:34.000Z" itemprop="datePublished">2023-07-10</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <blockquote>
-<p>选自bilibili <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pX4y1S7Dq/?spm_id_from=333.337.search-card.all.click">30分钟弄懂所有工作Git必备操作 &#x2F; Git 入门教程</a></p>
-</blockquote>
-<blockquote>
-<p>选自bilibili <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1r3411F7kn/?spm_id_from=333.337.search-card.all.click">Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub</a></p>
-</blockquote>
-<p>建议直接观看视频</p>
-<h1 id="git是什么"><a href="#git是什么" class="headerlink" title="git是什么"></a>git是什么</h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明性的)</p> 
-      <a class="article-more-link" href="/2023/07/10/git%E5%85%A5%E9%97%A8/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/" rel="tag">日常学习</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-教程与资源"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/"
-    >教程与资源</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/" class="article-date">
-  <time datetime="2023-07-09T13:50:13.000Z" itemprop="datePublished">2023-07-09</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="教程推荐-不分先后"><a href="#教程推荐-不分先后" class="headerlink" title="教程推荐(不分先后)"></a>教程推荐(不分先后)</h1><!-- toc -->
-
-<ul>
-<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0gitee%E4%BB%93%E5%BA%93%E7%9A%84%E6%AD%A5%E9%AA%A4httpsblogcsdnnetfayoung3568articledetails119488325">上传文件到gitee仓库的步骤</a></li>
-<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B">上传文件示例</a></li>
-<li><a href="#%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA">插件市场</a></li>
-<li><a href="#%E5%9B%BE%E5%BA%8A">图床</a></li>
-<li><a href="#hexo-%E8%B7%B3%E8%BF%87%E6%96%87%E4%BB%B6%E6%B8%B2%E6%9F%93">hexo 跳过文件渲染</a></li>
-</ul>
-<ul>
-<li><a href="#%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90">资源推荐</a><ul>
-<li><a href="#%E5%A4%9A%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86">多平台下载工具合集</a><ul>
-<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
-<li><a href="#%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">网盘资源下载</a></li>
-</ul>
-</li>
-<li><a href="#python%E8%B5%84%E6%BA%90">python资源</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-<p><del>抓紧学习</del>!<br><a target="_blank" rel="noopener" href="https://imgse.com/i/pCqSsF1"><img src="https://s1.ax1x.com/2023/07/22/pCqSsF1.png" alt="pCqSsF1.png"></a></p>
-<h2 id="上传文件到gitee仓库的步骤"><a href="#上传文件到gitee仓库的步骤" class="headerlink" title="上传文件到gitee仓库的步骤"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a></h2><p>  <a target="_blank" rel="noopener" href="https://imgse.com/i/pCqSDoR"><img src="https://s1.ax1x.com/2023/07/22/pCqSDoR.png" alt="pCqSDoR.png"></a> </p>
-<ul>
-<li>几部曲<del>不会数数</del><ul>
-<li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
-<li><code>git commit -m &quot;注释&quot;</code></li>
-<li><code>git remote add origin</code> <a target="_blank" rel="noopener" href="https://gitee.com/zh3g/git">https://gitee.com/zh3g/git</a> (不知道是否每次都用) </li>
-<li><code>git pull --rebase origin master</code>(如果远程仓库为空可以跳过这一步，如果远程仓库不为空，则必须进行这一步，否则会报错。)</li>
-<li>git push -u origin master</li>
-</ul>
-</li>
-</ul>
-<h2 id="上传文件示例"><a href="#上传文件示例" class="headerlink" title="上传文件示例"></a>上传文件示例</h2> 
-      <a class="article-more-link" href="/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-bilibili嵌入视频"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/"
-    >bilibili嵌入视频</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/" class="article-date">
-  <time datetime="2023-07-07T13:39:03.000Z" itemprop="datePublished">2023-07-07</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a> / <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/%E8%A7%86%E9%A2%91%E5%B5%8C%E5%85%A5/">视频嵌入</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  Here's something encrypted, password is required to continue reading. 
-      <a class="article-more-link" href="/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bilibili/" rel="tag">bilibili</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-vscode自动更新"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/"
-    >vscode自动更新</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/" class="article-date">
-  <time datetime="2023-07-07T08:48:48.000Z" itemprop="datePublished">2023-07-07</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a> / <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/%E6%95%99%E7%A8%8B/">教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/2023-7%E6%9C%88-07-17-01-53-164mage.png" alt="Alt text"></p>
-<ul>
-<li>afterDelay将在配置的 <code>files.autoSaveDelay</code> 后自动保存为保存的编辑器</li>
-<li>onFocusChange —— 当编辑器失去焦点时，将自动保存为保存的编辑器也就是鼠标不在VSCode里面时自动保存</li>
-<li>onWindowChange —— 当窗口失去焦点时，将自动保存为保存的编辑器（窗口可理解为每个代码脚本，当鼠标从 A 脚本转到 B 脚本时，自动保存脚本 A 的修改内容）</li>
-</ul>
-<p><del>最后：这里我用的是onWindowChange 自己喜欢哪个就用哪个！！！</del></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-一张图片"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/"
-    >一张图片</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/" class="article-date">
-  <time datetime="2023-07-07T06:04:46.000Z" itemprop="datePublished">2023-07-07</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%97%A0/">无</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
-<h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
-<h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart3423" style="height: 300px"></canvas>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart3423').getContext('2d');
-    var options = {
-    type: 'line',
-    data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
-        }]
-    },
-    options: {
-        responsive: true,
-        title: {
-            display: true,
-            text: 'Chart.js Line Chart'
-        }
-    }
-};;
-    new Chart(ctx, options);
+  var gitalk = new Gitalk({
+    clientID: 'd186f3f35180f1d7ea10',
+    clientSecret: '4e853408d31eaf16451af58d490d816a8ed985a5',
+    repo: 'zh3g.github.io',
+    owner: 'zh3g',
+    admin: ['zh3g'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
 </script>
 
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/live2d/" rel="tag">live2d</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
   
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
 </article>
 
-    
-  </article>
-  
-
-  
-  <nav class="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
-  
 </section>
-</div>
-
       <footer class="footer">
   <div class="outer">
     <ul>
