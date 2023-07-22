@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</loc>
+    <loc>http://example.com/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</loc>
     <lastmod>2023-07-22</lastmod>
   </url>
   <url>
@@ -9,7 +9,11 @@
     <lastmod>2023-07-22</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</loc>
+    <loc>http://example.com/2023/07/10/git%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2023-07-22</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2023/07/07/hello-world/</loc>
     <lastmod>2023-07-22</lastmod>
   </url>
   <url>
@@ -17,7 +21,7 @@
     <lastmod>2023-07-22</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2023/07/10/git%E5%85%A5%E9%97%A8/</loc>
+    <loc>http://example.com/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2023-07-22</lastmod>
   </url>
   <url>
@@ -30,10 +34,6 @@
   </url>
   <url>
     <loc>http://example.com/2023/07/12/chatgpt/</loc>
-    <lastmod>2023-07-21</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2023/07/07/hello-world/</loc>
     <lastmod>2023-07-21</lastmod>
   </url>
   <url>

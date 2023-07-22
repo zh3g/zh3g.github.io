@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</loc>
+    <loc>http://example.com/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</loc>
     
     <lastmod>2023-07-22</lastmod>
     
@@ -20,7 +20,16 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</loc>
+    <loc>http://example.com/2023/07/10/git%E5%85%A5%E9%97%A8/</loc>
+    
+    <lastmod>2023-07-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2023/07/07/hello-world/</loc>
     
     <lastmod>2023-07-22</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/07/10/git%E5%85%A5%E9%97%A8/</loc>
+    <loc>http://example.com/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</loc>
     
     <lastmod>2023-07-22</lastmod>
     
@@ -66,15 +75,6 @@
   
   <url>
     <loc>http://example.com/2023/07/12/chatgpt/</loc>
-    
-    <lastmod>2023-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2023/07/07/hello-world/</loc>
     
     <lastmod>2023-07-21</lastmod>
     
@@ -220,13 +220,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/hexo-vscode/</loc>
-    <lastmod>2023-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-07-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -236,13 +229,6 @@
 
   
   <url>
-    <loc>http://example.com/categories/%E8%A7%86%E9%A2%91%E5%B5%8C%E5%85%A5/</loc>
-    <lastmod>2023-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/%E4%B8%AA%E4%BA%BA/</loc>
     <lastmod>2023-07-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -250,14 +236,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E4%B8%AA%E4%BA%BA%E6%8F%90%E5%8D%87/</loc>
+    <loc>http://example.com/categories/%E4%B8%AA%E4%BA%BA/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://example.com/categories/%E4%B8%AA%E4%BA%BA/%E8%A7%86%E9%A2%91%E5%B5%8C%E5%85%A5/</loc>
     <lastmod>2023-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
