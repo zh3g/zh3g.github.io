@@ -156,6 +156,69 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
+    <title>python学习笔记</title>
+    <url>/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>Life is short. You need Python。<br>                                      ——Bruce Eckel</p>
+</blockquote>
+<blockquote>
+<p>只有勇敢地割掉与时代发展不相符的瑕疵部分，才能<br>缔造出真正的完美体验！</p>
+</blockquote>
+<h1><span id="python学英语">python学英语</span></h1><p>变量(variable) 字符串(str)</p>
+<h1><span id="前提">前提</span></h1><p>本资料均来自课程和网上查找 且仅展示我不熟悉的知识点 (会在不同程度上补充)</p>
+<h1><span id="2023x2f7x2f22">2023&#x2F;7&#x2F;22</span></h1><h2><span id="py文件怎么运行">.py文件怎么运行?</span></h2><p>将python设为全局变量<br>在cmd窗口中python .py文件所在路径即可<br>手机termux中可以用pkg install python(最好先安装tsu)</p>
+<h2><span id="windows的python文件怎样更新">windows的python文件怎样更新</span></h2><p>暂时不想升级<del>逃避逃避</del></p>
+<h2><span id="显示所有python内置函数bif">显示所有python内置函数(BIF)</span></h2><p><code>dir(__builtins__)</code></p>
+<h2><span id="python特殊字符输入方法">python特殊字符输入方法</span></h2><ol>
+<li>使用转义符号（\）对字符串中的引号进行转义</li>
+<li>只需要在字符串前边加一个英文字母r即可<br><img src="/image.png" alt="Alt text"></li>
+<li>无论是否为原始字符串，都不能以反斜杠作为结尾（注：反斜杠放在字符串的末尾表示该字符串还没有结束，换行继续的意思)<br>解决方法用\转义</li>
+</ol>
+<h2><span id="小技巧">小技巧</span></h2><ol>
+<li>输入长文本时可以用<code>&quot;&quot;&quot;长文本&quot;&quot;&quot;</code>进行输入(当然也可以用<code>\n</code>在换行时)但是文本比较多是就麻烦了</li>
+</ol>
+<h3><span id="true-true">True + True</span></h3><p><code>True + True =2</code>直接运行是错的<br>但是输入<code>True + True</code>回车时是2<br>1,2输出后是(1,2)<br>字符串输出后带’’但是print后没有</p>
+<h2><span id="类型判断">类型判断</span></h2><ol>
+<li>type告诉你何种类型 <code>type</code></li>
+<li>判断某个字符是否为某种类型 <code>isinstance</code></li>
+</ol>
+<h2><span id="idle清屏方法">idle清屏方法</span></h2><p>参考<a href="https://blog.csdn.net/cxcxrs/article/details/81219395">真实可行的Python清屏命令</a><br>下载文件,更改idle配置<br>直接ctrl+l就可以清屏</p>
+<h2><span id="断言assert">断言assert</span></h2><p>暂时不懂 但估计和正则表达式中正&#x2F;反向先&#x2F;后行断言差不多<br>例子<br><code>assert 1 &lt;= 3</code>能执行<br><code>assert 1 &gt;= 3</code>报错<br>##列表</p>
+<ol>
+<li>list:将列表打印出来<br><code>list(range(10))</code><br><code>list(&quot;hello&quot;)</code></li>
+<li>range(a,b,c)记住左闭右开即可</li>
+</ol>
+<h3><span id="向列表添加元素">向列表添加元素</span></h3><ol>
+<li>.append向右添加一个元素<br><code>number.append(6)</code></li>
+<li>.extend可以添加多个元素(简单理解为一个列表在接上一个列表)<br><code>number.extend([8,9])</code> </li>
+<li>.insert可以利用所以在指定位置添加元素<br><code>列表.insert(索引:要插入的位置,要添加的元素)</code><br><code>number.insert(0.0)</code>注意是从0开始数的<br>还可以是倒数从-1,-2开始不过是倒数<br>算了,猜错了<br>是从列表中所以所在元素的前一位</li>
+<li>一个不用函数的变换<br>即令<code>number[索引] = 一个替换的元素</code><br>可以做到 交换列表中的元素<br><code>eggs[1],eggs[3] = eggs[3],eggs[1]</code></li>
+</ol>
+<h3><span id="列表套娃">列表套娃</span></h3><p>从列表中获取元素<br><code>eggs = [&quot;鸡蛋&quot;,&quot;铁蛋&quot;,[&quot;天鹅蛋&quot;,&quot;企鹅蛋&quot;,&quot;加拿大蛋&quot;],&quot;鸭蛋&quot;]</code><br>获取 加拿大蛋<br><code>eggs[2][2]</code></p>
+<h3><span id="randomchoice">random.choice</span></h3><p>从一个非空的列表中随机获取一个元素<br><code>random.choice(prizes)</code></p>
+<h3><span id="从列表中删除元素">从列表中删除元素</span></h3><ol>
+<li>remove方法<br><code>列表.remove(元素名称)</code><br><code>eggs.remove(&quot;铁蛋&quot;)</code></li>
+<li>pop(弹)<br>1.)列表.pop()会将弹出去的数打印出来,列表弹出对应的数<br>2.)列白.pop(索引)同理 </li>
+<li>del(实际上是利用del能够删除变量的特性操作的)<br>用法<code>del 列表名[索引]</code><br><code>del eggs(0)</code><br>del 变量名(变量,列表之类的)</li>
+</ol>
+<h3><span id="列表切片">列表切片</span></h3><p>1.)<code>list[元素1的索引:元素2的索引+1]</code><br>list[]是左闭右开的(和range类似)所以终止索引需要+1<br><code>list[2:5]</code><br>2.) 简化写法:<code>list[:2]</code>表示从0开始到2结束且不包含2其等价于<code>list[0:2]</code><br><code>list[2:]</code>表示从2开始,直到最后<br><code>list[:]</code>表示从开始到结束<br>3.)步长:默认不输是1 <code>list[0:9:2]</code>结果每个相隔2 同时步长可正可负<br>4.) 利用del和步长删除列表的奇数项<code>del list1[::2]</code><br>5.) 利用切片进行列表替换 <code>list[:2]=[&quot;超人&quot;,&quot;神奇女侠&quot;]</code>可以做到不等长替换</p>
+<h3><span id="列表的运算">列表的运算</span></h3><ol>
+<li>列表大小比较:单元素列表将元素转化为Ascall码进行大小比较</li>
+<li>多元素列表则先比较第一个元素,如果第一个元素大,则其所在列表更大</li>
+<li>列表相加 列表与数字相乘 </li>
+<li>判断元素是否在列表内 <code>&quot;小甲鱼&quot; in list1</code>or<code>&quot;小乌龟&quot;not in list1</code></li>
+<li>综合利用去除某一列表的重复元素</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">old_list = [<span class="string">&quot;西班牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;牙买加&quot;</span>,<span class="string">&quot;匈牙利&quot;</span>]</span><br><span class="line">new_list = []</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> old_list:</span><br><span class="line">    <span class="keyword">if</span> each <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">        new_list.append(each)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>v2ray总结</title>
     <url>/2023/07/21/v2ray%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
@@ -476,11 +539,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart4157" style="height: 300px"></canvas>
+    <canvas id="chart8047" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart4157').getContext('2d');
+    var ctx = document.getElementById('chart8047').getContext('2d');
     var options = {
     type: 'line',
     data: {

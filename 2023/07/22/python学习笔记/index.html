@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>个人 |  zh3g</title>
+      <title>python学习笔记 |  zh3g</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon3.ico" />
@@ -73,301 +73,239 @@ var _hmt = _hmt || [];
       
     <main class="content on">
       <section class="outer">
-  
-  
-  <article class="articles">
+  <article
+  id="post-python学习笔记"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">个人</h1>
-    
-    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  python学习笔记
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2023-07-22T06:28:37.000Z" itemprop="datePublished">2023-07-22</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
+  </div>
   
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2023" class="archive-year">2023</a>
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
-    <div class="archives">
       
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  <time datetime="2023-07-22T06:28:37.000Z" itemprop="datePublished">07/22</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
-    >python学习笔记</a> 
-</h2>
+  <blockquote>
+<p>Life is short. You need Python。<br>                                      ——Bruce Eckel</p>
+</blockquote>
+<blockquote>
+<p>只有勇敢地割掉与时代发展不相符的瑕疵部分，才能<br>缔造出真正的完美体验！</p>
+</blockquote>
+<h1><span id="python学英语">python学英语</span></h1><p>变量(variable) 字符串(str)</p>
+<h1><span id="前提">前提</span></h1><p>本资料均来自课程和网上查找 且仅展示我不熟悉的知识点 (会在不同程度上补充)</p>
+<h1><span id="2023x2f7x2f22">2023&#x2F;7&#x2F;22</span></h1><h2><span id="py文件怎么运行">.py文件怎么运行?</span></h2><p>将python设为全局变量<br>在cmd窗口中python .py文件所在路径即可<br>手机termux中可以用pkg install python(最好先安装tsu)</p>
+<h2><span id="windows的python文件怎样更新">windows的python文件怎样更新</span></h2><p>暂时不想升级<del>逃避逃避</del></p>
+<h2><span id="显示所有python内置函数bif">显示所有python内置函数(BIF)</span></h2><p><code>dir(__builtins__)</code></p>
+<h2><span id="python特殊字符输入方法">python特殊字符输入方法</span></h2><ol>
+<li>使用转义符号（\）对字符串中的引号进行转义</li>
+<li>只需要在字符串前边加一个英文字母r即可<br><img src="/image.png" alt="Alt text"></li>
+<li>无论是否为原始字符串，都不能以反斜杠作为结尾（注：反斜杠放在字符串的末尾表示该字符串还没有结束，换行继续的意思)<br>解决方法用\转义</li>
+</ol>
+<h2><span id="小技巧">小技巧</span></h2><ol>
+<li>输入长文本时可以用<code>&quot;&quot;&quot;长文本&quot;&quot;&quot;</code>进行输入(当然也可以用<code>\n</code>在换行时)但是文本比较多是就麻烦了</li>
+</ol>
+<h3><span id="true-true">True + True</span></h3><p><code>True + True =2</code>直接运行是错的<br>但是输入<code>True + True</code>回车时是2<br>1,2输出后是(1,2)<br>字符串输出后带’’但是print后没有</p>
+<h2><span id="类型判断">类型判断</span></h2><ol>
+<li>type告诉你何种类型 <code>type</code></li>
+<li>判断某个字符是否为某种类型 <code>isinstance</code></li>
+</ol>
+<h2><span id="idle清屏方法">idle清屏方法</span></h2><p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/cxcxrs/article/details/81219395">真实可行的Python清屏命令</a><br>下载文件,更改idle配置<br>直接ctrl+l就可以清屏</p>
+<h2><span id="断言assert">断言assert</span></h2><p>暂时不懂 但估计和正则表达式中正&#x2F;反向先&#x2F;后行断言差不多<br>例子<br><code>assert 1 &lt;= 3</code>能执行<br><code>assert 1 &gt;= 3</code>报错<br>##列表</p>
+<ol>
+<li>list:将列表打印出来<br><code>list(range(10))</code><br><code>list(&quot;hello&quot;)</code></li>
+<li>range(a,b,c)记住左闭右开即可</li>
+</ol>
+<h3><span id="向列表添加元素">向列表添加元素</span></h3><ol>
+<li>.append向右添加一个元素<br><code>number.append(6)</code></li>
+<li>.extend可以添加多个元素(简单理解为一个列表在接上一个列表)<br><code>number.extend([8,9])</code> </li>
+<li>.insert可以利用所以在指定位置添加元素<br><code>列表.insert(索引:要插入的位置,要添加的元素)</code><br><code>number.insert(0.0)</code>注意是从0开始数的<br>还可以是倒数从-1,-2开始不过是倒数<br>算了,猜错了<br>是从列表中所以所在元素的前一位</li>
+<li>一个不用函数的变换<br>即令<code>number[索引] = 一个替换的元素</code><br>可以做到 交换列表中的元素<br><code>eggs[1],eggs[3] = eggs[3],eggs[1]</code></li>
+</ol>
+<h3><span id="列表套娃">列表套娃</span></h3><p>从列表中获取元素<br><code>eggs = [&quot;鸡蛋&quot;,&quot;铁蛋&quot;,[&quot;天鹅蛋&quot;,&quot;企鹅蛋&quot;,&quot;加拿大蛋&quot;],&quot;鸭蛋&quot;]</code><br>获取 加拿大蛋<br><code>eggs[2][2]</code></p>
+<h3><span id="randomchoice">random.choice</span></h3><p>从一个非空的列表中随机获取一个元素<br><code>random.choice(prizes)</code></p>
+<h3><span id="从列表中删除元素">从列表中删除元素</span></h3><ol>
+<li>remove方法<br><code>列表.remove(元素名称)</code><br><code>eggs.remove(&quot;铁蛋&quot;)</code></li>
+<li>pop(弹)<br>1.)列表.pop()会将弹出去的数打印出来,列表弹出对应的数<br>2.)列白.pop(索引)同理 </li>
+<li>del(实际上是利用del能够删除变量的特性操作的)<br>用法<code>del 列表名[索引]</code><br><code>del eggs(0)</code><br>del 变量名(变量,列表之类的)</li>
+</ol>
+<h3><span id="列表切片">列表切片</span></h3><p>1.)<code>list[元素1的索引:元素2的索引+1]</code><br>list[]是左闭右开的(和range类似)所以终止索引需要+1<br><code>list[2:5]</code><br>2.) 简化写法:<code>list[:2]</code>表示从0开始到2结束且不包含2其等价于<code>list[0:2]</code><br><code>list[2:]</code>表示从2开始,直到最后<br><code>list[:]</code>表示从开始到结束<br>3.)步长:默认不输是1 <code>list[0:9:2]</code>结果每个相隔2 同时步长可正可负<br>4.) 利用del和步长删除列表的奇数项<code>del list1[::2]</code><br>5.) 利用切片进行列表替换 <code>list[:2]=[&quot;超人&quot;,&quot;神奇女侠&quot;]</code>可以做到不等长替换</p>
+<h3><span id="列表的运算">列表的运算</span></h3><ol>
+<li>列表大小比较:单元素列表将元素转化为Ascall码进行大小比较</li>
+<li>多元素列表则先比较第一个元素,如果第一个元素大,则其所在列表更大</li>
+<li>列表相加 列表与数字相乘 </li>
+<li>判断元素是否在列表内 <code>&quot;小甲鱼&quot; in list1</code>or<code>&quot;小乌龟&quot;not in list1</code></li>
+<li>综合利用去除某一列表的重复元素</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">old_list = [<span class="string">&quot;西班牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;葡萄牙&quot;</span>,<span class="string">&quot;牙买加&quot;</span>,<span class="string">&quot;匈牙利&quot;</span>]</span><br><span class="line">new_list = []</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> old_list:</span><br><span class="line">    <span class="keyword">if</span> each <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">        new_list.append(each)</span><br></pre></td></tr></table></figure>
  
-
-    </header>
-    
+      <!-- reward -->
       
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  <time datetime="2023-07-21T15:59:59.000Z" itemprop="datePublished">07/21</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/"
-    >v2ray总结</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/" class="archive-article-date">
-  <time datetime="2023-07-21T12:10:38.000Z" itemprop="datePublished">07/21</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/21/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8hexo%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5-windows-ubuntu-android/"
-    >史上最全hexo多平台同步(windows+ubuntu+android)</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/12/chatgpt/" class="archive-article-date">
-  <time datetime="2023-07-12T14:33:46.000Z" itemprop="datePublished">07/12</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/12/chatgpt/"
-    >chatgpt</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/10/git%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  <time datetime="2023-07-10T06:06:34.000Z" itemprop="datePublished">07/10</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/10/git%E5%85%A5%E9%97%A8/"
-    >git入门</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/" class="archive-article-date">
-  <time datetime="2023-07-09T13:50:13.000Z" itemprop="datePublished">07/09</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/"
-    >教程与资源</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/" class="archive-article-date">
-  <time datetime="2023-07-07T13:39:03.000Z" itemprop="datePublished">07/07</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/"
-    >bilibili嵌入视频</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a> / <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/%E8%A7%86%E9%A2%91%E5%B5%8C%E5%85%A5/">视频嵌入</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/" class="archive-article-date">
-  <time datetime="2023-07-07T08:48:48.000Z" itemprop="datePublished">07/07</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/"
-    >vscode自动更新</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a> / <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/%E6%95%99%E7%A8%8B/">教程</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/07/hello-world/" class="archive-article-date">
-  <time datetime="2023-07-07T01:54:02.934Z" itemprop="datePublished">07/07</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/07/hello-world/"
-    >Hello World</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a> / <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/%E6%95%99%E7%A8%8B/">教程</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  <time datetime="2023-07-07T00:23:40.000Z" itemprop="datePublished">07/07</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/07/%E5%9F%BA%E6%9C%AC%E6%95%99%E7%A8%8B/"
-    >github+hexo+ayer+插件免费搭建个人博客教程</a> 
-</h2>
- 
-
-    </header>
-    
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
-  </div>
-
-    
-    
-  </div>
-</article>
-      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
       
     </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/07/22/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
   </div>
-  
-  
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2023/07/21/v2ray%E6%80%BB%E7%BB%93/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">v2ray总结</div>
+      </a>
+    
+  </nav>
 
   
+   
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+
+
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+
+
+<script src="https://cdn.staticfile.org/blueimp-md5/2.19.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'd186f3f35180f1d7ea10',
+    clientSecret: '4e853408d31eaf16451af58d490d816a8ed985a5',
+    repo: 'zh3g.github.io',
+    owner: 'zh3g',
+    admin: ['zh3g'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
