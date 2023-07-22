@@ -283,13 +283,17 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
 <p>选自bilibili <a href="https://www.bilibili.com/video/BV1pX4y1S7Dq/?spm_id_from=333.337.search-card.all.click">30分钟弄懂所有工作Git必备操作 &#x2F; Git 入门教程</a></p>
 </blockquote>
+<blockquote>
+<p>选自bilibili <a href="https://www.bilibili.com/video/BV1r3411F7kn/?spm_id_from=333.337.search-card.all.click">Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub</a></p>
+</blockquote>
+<p>建议直接观看视频</p>
 <h1><span id="git是什么">git是什么</span></h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明性的)</p>
 <span id="more"></span>
 <p>创建仓库:<br>去项目的文件夹输入<br>$ git init<br>(不需要联网)<br>用 git clone去克隆一个网络上的项目<br>例如: git clone <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a><br>(为所欲为)</p>
 <p>创建完仓库后,每一个文件都有一个状态<br>git init<br>新建 状态:未跟踪<br>单独跟踪一个文件<br>$ git add <name><br>删除:$ git rm <name> 或者用$ git rm –cache <name>(保留在目录里但不被跟踪)<br>修改<br>接下来用 git add <file-name>设置成缓存状态<br>假如<em>手滑</em> 不想把它设置成缓存状态用 git reset HEAD <name>来取消它的缓存状态<br>用 git commit命令来提交此次修改<br>一个文件的四个状态</name></file-name></name></name></name></p>
 <p>补充:git commit<br>输入git commit 然后回车<br>终端自动跳到编辑器里(应该是vim)<br>  按i键输入模式<br>  编辑完成后按 ESC和:wq键保存并退出版本提交完成<br>-或者按git commit -m “本次修改的大致内容”<br>接着按回车</p>
 <p>突然不想提交怎么办用git reset head~ –soft来取消我们这次的提交(但第一次提交撤销不了,第二三次可以)<br>如何查看文件章台<br>用git status查看<br>红色是修改但没暂存,绿色是已暂存但没提交<br>查询命令(更细致)git diff<br>查询之前历史的提交 git log(commit后面的乱码是之前提交的哈希值接下来是提交作者,提交时间还有我们提交时输入的一些信息)</p>
-<p>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地</p>
+<p>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地<br><img src="https://pic.imgdb.cn/item/64bb62981ddac507ccc4bb77.jpg"><br><img src="https://pic.imgdb.cn/item/64bb62981ddac507ccc4bb8a.jpg"><br><a href="https://imgse.com/i/pCqSyJx"><img src="https://s1.ax1x.com/2023/07/22/pCqSyJx.md.png" alt="pCqSyJx.md.png"></a></p>
 <hr>
 <p>远程仓库的一些使用:<br>代码托管平台:以github为例<br>右上角new repository<br>给原始仓库起名 公开 初始化</p>
 <ul>
@@ -329,17 +333,32 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
-    <title>实用教程</title>
-    <url>/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <title>教程与资源</title>
+    <url>/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="教程推荐不分先后">教程推荐(不分先后)</span></h1><!-- toc -->
 
-
-
+<ul>
+<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0gitee%E4%BB%93%E5%BA%93%E7%9A%84%E6%AD%A5%E9%AA%A4httpsblogcsdnnetfayoung3568articledetails119488325">上传文件到gitee仓库的步骤</a></li>
+<li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B">上传文件示例</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA">插件市场</a></li>
+<li><a href="#%E5%9B%BE%E5%BA%8A">图床</a></li>
+<li><a href="#hexo-%E8%B7%B3%E8%BF%87%E6%96%87%E4%BB%B6%E6%B8%B2%E6%9F%93">hexo 跳过文件渲染</a></li>
+</ul>
+<ul>
+<li><a href="#%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90">资源推荐</a><ul>
+<li><a href="#%E5%A4%9A%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86">多平台下载工具合集</a><ul>
+<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
+<li><a href="#%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">网盘资源下载</a></li>
+</ul>
+</li>
+<li><a href="#python%E8%B5%84%E6%BA%90">python资源</a></li>
+</ul>
+</li>
+</ul>
 <!-- tocstop -->
 
-<p><del>抓紧学习</del>!<br><img src="/image.png" alt="学习"></p>
-<ul>
-<li><p><a href="https://blog.csdn.net/fayoung3568/article/details/119488325">上传文件到gitee仓库的步骤</a><br><img src="/image2.png" alt="gitee"><br><a href="https://gitee.com/zh3g/git/raw/master/%E9%82%AE%E7%AE%B1.xlsx">邮箱文件下载</a></p>
+<p><del>抓紧学习</del>!<br><a href="https://imgse.com/i/pCqSsF1"><img src="https://s1.ax1x.com/2023/07/22/pCqSsF1.png" alt="pCqSsF1.png"></a></p>
+<h2><span id="上传文件到gitee仓库的步骤"></span></h2><p>  <a href="https://imgse.com/i/pCqSDoR"><img src="https://s1.ax1x.com/2023/07/22/pCqSDoR.png" alt="pCqSDoR.png"></a> </p>
 <ul>
 <li>几部曲<del>不会数数</del><ul>
 <li><code>git add .</code>(如果想要添加个别文件可以把”.”替换为相应文件名。)</li>
@@ -349,30 +368,23 @@ cat ~/.ssh/id_rsa.pub
 <li>git push -u origin master</li>
 </ul>
 </li>
-<li>上传文件示例<span id="more"></span>
+</ul>
+<h2><span id="上传文件示例">上传文件示例</span></h2><span id="more"></span>
 <ul>
 <li><del><img src="https://gitee.com/zh3g/git/raw/master/001.png" alt="在线图片"> 没用</del></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><p>插件市场</p>
-<ul>
+<h2><span id="插件市场">插件市场</span></h2><ul>
 <li>hexo <a href="https://hexo.io/plugins/">插件市场</a></li>
 <li><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">主题</a></li>
 </ul>
-</li>
-<li><p>图床</p>
-<ul>
+<h2><span id="图床">图床</span></h2><ul>
 <li><p><a href="https://www.superbed.cn/">聚合图床</a> <del>可惜我没用</del></p>
 </li>
 <li><p><a href="https://www.cuplayer.com/cloud/">酷播云</a> (视频,音乐&lt;但有一点点限制&gt;</p>
 </li>
 <li><p><a href="https://imgchr.com/i/Vne6w4">路过图床</a></p>
 <ul>
-<li>unhealthy <a href="https://imgse.com/i/pCgBKQs"><img src="https://s1.ax1x.com/2023/07/08/pCgBKQs.jpg" alt="pCgBKQs.jpg"></a></li>
-</ul>
-</li>
+<li><a href="https://imgse.com/i/pCgBKQs"><img src="https://s1.ax1x.com/2023/07/08/pCgBKQs.md.jpg" alt="pCgBKQs.md.jpg"></a></li>
 </ul>
 </li>
 <li><p><a href="https://zhuanlan.zhihu.com/p/490143994">免费文件存储分享网站合集 - 知乎</a></p>
@@ -381,25 +393,33 @@ cat ~/.ssh/id_rsa.pub
 <!--- 来小亮,给大伙整个活(live2d进阶)
      - 进阶:[Hexo博客优化：在Next主题中设置进阶版Live2D看板娘](https://blog.csdn.net/qq_39610915/article/details/90679768)
 -->
+<h2><span id="hexo-跳过文件渲染">hexo 跳过文件渲染</span></h2><pre><code>- 起因:谷歌要求主页必须有html文件的链接才行
+- 我不会弄(但我新建了一个html的文件节里面的index.md改为index.html并且内容改为html内容)
+- ~~我真是太机智了~~于是乎我渲染出来接我是不行
+- 参考文章 跳过了css渲染(success) 
+  - [Hexo博客技巧：添加自定义html页面](https://blog.csdn.net/weixin_58068682/article/details/116611715)
+  - [hexo跳过渲染](http://qtdebug.com/hexo-skip-render/#:~:text=Hexo.%20Hexo%20%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E8%A7%81%E6%96%87%E7%AB%A0%E9%83%BD%E6%98%AF%E7%BB%8F%E7%94%B1%E6%B8%B2%E6%9F%93%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%8C%E8%80%8C%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E7%9A%84%E6%A0%B7%E5%BC%8F%E9%83%BD%E7%9B%B4%E6%8E%A5%E7%94%B1%20Hexo%20%E7%9A%84%E4%B8%BB%E9%A2%98%E6%8E%A7%E5%88%B6%EF%BC%8C%E6%89%80%E4%BB%A5%20Hexo%20%E5%8D%9A%E5%AE%A2%E5%A4%A7%E9%83%A8%E5%88%86%E9%83%BD%E5%91%88%E7%8E%B0%E5%87%BA%E4%B8%80%E7%A7%8D%E9%AB%98%E5%BA%A6%E7%9A%84%E7%BB%9F%E4%B8%80%E5%8C%96%E4%B8%8E%E8%A7%84%E8%8C%83%E5%8C%96%E3%80%82.%20%E4%B8%8D%E8%BF%87,%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%20%E3%80%82.%20%E5%A6%82%E6%9E%9C%E8%A6%81%E5%BF%BD%E7%95%A5%20source%20%E4%B8%8B%E7%9A%84%20test%20%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E9%85%8D%E7%BD%AE%EF%BC%9A.%201.)
+- ~~结果:没验证成功~~
+- 最简单的方法是将html复制到source文件夹(在跳过css渲染) over
+- 主题作者方法:在 head.ejs 里添加 html 标签
+               &lt;u&gt;(后悔没早点看到)&lt;/u&gt;
+</code></pre>
 <ul>
-<li><p>hexo 跳过文件渲染</p>
-<ul>
-<li>起因:谷歌要求主页必须有html文件的链接才行</li>
-<li>我不会弄(但我新建了一个html的文件节里面的index.md改为index.html并且内容改为html内容)</li>
-<li><del>我真是太机智了</del>于是乎我渲染出来接我是不行</li>
-<li>参考文章 跳过了css渲染(success) <ul>
-<li><a href="https://blog.csdn.net/weixin_58068682/article/details/116611715">Hexo博客技巧：添加自定义html页面</a></li>
-<li><a href="http://qtdebug.com/hexo-skip-render/#:~:text=Hexo.%20Hexo%20%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E8%A7%81%E6%96%87%E7%AB%A0%E9%83%BD%E6%98%AF%E7%BB%8F%E7%94%B1%E6%B8%B2%E6%9F%93%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%EF%BC%8C%E8%80%8C%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E7%9A%84%E6%A0%B7%E5%BC%8F%E9%83%BD%E7%9B%B4%E6%8E%A5%E7%94%B1%20Hexo%20%E7%9A%84%E4%B8%BB%E9%A2%98%E6%8E%A7%E5%88%B6%EF%BC%8C%E6%89%80%E4%BB%A5%20Hexo%20%E5%8D%9A%E5%AE%A2%E5%A4%A7%E9%83%A8%E5%88%86%E9%83%BD%E5%91%88%E7%8E%B0%E5%87%BA%E4%B8%80%E7%A7%8D%E9%AB%98%E5%BA%A6%E7%9A%84%E7%BB%9F%E4%B8%80%E5%8C%96%E4%B8%8E%E8%A7%84%E8%8C%83%E5%8C%96%E3%80%82.%20%E4%B8%8D%E8%BF%87,%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%20%E3%80%82.%20%E5%A6%82%E6%9E%9C%E8%A6%81%E5%BF%BD%E7%95%A5%20source%20%E4%B8%8B%E7%9A%84%20test%20%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E9%85%8D%E7%BD%AE%EF%BC%9A.%201.">hexo跳过渲染</a></li>
+<li><a href="https://blog.csdn.net/zgcr654321/article/details/86738005">使用Gitlab pages自动部署hexo博客</a></li>
 </ul>
-</li>
-<li><del>结果:没验证成功</del></li>
-<li>最简单的方法是将html复制到source文件夹(在跳过css渲染) over</li>
-<li>主题作者方法:在 head.ejs 里添加 html 标签<br>         <u>(后悔没早点看到)</u></li>
-</ul>
-</li>
-<li><p><a href="https://blog.csdn.net/zgcr654321/article/details/86738005">使用Gitlab pages自动部署hexo博客</a></p>
-</li>
-</ul>
+<h1><span id="资源推荐">资源推荐</span></h1><h2><span id="多平台下载工具合集">多平台下载工具合集</span></h2><h3><span id="工具">工具</span></h3><p>看链接<a href="https://www.youxiaohou.com/download.html">相关软件下载</a>  有IDM NDM Xdown(多平台)–多线程下载<br>还有ariaNg<a href="http://aria2.scrongyao.com/">Aria2中文网 </a></p>
+<blockquote>
+<p><em>油小猴</em></p>
+</blockquote>
+<h3><span id="网盘资源下载">网盘资源下载</span></h3><p><a href="https://greasyfork.org/zh-CN/scripts/449291-%E6%94%B9-%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B">（改）网盘直链下载助手 </a></p>
+<blockquote>
+<p><em>油小猴</em></p>
+</blockquote>
+<p><a href="https://greasyfork.org/zh-CN/scripts/431256-%E8%BF%85%E9%9B%B7%E4%BA%91%E7%9B%98">迅雷云盘</a>:建议先导入bt文件或资源再进行idm命令行下载</p>
+<blockquote>
+<p><em>迅雷云盘</em></p>
+</blockquote>
+<h2><span id="python资源">python资源</span></h2><p>这是假的<br><del><a href="https://www.manongbook.com/download/315.html">《零基础入门学习Python(第2版) 》</a></del><br>弄出来丢脸(打着免费的幌子明目张胆的收钱)<br><a href="https://imgse.com/i/pCq9zR0"><img src="https://s1.ax1x.com/2023/07/22/pCq9zR0.md.png" alt="pCq9zR0.md.png"></a><br><a href="https://imgse.com/i/pCqCSzV"><img src="https://s1.ax1x.com/2023/07/22/pCqCSzV.md.png" alt="pCqCSzV.md.png"></a><br>正经资源<br><a href="https://pic.itmresources.com/archives/53951">(‘《零基础入门学习Python（第2版）》pdf电子书附源码课件 …</a><br>配套b站课程 <a href="https://www.bilibili.com/video/BV1Qa4y1Y7vW/?spm_id_from=333.999.0.0">《零基础入门学习Python》(第2版)【快速解读版】</a><br>我直接推她 声音太好听了</p>
 ]]></content>
       <categories>
         <category>个人</category>
@@ -409,15 +429,10 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/07/09/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/googlea0e607549e412fbf/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>google-site-verification: googlea0e607549e412fbf.html]]></content>
-  </entry>
-  <entry>
     <title>bilibili嵌入视频</title>
     <url>/2023/07/07/bilibili%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="3ec17eaffa2b7227a8663edec6a537ee702efd4ed8c8e10be11f9c8ca9703245">0fccd7f6df5c90b5412c12ff50aec4d3d780ea6cfa703f92841b8637dcb936f809cb0a012bc19d24d8cd17591beac60dfe6a2ddc6c723bfb0a702cd655da391c515846d6a2a8b1cf60676ca892bce9a516d102dc852fa38759690e1b977136fa418a1d2837532274e73b9f215f1dcca8b4b14194c922bbddaef0641cd50288e9e6f0be0a6018dad0090b97b58b2136c25aa9714c267c86b8c66e151bf1ae12c466932349e6c7a78a4fb01ef7d6f9bce0abe4bbead884c23f22698836ba7f551ab81bf55c7e4ddc445311a1ad44aaa51220f2fdd72cfb1663735d7bb33bf58231d702847448f23e32f1107c892d93a2d5e550c31ace622f48853a20cf20d673323534e35e2e2dcf120c84cca1a91d1d16c61e1abc30fd90804fa1495571b8b0b27a9d80077164ba216f5ce8f408d34cf7cb4b4ab663f227d5c72dae2d902bd44fe9d75a5ddb9c78ad52a57cfccf4d336a69387e36fd293dceaf6c73104353195398d19d24ee480a9730a94d470e99140ab887449b3b93f63148e089610cbcdebb370a0860d714c0fb734ff6f13cc3c9cae7fde8714f7cc56d615effbc3ea70e5f47591cb057040f9c9c93671f5dbd134a304515fdcaf4e4f0d1d24d09bc62682f4454d92fe8e7de211580ad6af4ca0923ede93676377f753d945366832dce755fce0eb0840ef2cfa565c604314e8f2ad1799f4c6cfd76ae1f90d68829bfff7744626e8a3b836a4fa8bcb33ced46893a50d0ff1a44578e49ce6bef080a46b6fac2554dd417d781a55d787a6bcab1adef9086ab6ba2526fa5bc306a18f44fb74362c92d11dabcb883b375322fdb2a205859c1d109529d709256f9143bd5d5d374bf7e92735f9bfffcd5c6fc4024cf58a64bb4d5f16d6f1efbf826ba5cd45d8eac13c25969aa8c9a308390824680fc734f1bd20dffe745fece2ae57d1382e98be21d5357d244d694edae10992bd8a15d3bd8602ae8785a8c8c992b2904e073c3f0227105a21ce7a935553808685c9ae1fa1e1454a23e1270b694368dd2bb175d0650e58744dc962ca4dd4a5112c7062b923e7c0f5689b6f73b8bfdccbcf748eba3804972aae4f924807f4cdb340bfa3ebe48eca8b8a99686a8048b1e116710944b9073262cdfc77b3678c49f595697c96e014e3930f14d1c18afa9908a1ebd31ad93bb3e8f76bff66c6ae821406d276efe8f8a4ccb335ce8faad42fe3a164fb72c85b22505a376f9e9bb093bfb947145858fbc8b83ec0512d2f918f217810108e8796f0236ec2c583608c7080c7bebeb9ddbf53fd8b08cdf399d2458d81661ddf780bc4c5607da37bc11b18f12873ba9f592e337934b59b0bac21c88b81ea72cf4cd71e1c6e815081891bb555445a95bb930074f0e60b9b6de294ff6c0c91357f992505be0e8077341feecadedd696b721b47673dda41a468039e6e6b148c3b872e8541e22c3df4f155da6dcc3f651dd7ae023fa49e3575ba96238435feaae31af1729d6f4a62ce4078b4844c1e7946cd93bf1ed655f133c8858e9ad8f714255c10d15ea5a9705456c6ef109c9d7859e2e8dc0d6d4d93b6a6c0d7b2720b41eec40614a16df0e6e5d06159290312e45a0a71c410bbf23870e87269d865d86a1b623ade7d5bdfa37d5cf18295d14cd19c5ddfe58635487d35f5a493c8a9c7453e87b455dacae525329cdadb936450b1edae88c6cd28c1708fc662c76985fa44a05cfedfb8c643c5fbf215555b1f8f6f0fc6365fb92321faf0d36880a1bdd0edcd3db82e6c376bee114d2796c24d92499eb4e9ab39d76a49ae65962f56cd75b1db05bf5c6bf25478d5fe89a6f6e64ed50bf3e781d541470d07c5ab2b73b5df359009ff6d1908f09045f0bba4de1ef0fb847bd3bac29ffe53982f49857b831680b9c89b00a419a4db70af553a5722d2c8cb27fce9f46f55744d96fa061e9de264a57996fd87c5e4937877ca4af23ac51d435f51bb257b610c6d8533f30bbb935266d157ce903460372df496544c44cc50effcc342fabd497fd375db476b5aa66419a1d0c08899b762d8a0c8e2c40e8951c67de0ca5e16f3471d4c289958d2319477a6518345cc2fb29c4de75f12c92ea6539810248fcba9d469981f3b17c6e3d3202613902fb9c6809ad67187d9835d32130857dd1fba498e66659db9100c54f00ea3ae84bc6d9616ef0d4dd07c63eb0940d8a32e23808bbf814df3c0d805b139ca45b3013f94dd457b7052364e6e331741df53c51cabf52086732804e3c3f2d84c08abf4ec25762291bb8b6524f6fe1887b19f0bae26494ba3f17b5af50eb427c6fa7784110e96882a2600d1e23082972791248703b67733363417b0b52ffb68e910fc622408f867ad6aabe70c5a9276fe1137c16b254e37eeccea5cd9492e79a9fece873b21207e3d69d4e63b14da50fdc85ba803f1dafe7b3fed0a0cfb123398231540a864d9db1424f5c6ecd2d9054f02203cd8f6fa783debced32e52baab0c5304d4b77ca3aae09e440a26d3631f86ec1706140611d7a8b43c3fcc8d6b058927c64852f914e0a45c23cef89c757ec4bba624c69a360623e300e4557ba4b2d0561f1e6b7e22be88d64b6b049eece5badd7535a0a84371fe489247731f2884eb5796bc0ade827cad9732d7f0963ef8058228c3d563cccb13224cfcfdca90ce7a28c7bc872ba8431d9fbd3f262721b74ed6501d1ccceff2c7b661223cb53a27bcae6c1a8731acf5118625506063345c94eb080e400ca69f8f8db0729975227162b4ded9b077bf4856973c6918e853086b1ec125bae5f579752467cfa25796b57e91ce5ca301ec8202c37e25e81a2983ef700faef07e57bfcf6a65c836d795f6c5e6141aae76b1cf043b43b12972adbb3011e56fdeb50830c280095d0857227eae773304b0b32ec456fcc9fb40ac81346676702b5d9f3c5a1eda36459496ded6e8b59327443ea2a5a55d253f900041d810244b12b1131172b2ffef064e2e83f73765502a5c0a0501c4318444d594337347e8a63f43c391d9c18b82b09f9fb65759de1dc56f1396fa36c3bf7e598cdd2c174ff0254a2f3aff987fc26d4fad325200afa43de259fc1d3220cf860772ffdff4e9acebfd7fee3cd9aad7b05617d64399d1e040c4abe71e2c421d8431e90f01066a47055227962091ef82ff56b294a4ea289e8f7cb944ff51254b10a9f83d3fa754897c1db968785796c66dbadf328dcbfe5fc5f0a2bcdea35ec7fa85195e311eefa586da773bca6f9ac5ecf3411d9a64bf446e71f7d235af1c3af0da6682929ccace8ac06bc75ee582725fcaf9c740c64b1cdf9520743b0d44717a69ed307d164cccc59dc85b97aa5a34a3e2f435a69d526af26158476246c8cb937333ddfa2a0f61814876448006a2e7dd4e146f3d0adc078f305e85c72ab7fe2ab3e13eef1f55038156e536d54d9dee5da547e404d5193564933b52099e8a962b9bdc1587654c6251babeb475abd2a1329beb2c39be80d3cda768a557d6b3f13e1b0068c940db49a82db0d2513aa6aaebe2930ebcd05ae938cad0dd55f2048d7107b5ce2a91ead7c8da01607de25cd8de9a86993fa2d1d61799a6915d57b4579252d7bd70fe4d80110295193fe07fbbfcdc7c6cf4589714a3a33e02733879e1af641399bf1f797446d9976a71110551ff85bb9ec770812f5e78e59e21ebbd7f9b6f6d01dbbd2f2b9222bcbbf8dc3adb99530f805b71976ce9a4b2d4371358ac018d356bbd12186eb3fca0071b8435714889ae79f95077c3a759bee739bb0cb6cc2548badb755b8f8badf83b49bccbdce37755101c991069ad56b57a948b7d1de13c9ef416759a8818b4543239ec5284a51b8e938493156a229ce1c6acd53305cb4b64c50a2f2e605729aa99a4d95b4f5493cc853fa12d13206257370f5f4b5ca4da4e1ea4a22f72df84d2edeeebf3256f38d7d86b2a923604bd935f0d1a18487485644c1c6a5bec6c5d0526cd58876788efc860a28075105f05578da6406033783b65d06b90c1a1a6209b02c4ac45a7239fa2bdaf11bd9e6d577b6d9e4dbbc8a224bae17c966bde586b59791f6d71a8ba67e767503b9c754e6d21910c0ca0eb41a19645fef48cd81715ea239582e4a3430d4cc9baf15616ecd1d18df554478584d075527b158ed26473cedc3bdb22f3da399bdea60b1db63a1a2ad1bd7345e64da7607c9c17a7a232ecf15514f23b50fb3dcea994624354adb7eab09bde788b7c15698f2ae2c7f6d1663cf657ebafd4ea6a81672d88e4afe1a3578d9719d5cebc51cadea3d2e9258b37d206765f86fd73304ecf9d7b857bef8abd791420846cf1275c676cfd3cc02b53bd7af4465edf50493bf97750585c26bf9a9705c86734428e9b2e941c33f797be9831cfdf6bc3a9e7b5bf00c45c6514d1e64896bc421df0e3186ec11daec5feb542bcab67fbdd8dc7002476d71e83433a436a64a63bc20d55e3ce656875dec98169225fb3c0f570fcbf98fc373235b99f9d4493a98aa9c652c7da21fbabcb94dfa1bc133db201940e5612406c9998194fda3413d547e3010140a2f6faacdd383c7e1f9b847497f10720bdde2213042df3d379058ace25ceb9b0fda2f788c349b425167b9f2ac21f8685d4679a588a0bf79abf4f210bf73f4bfadc90d2743478116e81f19fdffe32aafd227a20399090f67f8968bc459574868d81c8c98bc3d832df07096b86e582cfcfe7e94d26d41181a6798fa87fc22c2df8ee8318f12d5c5ed7620c6f4ed14a33a18412df0a600d190805931051e9483e8fcfe0493e8fca6a9b9867cbf5bba761f52863c65ec38d4fab3a42f21495ff12364df02f006fc34921400a16978bad578de66138a851e2069eafdc98750775078dcd658d2ab98f61cb210975fd2dc659c3c2d12eae34dcc89f552ae0de95f6d4798b71a1f6cc2e62b0dc8141e727b8ce8d6ceccc2b5e4125d24dfd035c9db0fc32391e775d5fdc91b4ebf1c597ce4072d42b27f10a5305fc2441588f4330f11eac2802669f2ee61fb9c56bc2c3c5e49e524cf8deed708a97faa8f08e0fca4d26eeb9399c90b19283386fd1dc2794ca367ed1fba937e3a1162caa8a14591c7fb03571c4d0d034aedfcd79736e5e04dbc407924ca9080e0015a27e6f08579cf8ebaab0f7284105050829156603918946e77b2b7f0b7297e</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="68108cb866ac82c5c2fe092f9195f9e596decae15577c2f0675c65f8f52d62b0">0fccd7f6df5c90b5412c12ff50aec4d3d780ea6cfa703f92841b8637dcb936f809cb0a012bc19d24d8cd17591beac60dfe6a2ddc6c723bfb0a702cd655da391c515846d6a2a8b1cf60676ca892bce9a516d102dc852fa38759690e1b977136fa418a1d2837532274e73b9f215f1dcca8b4b14194c922bbddaef0641cd50288e9e6f0be0a6018dad0090b97b58b2136c25aa9714c267c86b8c66e151bf1ae12c466932349e6c7a78a4fb01ef7d6f9bce0abe4bbead884c23f22698836ba7f551ab81bf55c7e4ddc445311a1ad44aaa51220f2fdd72cfb1663735d7bb33bf58231d702847448f23e32f1107c892d93a2d5e550c31ace622f48853a20cf20d673323534e35e2e2dcf120c84cca1a91d1d16c61e1abc30fd90804fa1495571b8b0b27a9d80077164ba216f5ce8f408d34cf7cb4b4ab663f227d5c72dae2d902bd44fe9d75a5ddb9c78ad52a57cfccf4d336a69387e36fd293dceaf6c73104353195398d19d24ee480a9730a94d470e99140ab887449b3b93f63148e089610cbcdebb370a0860d714c0fb734ff6f13cc3c9cae7fde8714f7cc56d615effbc3ea70e5f47591cb057040f9c9c93671f5dbd134a304515fdcaf4e4f0d1d24d09bc62682f4454d92fe8e7de211580ad6af4ca0923ede93676377f753d945366832dce755fce0eb0840ef2cfa565c604314e8f2ad1799f4c6cfd76ae1f90d68829bfff7744626e8a3b836a4fa8bcb33ced46893a50d0ff1a44578e49ce6bef080a46b6fac2554dd417d781a55d787a6bcab1adef9086ab6ba2526fa5bc306a18f44fb74362c92d11dabcb883b375322fdb2a205859c1d109529d709256f9143bd5d5d374bf7e92735f9bfffcd5c6fc4024cf58a64bb4d5f16d6f1efbf826ba5cd45d8eac13c25969aa8c9a308390824680fc734f1bd20dffe745fece2ae57d1382e98be21d5357d244d694edae10992bd8a15d3bd8602ae8785a8c8c992b2904e073c3f0227105a21ce7a935553808685c9ae1fa1e1454a23e1270b694368dd2bb175d0650e58744dc962ca4dd4a5112c7062b923e7c0f5689b6f73b8bfdccbcf748eba3804972aae4f924807f4cdb340bfa3ebe48eca8b8a99686a8048b1e116710944b9073262cdfc77b3678c49f595697c96e014e3930f14d1c18afa9908a1ebd31ad93bb3e8f76bff66c6ae821406d276efe8f8a4ccb335ce8faad42fe3a164fb72c85b22505a376f9e9bb093bfb947145858fbc8b83ec0512d2f918f217810108e8796f0236ec2c583608c7080c7bebeb9ddbf53fd8b08cdf399d2458d81661ddf780bc4c5607da37bc11b18f12873ba9f592e337934b59b0bac21c88b81ea72cf4cd71e1c6e815081891bb555445a95bb930074f0e60b9b6de294ff6c0c91357f992505be0e8077341feecadedd696b721b47673dda41a468039e6e6b148c3b872e8541e22c3df4f155da6dcc3f651dd7ae023fa49e3575ba96238435feaae31af1729d6f4a62ce4078b4844c1e7946cd93bf1ed655f133c8858e9ad8f714255c10d15ea5a9705456c6ef109c9d7859e2e8dc0d6d4d93b6a6c0d7b2720b41eec40614a16df0e6e5d06159290312e45a0a71c410bbf23870e87269d865d86a1b623ade7d5bdfa37d5cf18295d14cd19c5ddfe58635487d35f5a493c8a9c7453e87b455dacae525329cdadb936450b1edae88c6cd28c1708fc662c76985fa44a05cfedfb8c643c5fbf215555b1f8f6f0fc6365fb92321faf0d36880a1bdd0edcd3db82e6c376bee114d2796c24d92499eb4e9ab39d76a49ae65962f56cd75b1db05bf5c6bf25478d5fe89a6f6e64ed50bf3e781d541470d07c5ab2b73b5df359009ff6d1908f09045f0bba4de1ef0fb847bd3bac29ffe53982f49857b831680b9c89b00a419a4db70af553a5722d2c8cb27fce9f46f55744d96fa061e9de264a57996fd87c5e4937877ca4af23ac51d435f51bb257b610c6d8533f30bbb935266d157ce903460372df496544c44cc50effcc342fabd497fd375db476b5aa66419a1d0c08899b762d8a0c8e2c40e8951c67de0ca5e16f3471d4c289958d2319477a6518345cc2fb29c4de75f12c92ea6539810248fcba9d469981f3b17c6e3d3202613902fb9c6809ad67187d9835d32130857dd1fba498e66659db9100c54f00ea3ae84bc6d9616ef0d4dd07c63eb0940d8a32e23808bbf814df3c0d805b139ca45b3013f94dd457b7052364e6e331741df53c51cabf52086732804e3c3f2d84c08abf4ec25762291bb8b6524f6fe1887b19f0bae26494ba3f17b5af50eb427c6fa7784110e96882a2600d1e23082972791248703b67733363417b0b52ffb68e910fc622408f867ad6aabe70c5a9276fe1137c16b254e37eeccea5cd9492e79a9fece873b21207e3d69d4e63b14da50fdc85ba803f1dafe7b3fed0a0cfb123398231540a864d9db1424f5c6ecd2d9054f02203cd8f6fa783debced32e52baab0c5304d4b77ca3aae09e440a26d3631f86ec1706140611d7a8b43c3fcc8d6b058927c64852f914e0a45c23cef89c757ec4bba624c69a360623e300e4557ba4b2d0561f1e6b7e22be88d64b6b049eece5badd7535a0a84371fe489247731f2884eb5796bc0ade827cad9732d7f0963ef8058228c3d563cccb13224cfcfdca90ce7a28c7bc872ba8431d9fbd3f262721b74ed6501d1ccceff2c7b661223cb53a27bcae6c1a8731acf5118625506063345c94eb080e400ca69f8f8db0729975227162b4ded9b077bf4856973c6918e853086b1ec125bae5f579752467cfa25796b57e91ce5ca301ec8202c37e25e81a2983ef700faef07e57bfcf6a65c836d795f6c5e6141aae76b1cf043b43b12972adbb3011e56fdeb50830c280095d0857227eae773304b0b32ec456fcc9fb40ac81346676702b5d9f3c5a1eda36459496ded6e8b59327443ea2a5a55d253f900041d810244b12b1131172b2ffef064e2e83f73765502a5c0a0501c4318444d594337347e8a63f43c391d9c18b82b09f9fb65759de1dc56f1396fa36c3bf7e598cdd2c174ff0254a2f3aff987fc26d4fad325200afa43de259fc1d3220cf860772ffdff4e9acebfd7fee3cd9aad7b05617d64399d1e040c4abe71e2c421d8431e90f01066a47055227962091ef82ff56b294a4ea289e8f7cb944ff51254b10a9f83d3fa754897c1db968785796c66dbadf328dcbfe5fc5f0a2bcdea35ec7fa85195e311eefa586da773bca6f9ac5ecf3411d9a64bf446e71f7d235af1c3af0da6682929ccace8ac06bc75ee582725fcaf9c740c64b1cdf9520743b0d44717a69ed307d164cccc59dc85b97aa5a34a3e2f435a69d526af26158476246c8cb937333ddfa2a0f61814876448006a2e7dd4e146f3d0adc078f305e85c72ab7fe2ab3e13eef1f55038156e536d54d9dee5da547e404d5193564933b52099e8a962b9bdc1587654c6251babeb475abd2a1329beb2c39be80d3cda768a557d6b3f13e1b0068c940db49a82db0d2513aa6aaebe2930ebcd05ae938cad0dd55f2048d7107b5ce2a91ead7c8da01607de25cd8de9a86993fa2d1d61799a6915d57b4579252d7bd70fe4d80110295193fe07fbbfcdc7c6cf4589714a3a33e02733879e1af641399bf1f797446d9976a71110551ff85bb9ec770812f5e78e59e21ebbd7f9b6f6d01dbbd2f2b9222bcbbf8dc3adb99530f805b71976ce9a4b2d4371358ac018d356bbd12186eb3fca0071b8435714889ae79f95077c3a759bee739bb0cb6cc2548badb755b8f8badf83b49bccbdce37755101c991069ad56b57a948b7d1de13c9ef416759a8818b4543239ec5284a51b8e938493156a229ce1c6acd53305cb4b64c50a2f2e605729aa99a4d95b4f5493cc853fa12d13206257370f5f4b5ca4da4e1ea4a22f72df84d2edeeebf3256f38d7d86b2a923604bd935f0d1a18487485644c1c6a5bec6c5d0526cd58876788efc860a28075105f05578da6406033783b65d06b90c1a1a6209b02c4ac45a7239fa2bdaf11bd9e6d577b6d9e4dbbc8a224bae17c966bde586b59791f6d71a8ba67e767503b9c754e6d21910c0ca0eb41a19645fef48cd81715ea239582e4a3430d4cc9baf15616ecd1d18df554478584d075527b158ed26473cedc3bdb22f3da399bdea60b1db63a1a2ad1bd7345e64da7607c9c17a7a232ecf15514f23b50fb3dcea994624354adb7eab09bde788b7c15698f2ae2c7f6d1663cf657ebafd4ea6a81672d88e4afe1a3578d9719d5cebc51cadea3d2e9258b37d206765f86fd73304ecf9d7b857bef8abd791420846cf1275c676cfd3cc02b53bd7af4465edf50493bf97750585c26bf9a9705c86734428e9b2e941c33f797be9831cfdf6bc3a9e7b5bf00c45c6514d1e64896bc421df0e3186ec11daec5feb542bcab67fbdd8dc7002476d71e83433a436a64a63bc20d55e3ce656875dec98169225fb3c0f570fcbf98fc373235b99f9d4493a98aa9c652c7da21fbabcb94dfa1bc133db201940e5612406c9998194fda3413d547e3010140a2f6faacdd383c7e1f9b847497f10720bdde2213042df3d379058ace25ceb9b0fda2f788c349b425167b9f2ac21f8685d4679a588a0bf79abf4f210bf73f4bfadc90d2743478116e81f19fdffe32aafd227a20399090f67f8968bc459574868d81c8c98bc3d832df07096b86e582cfcfe7e94d26d41181a6798fa87fc22c2df8ee8318f12d5c5ed7620c6f4ed14a33a18412df0a600d190805931051e9483e8fcfe0493e8fca6a9b9867cbf5bba761f52863c65ec38d4fab3a42f21495ff12364df02f006fc34921400a16978bad578de66138a851e2069eafdc98750775078dcd658d2ab98f61cb210975fd2dc659c3c2d12eae34dcc89f552ae0de95f6d4798b71a1f6cc2e62b0dc8141e727b8ce8d6ceccc2b5e4125d24dfd035c9db0fc32391e775d5fdc91b4ebf1c597ce4072d42b27f10a5305fc2441588f4330f11eac2802669f2ee61fb9c56bc2c3c5e49e524cf8deed7083f90ce2c9be35431d0083cbc98f38fe4f6d8f1b89d724105b5379b6c80a15250bf00a9fb28323bf707f5629fbb4a873f6b3d2684c58bd95a93e0120441316bad1bc503f8d36f6e0fe118515ab9e3e3ecd7cc8e3e99d41f1d48dbaa2c3ae1f92172741f80323964f3a53942c5bc24aac85d74ee0c58d47c5bcc8a2c3118dc0bba</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -438,7 +453,7 @@ cat ~/.ssh/id_rsa.pub
   <entry>
     <title>vscode自动更新</title>
     <url>/2023/07/07/vscode%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/image.png" alt="Alt text"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="论如何设置vscode自动更新">论如何设置vscode自动更新</span></h1><h2><span id="-打开vscode设置界面搜索框内输入-auto-save">- 打开VSCode设置界面,搜索框内输入 auto save</span></h2><p><img src="/2023-7%E6%9C%88-07-17-01-53-164mage.png" alt="Alt text"></p>
 <ul>
 <li>afterDelay将在配置的 <code>files.autoSaveDelay</code> 后自动保存为保存的编辑器</li>
 <li>onFocusChange —— 当编辑器失去焦点时，将自动保存为保存的编辑器也就是鼠标不在VSCode里面时自动保存</li>
@@ -456,14 +471,14 @@ cat ~/.ssh/id_rsa.pub
   <entry>
     <title>一张图片</title>
     <url>/2023/07/07/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="01.png">图片</a></p>
-<h2><span id="这是图片">这是图片</span></h2><p><img src="/01.png" alt="picture"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
+<h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart3864" style="height: 300px"></canvas>
+    <canvas id="chart2047" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart3864').getContext('2d');
+    var ctx = document.getElementById('chart2047').getContext('2d');
     var options = {
     type: 'line',
     data: {
@@ -699,9 +714,9 @@ distractionFreeMode: true  #无干扰模式，不需要更改
 </ul>
 <h1><span id="文章太长怎么办">文章太长怎么办?</span></h1><h2><span id="添加这个即可">添加这个即可</span></h2><p><code>&lt;!--more--&gt;</code></p>
 <h1><span id="新建文件夹或文件格式">新建文件夹或文件格式</span></h1><h1><span id="hexo多平台同步">hexo多平台同步</span></h1><p>参考:<a href="https://www.zhihu.com/question/21193762/answer/489124966">知乎 直上云霄 【使用hexo，如果换了电脑怎么更新博客？】问题回答</a></p>
-<h2><span id="git-基本操作">Git 基本操作</span></h2><p> <a href="https://www.runoob.com/git/git-basic-operations.html">git</a><br> <img src="/002.png" alt="Alt text"></p>
+<h2><span id="git-基本操作">Git 基本操作</span></h2><p> <a href="https://www.runoob.com/git/git-basic-operations.html">git</a></p>
 <h1><span id="ayer">ayer</span></h1><p><a href="https://easyhexo.com/2-Theme-use-and-config/2-19-hexo-theme-ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">作者介绍</a></p>
-<h2><span id="基本插件">基本插件</span></h2><p> <img src="/001.png" alt="插件"></p>
+<h2><span id="基本插件">基本插件</span></h2><p><img src="/2023-7%E6%9C%88-10-11-28-19-51801.png" alt="Alt text"></p>
 ]]></content>
       <categories>
         <category>个人</category>

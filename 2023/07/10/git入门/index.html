@@ -105,7 +105,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.9k</span>
+            <span class="post-count">2k</span>
         </span>
     </span>
 
@@ -126,13 +126,17 @@ var _hmt = _hmt || [];
   <blockquote>
 <p>选自bilibili <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pX4y1S7Dq/?spm_id_from=333.337.search-card.all.click">30分钟弄懂所有工作Git必备操作 &#x2F; Git 入门教程</a></p>
 </blockquote>
+<blockquote>
+<p>选自bilibili <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1r3411F7kn/?spm_id_from=333.337.search-card.all.click">Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub</a></p>
+</blockquote>
+<p>建议直接观看视频</p>
 <h1><span id="git是什么">git是什么</span></h1><p>免费开源的分布式版本控制系统<br>版本管理<br>分布式 集中式svn<br>方面大家以后工作<br>github gitlab gitee区别<br>安装git<br>官网下载<br>[Windows和mac有区别]<br>(windows:右键打开gbh<br>mac直接打开终端窗口)<br>基础配置<br>$ git config –global user.name”your name”<br>$ git config –global user.email “your email”<br>(只是说明性的)</p>
 <span id="more"></span>
 <p>创建仓库:<br>去项目的文件夹输入<br>$ git init<br>(不需要联网)<br>用 git clone去克隆一个网络上的项目<br>例如: git clone <a target="_blank" rel="noopener" href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a><br>(为所欲为)</p>
 <p>创建完仓库后,每一个文件都有一个状态<br>git init<br>新建 状态:未跟踪<br>单独跟踪一个文件<br>$ git add <name><br>删除:$ git rm <name> 或者用$ git rm –cache <name>(保留在目录里但不被跟踪)<br>修改<br>接下来用 git add <file-name>设置成缓存状态<br>假如<em>手滑</em> 不想把它设置成缓存状态用 git reset HEAD <name>来取消它的缓存状态<br>用 git commit命令来提交此次修改<br>一个文件的四个状态</name></file-name></name></name></name></p>
 <p>补充:git commit<br>输入git commit 然后回车<br>终端自动跳到编辑器里(应该是vim)<br>  按i键输入模式<br>  编辑完成后按 ESC和:wq键保存并退出版本提交完成<br>-或者按git commit -m “本次修改的大致内容”<br>接着按回车</p>
 <p>突然不想提交怎么办用git reset head~ –soft来取消我们这次的提交(但第一次提交撤销不了,第二三次可以)<br>如何查看文件章台<br>用git status查看<br>红色是修改但没暂存,绿色是已暂存但没提交<br>查询命令(更细致)git diff<br>查询之前历史的提交 git log(commit后面的乱码是之前提交的哈希值接下来是提交作者,提交时间还有我们提交时输入的一些信息)</p>
-<p>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地</p>
+<p>git log –pretty美化输出<br>git log –pretty&#x3D;oneline(把每一次提交的信息都变成一行)<br>或自定义一个格式 $ git log –pretty&#x3D;format:”%h-%an,%ar:%s”<br>(%h 简化哈希<br>%an 作者名字<br>%ar 修订日期(距今)<br>%ad 修订日期<br>%s 提交说明)<br>当然除了这样一条一条上传信息<br>还可以用git log –graph来以图形化的方式去呈现(主要表现为分支)–&gt;这是本地<br><img src="https://pic.imgdb.cn/item/64bb62981ddac507ccc4bb77.jpg"><br><img src="https://pic.imgdb.cn/item/64bb62981ddac507ccc4bb8a.jpg"><br><a target="_blank" rel="noopener" href="https://imgse.com/i/pCqSyJx"><img src="https://s1.ax1x.com/2023/07/22/pCqSyJx.md.png" alt="pCqSyJx.md.png"></a></p>
 <hr>
 <p>远程仓库的一些使用:<br>代码托管平台:以github为例<br>右上角new repository<br>给原始仓库起名 公开 初始化</p>
 <ul>
@@ -256,9 +260,9 @@ var _hmt = _hmt || [];
       </a>
     
     
-      <a href="/2023/07/09/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/" class="article-nav-link">
+      <a href="/2023/07/09/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">实用教程</div>
+        <div class="article-nav-title">教程与资源</div>
       </a>
     
   </nav>
