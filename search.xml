@@ -159,7 +159,15 @@ cat ~/.ssh/id_rsa.pub
     <title>android写作平台</title>
     <url>/2023/07/23/android%E5%86%99%E4%BD%9C%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="quickedit">QuickEdit</span></h1><h2><span id="你是否还在为无法用手机-写代码而烦恼你是否还在termux中用vi编辑器">你是否还在为无法<em>用手机</em> 写代码而烦恼,你是否还在termux中用vi编辑器</span></h2><h1><span id="知名大佬-许子旋-倾情分享他自认为最好用的写作软件-quickedit">知名大佬   <strong>许子旋</strong>  倾情分享他自认为最好用的写作软件 quickedit</span></h1><p><a href="https://user.qzone.qq.com/1462586668?source=namecardhoverqzone">许子旋的空间</a> 不会的可以加他好友进行交流</p>
-<h2><span id="1-支持markdown文件编写与预览">1. 支持markdown文件编写与预览</span></h2><h2><span id="2-支持文件查找到根目录">2. 支持文件查找到根目录</span></h2><h2><span id="3-支持对文件进行运行调试">3. 支持对文件进行运行调试</span></h2>]]></content>
+<h2><span id="1-支持markdown文件编写与预览">1. 支持markdown文件编写与预览</span></h2><h2><span id="2-支持文件查找到根目录">2. 支持文件查找到根目录</span></h2><h2><span id="3-支持对文件进行运行调试">3. 支持对文件进行运行调试</span></h2><h1><span id="如果不方便可以采用坚果云进行替代安卓端">如果不方便可以采用坚果云进行替代(安卓端)</span></h1><p>好处:</p>
+<ol>
+<li>支持云同步</li>
+<li>有免费空间<br>好,然我们在结尾处再次感谢 <strong>许子旋同学</strong>!</li>
+<li>支持多平台:包括但不限于windows ubuntu android macos具体可以到<a href="https://www.jianguoyun.com/s/downloads">官网</a>查看</li>
+<li>支持实时同步 确实不错</li>
+<li>支持各类<strong>快捷键</strong></li>
+</ol>
+]]></content>
       <categories>
         <category>个人</category>
       </categories>
@@ -868,11 +876,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart9719" style="height: 300px"></canvas>
+    <canvas id="chart5833" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart9719').getContext('2d');
+    var ctx = document.getElementById('chart5833').getContext('2d');
     var options = {
     type: 'line',
     data: {
