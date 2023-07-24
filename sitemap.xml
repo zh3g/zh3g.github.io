@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://example.com/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/index.html</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/index.html</loc>
+    <loc>http://example.com/tags/index.html</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -110,15 +110,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/about/index.html</loc>
     
     <lastmod>2023-07-23</lastmod>
@@ -138,6 +129,15 @@
   
   <url>
     <loc>http://example.com/photos/index.html</loc>
+    
+    <lastmod>2023-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/index.html</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -272,6 +272,13 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/cmd/</loc>
+    <lastmod>2023-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/test/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -280,13 +287,6 @@
   
   <url>
     <loc>http://example.com/tags/live2d/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/cmd/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -330,14 +330,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E6%97%A0/</loc>
+    <loc>http://example.com/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>http://example.com/categories/%E6%97%A0/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
