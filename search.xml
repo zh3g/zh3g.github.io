@@ -156,6 +156,11 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
+    <title>unpro software</title>
+    <url>/2023/12/02/unpro-software/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+  </entry>
+  <entry>
     <title>百校联考前及期中反思</title>
     <url>/2023/12/02/%E7%99%BE%E6%A0%A1%E8%81%94%E8%80%83%E5%89%8D%E5%8F%8A%E6%9C%9F%E4%B8%AD%E5%8F%8D%E6%80%9D/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="无望">无望</span></h1><p>一招从高台中跌落,便再也起不了.</p>
@@ -188,6 +193,25 @@ cat ~/.ssh/id_rsa.pub
 <p>等了45min(一节化学晚自习),后能够预览相关的视频,但是下一步操作时,却出现了bug,因为我们现在是用的免费版,大文件不支持恢复,需要购买高级版,我们当时苦笑不得,我提议用注册码,但是小白找了好一会儿,一个能用的都没有.</p>
 <p>我气得晚上晚了10min才走,找到一个,本满心欢喜,却在.第二次打开时.整个软件直接崩溃(堪称一次性软件),第二天,早饭后,我不依不饶终于找到了真正的pro版…….自此这事才告一段落..</p>
 <p>啰嗦一大堆,还是呈现一下吧.</p>
+<p><a href="https://imgse.com/i/pisvZOH"><img src="https://z1.ax1x.com/2023/12/02/pisvZOH.md.png" alt="pisvZOH.md.png"></a></p>
+<h2><span id="typora">typora</span></h2><p>原先不想用但无奈vscode经常出现bug,而且真心不好用,于是就有了这个</p>
+<p><a href="https://zhuanlan.zhihu.com/p/661170065">Typora激活使用指南（2023年最新版） - 知乎 (zhihu.com)</a></p>
+<p>公众号:AI小智(大家多多支持)</p>
+<p>以下参考这篇文章</p>
+<p>链接：<a href="https://pan.baidu.com/s/1mOrrFMmuD9z3GwsSEI04tg?pwd=xb1k">https://pan.baidu.com/s/1mOrrFMmuD9z3GwsSEI04tg?pwd=xb1k</a> 提取码：xb1k </p>
+<p>我采用的是第二种,效果显著</p>
+<h2><span id="process-lasso">process lasso</span></h2><p>(bitsum家顶好用的软件)俗称高级任务管理器,老旧电脑的福音</p>
+<p>采用注册机破解的方法(回头再补充)</p>
+<h2><span id="office">office</span></h2><p>大名鼎鼎的<a href="https://otp.landian.vip/zh-cn/">Office Tool Plus 官方网站 - 一键部署 Office (landian.vip)</a></p>
+<p><a href="https://www.coolhub.top/">Yerong の小窝 - Love life, like coding. (coolhub.top)</a></p>
+<p>主要分这几部:</p>
+<p>1.自己选择下载(例如365)</p>
+<p>2.<a href="https://www.coolhub.top/archives/14">清除激活信息</a></p>
+<p>3.重新激活即可</p>
+<p>自动激活:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl + shift + p</span><br><span class="line">ospp /inslicid MondoVolume /sethst:kms.loli.beer /setprt:1688 /act</span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
 ]]></content>
       <categories>
         <category>工具</category>
@@ -201,10 +225,9 @@ cat ~/.ssh/id_rsa.pub
     <title>扩容u盘修复记</title>
     <url>/2023/08/26/%E6%89%A9%E5%AE%B9u%E7%9B%98%E4%BF%AE%E5%A4%8D%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>学校不让带手机,所以宿舍某吴同学(186)便屡次被逮到玩手机后,带了一个学生专用”老年机”–巨豆豆<br>除了听歌之外啥也不能干<br><del>我们看他怪可怜</del>,便给他<del>施舍</del>了一张扩容卡[^1]<br>原图奉上用于避雷<br>正面:</p>
-<p>[<img src="https://z1.ax1x.com/2023/12/02/pisqkAf.md.jpg" alt="pisqkAf.md.jpg"></p>
-<p>反面:<br><a href="https://imgse.com/i/pisbWkT"><img src="https://z1.ax1x.com/2023/12/02/pisbWkT.md.jpg" alt="pisbWkT.md.jpg"></a><br>上面标的是8G<br>经过我检测是128扩容[^1]至8G(测试工具:Mydisktest)<br>](<a href="https://imgse.com/i/pisqkAf">https://imgse.com/i/pisqkAf</a>)<br><a href="https://imgse.com/i/pisqPBt"><img src="https://z1.ax1x.com/2023/12/02/pisqPBt.png" alt="pisqPBt.png"></a><br>首先推荐工具:<a href="http://www.tbtool.cn/">图吧工具箱</a>(里面的软件都有)</p>
+<p>学校不让带手机,所以宿舍某吴同学(186)便屡次被逮到玩手机后,带了一个学生专用”老年机”–巨豆豆<br>除了听歌之外啥也不能干<br><del>我们看他怪可怜</del>,便给他<del>施舍</del>了一张扩容卡[^1]<br> 原图奉上用于避雷<br> 正面:<br> <a href="https://imgse.com/i/pisbWkT"><img src="https://z1.ax1x.com/2023/12/02/pisqkAf.md.jpg" alt="pisbWkT.md.jpg" style="zoom:33%;"></a><br> 反面:<br> <a href="https://imgse.com/i/pisbWkT"><img src="https://z1.ax1x.com/2023/12/02/pisbWkT.md.jpg" alt="pisbWkT.md.jpg" style="zoom:33%;"></a><br> 上面标的是8G<br> 经过我检测是128扩容[^1]至8G(测试工具:Mydisktest)</p>
 </blockquote>
+<p> <a href="https://imgse.com/i/pisqPBt"><img src="https://z1.ax1x.com/2023/12/02/pisqPBt.png" alt="pisqPBt.png" style="zoom:67%;"></a><br> 首先推荐工具:<a href="http://www.tbtool.cn/">图吧工具箱</a>(里面的软件都有)</p>
 <h2><span id="方法一">方法一</span></h2><p>利用chipgenus(这是我用过的最快的,还算准确的)</p>
 <p>[^1]:扩容盘是指用相关软件让容量很小的U盘在电脑上显示出来的容量很大(比如512M的显成2G).不 过多出来的内存是不能正常使用的，这种U盘存入的文件只要超过实际的容量，多出来容量的文件不可用(如歌曲不能听，视频不能看)，或者再拷出来就会损坏。</p>
 ]]></content>
@@ -250,9 +273,9 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
-    <title>bilibili音乐大赏</title>
+    <title>国风再起 吾当自豪</title>
     <url>/2023/07/24/bilibili%E9%9F%B3%E4%B9%90%E5%A4%A7%E8%B5%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>最近看了<a href="https://space.bilibili.com/403748305?spm_id_from=333.337.0.0">BML</a>[^1]的视频，发现bilibili多才多艺的人真多:<a href="https://www.bilibili.com/video/BV19k4y1V7aM/?share_source=copy_web&vd_source=0eea709d7e68f928596487429462cdf8">《转生到梗曲世界后》度过了抽象的一生【BML2023单品】</a><br>所以<del>我也想学乐器</del><br>所以,我统计一下里面的大神:<br>先放张合影<a href="https://imgse.com/i/pCOlDrF"><img src="https://s1.ax1x.com/2023/07/24/pCOlDrF.md.png" alt="pCOlDrF.md.png"></a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2><span id="我爱小破站">我爱小破站</span></h2><p>最近看了<a href="https://space.bilibili.com/403748305?spm_id_from=333.337.0.0">BML</a>[^1]的视频，发现bilibili多才多艺的人真多:<a href="https://www.bilibili.com/video/BV19k4y1V7aM/?share_source=copy_web&vd_source=0eea709d7e68f928596487429462cdf8">《转生到梗曲世界后》度过了抽象的一生【BML2023单品】</a><br>所以<del>我也想学乐器</del><br>所以,我统计一下里面的大神:</p>
 <!-- toc -->
 
 <ul>
@@ -279,6 +302,7 @@ cat ~/.ssh/id_rsa.pub
 <h2><span id="6-丿落英飞花">6. 丿落英飞花</span></h2><p>要说晚会除了唢呐,剩下的就是那一排计算器了,对,你没听错,就是计算器,作为最不像乐器的乐器,有着自己独特的曲谱,发出略显搞笑的电音,让人不禁感叹这多好的一双手啊,可能在别人眼中是噪声,但是那句归零,却在无时无刻提醒你他在演奏,但是难免会出现音色重复等缺点,需要加以改进.剩下的只有享受音乐了<br><a href="https://www.bilibili.com/video/BV1Z8411U7Vi/?spm_id_from=333.999.0.0">计算器演奏刃角色pv曲，计算器硬刚唢呐?</a></p>
 <h2><span id="7-哔哔啵啵璇">7. 哔哔啵啵璇</span></h2><p>这位更是<strong>重量级</strong>!来自古筝健身专业?娇小的身躯却可以抬起古筝,不经意的尝试却开创了新的玩法,将古筝玩出了吉他的感觉,仅凭这一身行头就能震慑全场<br><a href="https://www.bilibili.com/video/BV1ec411P7H7/?spm_id_from=333.999.0.0">卧 推 の 孩 子</a></p>
 <h2><span id="8-爪子drumdoll">8. 爪子drumdoll</span></h2><p>最后也不得不提的是能够震慑全场的架子鼓了,也不愧是是爵士乐队中十分重要的一种打击乐器,说不上有什么出彩,却总是整个过程中绝对不可或缺的一部分呢?但仍需要继续努力呀!<br><a href="https://www.bilibili.com/video/BV13Y411b7f1/?spm_id_from=333.337.search-card.all.click">【架子鼓】神女劈观 ♡ 鼓点改编remix|现场炸裂版</a></p>
+<p>后放张合影<a href="https://imgse.com/i/pCOlDrF"><img src="https://s1.ax1x.com/2023/07/24/pCOlDrF.md.png" alt="pCOlDrF.md.png"></a></p>
 <h1><span id="总结">总结:</span></h1><p>无论是正常的乐器还是那些标新立意的乐器,不管演奏什么都需要得到我们的尊重(赞扬也好,批评也罢)都是对他们的合理意见,也都是希望他们能更进一步,继续去演奏更好的音乐,同时也希望他们多去弄一些原创,不断去进步提升。<br>或许我们一开始只是抱着好奇的态度去看他们的视频的(我就是),但经过欣赏后,也不难发现他们在为做好作品背后付出的努力,也同时为了获得相应的激励,所以请不要吝啬手中的三连做到:这次一定!</p>
 <p>[^1]:BILIBILI MACRO LINK（BML）是由哔哩哔哩和超电文化联合主办，以哔哩哔哩核⼼内容为主题的大型线下活动。现场邀请一线动画歌⼿、人⽓UP主、⽹络年轻文化代表人物，以及所有热爱B站文化的用户共同参加。</p>
 ]]></content>
@@ -1011,11 +1035,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart5506" style="height: 300px"></canvas>
+    <canvas id="chart7162" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart5506').getContext('2d');
+    var ctx = document.getElementById('chart7162').getContext('2d');
     var options = {
     type: 'line',
     data: {
