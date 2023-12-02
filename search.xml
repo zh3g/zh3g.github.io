@@ -156,6 +156,46 @@ cat ~/.ssh/id_rsa.pub
       </tags>
   </entry>
   <entry>
+    <title>百校联考前及期中反思</title>
+    <url>/2023/12/02/%E7%99%BE%E6%A0%A1%E8%81%94%E8%80%83%E5%89%8D%E5%8F%8A%E6%9C%9F%E4%B8%AD%E5%8F%8D%E6%80%9D/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="无望">无望</span></h1><p>一招从高台中跌落,便再也起不了.</p>
+<p>站得有多高,摔得就有多痛</p>
+<p>期末:全校第三</p>
+<p>期中:全班倒数第三</p>
+<p>人生起落起落落罗落落落落落落……..</p>
+<p>但是:</p>
+<p>我坚信只有不断地调整自己的心态方法态度,胜利的天平钟会向我那边倾斜.</p>
+<h2><span id="加油加油">加油加油!!!!</span></h2><h2><span id="向高考示威">向高考示威</span></h2><p><em>Fighting</em></p>
+]]></content>
+      <categories>
+        <category>高三</category>
+      </categories>
+      <tags>
+        <tag>学习方面</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>扩容u盘修复记</title>
+    <url>/2023/08/26/%E6%89%A9%E5%AE%B9u%E7%9B%98%E4%BF%AE%E5%A4%8D%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>学校不让带手机,所以宿舍某吴同学(186)便屡次被逮到玩手机后,带了一个学生专用”老年机”–巨豆豆<br>除了听歌之外啥也不能干<br>我们看他怪可怜,便给他施舍了一张扩容卡<br>原图奉上用于避雷<br>正面:<br><img src="/IMG_20230826_071538.jpg" alt="Alt text"><br>反面:<br><img src="/IMG_20230826_071550.jpg" alt="Alt text"><br>上面标的是8G<br>经过我检测是128扩容[^1]至8G(测试工具:Mydisktest)<br><img src="/E~WUV(05YPOIMITJVL)E~%5BC.png" alt="Alt text"><br>首先推荐工具:<a href="http://www.tbtool.cn/">图吧工具箱</a>(里面的软件都有)</p>
+</blockquote>
+<h2><span id="方法一">方法一</span></h2><p>利用chipgenus<br>[^1]:扩容盘是指用相关软件让容量很小的U盘在电脑上显示出来的容量很大(比如512M的显成2G).不 过多出来的内存是不能正常使用的，这种U盘存入的文件只要超过实际的容量，多出来容量的文件不可用(如歌曲不能听，视频不能看)，或者再拷出来就会损坏。</p>
+]]></content>
+      <categories>
+        <category>磁盘管理</category>
+      </categories>
+      <tags>
+        <tag>u盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/08/13/%E4%B8%89%E5%9B%BD%E6%9D%80%E6%88%90%E7%98%BE%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2023年8月12日，在同学的强烈要求下，下载了三国杀这款游戏，随后变玩了十几小时……….</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Pixiv</title>
     <url>/2023/08/11/Pixiv/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -951,11 +991,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart7162" style="height: 300px"></canvas>
+    <canvas id="chart54" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart7162').getContext('2d');
+    var ctx = document.getElementById('chart54').getContext('2d');
     var options = {
     type: 'line',
     data: {
