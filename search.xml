@@ -158,7 +158,15 @@ cat ~/.ssh/id_rsa.pub
   <entry>
     <title>unpro software</title>
     <url>/2023/12/02/unpro-software/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2><span id="vista看天下">vista看天下</span></h2><p>虽说知道盗版不好,但我没有那个经济实力,于是就抱着侥幸心理找了一下果然没找到.</p>
+<p>本文所涉及到的软件都是我经过尝试未找到相应破解的,希望广大网友发挥作用,<del>共享成果</del></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
   </entry>
   <entry>
     <title>百校联考前及期中反思</title>
@@ -1035,11 +1043,11 @@ cat ~/.ssh/id_rsa.pub
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1><span id="hello">hello</span></h1><h1><span id="图片">图片</span></h1><p><a href="2023-7%E6%9C%88-07-14-05-53-8461.png">图片</a></p>
 <h2><span id="这是图片">这是图片</span></h2><p><img src="/2023-7%E6%9C%88-07-14-05-53-8461-1.png" alt="Alt text"></p>
 <h1><span id="图表">图表</span></h1><div style="width: 80%;margin: 0 auto">
-    <canvas id="chart7162" style="height: 300px"></canvas>
+    <canvas id="chart9984" style="height: 300px"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart7162').getContext('2d');
+    var ctx = document.getElementById('chart9984').getContext('2d');
     var options = {
     type: 'line',
     data: {
